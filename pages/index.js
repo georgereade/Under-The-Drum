@@ -1,7 +1,7 @@
 import { Inter } from "next/font/google";
 import React from "react";
 import { loadStripe } from "@stripe/stripe-js";
-import PreviewPage from "./buy";
+import BuyTickets from "./buy";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +16,7 @@ export default function Home() {
     >
       <div className="z-10 max-w-5xl w-full items-center font-mono text-sm lg:flex">
         <p> Hey</p>
-        <PreviewPage />
+        <BuyTickets />
       </div>
     </main>
   );

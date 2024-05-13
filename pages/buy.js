@@ -6,7 +6,7 @@ import { loadStripe } from "@stripe/stripe-js";
 const stripePromise = loadStripe(
   process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY
 );
-export default function PreviewPage() {
+export default function BuyTickets() {
   React.useEffect(() => {
     // Check to see if this is a redirect back from Checkout
     const query = new URLSearchParams(window.location.search);
