@@ -37,9 +37,9 @@ body {
   display: flex;
   flex-direction: column;
   width: 400px;
-  height: 112px;
+  /* height: 112px; */
   border-radius: 6px;
-  justify-content: space-between;
+  justify-content: center;
 }
 .checkout-button {
   height: 36px;
