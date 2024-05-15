@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import React from "react";
 import { loadStripe } from "@stripe/stripe-js";
 import BuyTickets from "./buy";
+import "../styles/globals.css"
 
 const inter = Inter({ subsets: ["latin"] });
 
