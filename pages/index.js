@@ -12,7 +12,7 @@ const stripePromise = loadStripe(
 export default function Home() {
   return (
     <main
-      className={`flex place-content-center h-screen p-24 ${inter.className}`}
+      className={`flex place-content-center h-screen w-screen p-24 ${inter.className}`}
     >
       <BuyTickets />
     </main>
