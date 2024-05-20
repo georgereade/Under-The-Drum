@@ -23,18 +23,19 @@ export default function Home() {
         width="300"
         height="300"
       />
-      <h1>Under The Drum</h1>
+      <h1 className="font-extrabold pt-4">Under The Drum</h1>
       <p className="leading-loose text-center">
         Saturday September 28th 2024
         <br />
         An eclectic weekend of music in the Antrim hills
       </p>
       <p className="leading-loose text-center pt-6">Venue:</p>
-      <Link href="https://breckenhill.co.uk/contact/">
-        <p className="text-yellow-200 font-bold border-2 rounded p-2 mb-12">
-          Breckenhill
-        </p>
-      </Link>{" "}
+      <button
+        href="https://breckenhill.co.uk/contact/"
+        className="text-yellow-200 font-bold border-2 border-yellow-200 rounded mb-12 breckenhill-button"
+      >
+        Breckenhill
+      </button>
       <BuyTickets />
     </main>
   );

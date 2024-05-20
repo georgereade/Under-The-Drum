@@ -23,6 +23,7 @@ export default function BuyTickets() {
 
   return (
     <form action="/api/checkout_sessions" method="POST">
+      <p className="text-center leading-loose">Tickets:</p>
       <section className="checkout-button-section">
         <button
           type="submit"
@@ -30,7 +31,7 @@ export default function BuyTickets() {
           className="checkout-button bg-gray-300 cursor-not-allowed"
           disabled
         >
-          Buy Tickets (On Sale Soon)
+          On Sale Soon
         </button>
       </section>
     </form>
