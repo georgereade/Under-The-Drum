@@ -7,7 +7,7 @@ export default function Success() {
     <main
       className={`flex flex-col items-center place-content-center h-screen p-6 ${inter.className}`}
     >
-      <div className="text-justify leading-loose">
+      <div className="text-center leading-loose">
         <p>Payment successful, thanks!</p>
         <p>Your ticket will be emailed to you shortly.</p>
 

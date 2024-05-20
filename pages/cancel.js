@@ -8,7 +8,7 @@ export default function Cancel() {
       className={`flex flex-col items-center place-content-center h-screen p-6 ${inter.className}`}
     >
       <div>
-        <p className="leading-loose"> Payment cancelled.</p>
+        <p className="leading-loose text-center"> Payment cancelled.</p>
         <ReturnButton />
       </div>
     </main>

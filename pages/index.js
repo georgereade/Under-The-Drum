@@ -3,6 +3,7 @@ import React from "react";
 import { loadStripe } from "@stripe/stripe-js";
 import BuyTickets from "./buy";
 import Image from "next/image";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,8 +24,18 @@ export default function Home() {
         height="300"
       />
       <h1>Under The Drum</h1>
-      <p className="leading-loose">Saturday September 28th 2024</p>
+      <p className="leading-loose text-center">
+        Saturday September 28th 2024 <br /> An eclectic weekend of music in the
+        Antrim hills
+      </p>
       <BuyTickets />
+      <hr />
+      <p className="leading-loose text-center pt-12">Venue:</p>
+      <Link href="https://breckenhill.co.uk/contact/">
+        <p className="text-yellow-400 font-bold border-2 rounded p-2">
+          Breckenhill
+        </p>
+      </Link>{" "}
     </main>
   );
 }
