@@ -5,10 +5,10 @@ import ReturnButton from "./components/return-button";
 export default function Cancel() {
   return (
     <main
-      className={`flex place-content-center h-screen p-24 ${inter.className}`}
+      className={`flex flex-col items-center place-content-center h-screen p-24 ${inter.className}`}
     >
       <div>
-        <p> Payment cancelled.</p>
+        <p className="leading-loose"> Payment cancelled.</p>
         <ReturnButton />
       </div>
     </main>
