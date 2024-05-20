@@ -5,7 +5,7 @@ import ReturnButton from "./components/return-button";
 export default function Success() {
   return (
     <main
-      className={`flex flex-col items-center place-content-center h-screen p-24 ${inter.className}`}
+      className={`flex flex-col items-center place-content-center h-screen p-6 ${inter.className}`}
     >
       <div className="text-justify leading-loose">
         <p>Payment successful, thanks!</p>
