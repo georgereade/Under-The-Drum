@@ -1,6 +1,4 @@
-const stripe = require("stripe")(
-  "pk_live_51PFz1BP2rqQbA2GkbsACsGpLA5ML3wkT1uiS9mCMKmLCxKyDnwJRR2VpZnsBXjiN8omL9cWS4cfLYePmlGEHDxzk00WLlfj2io"
-);
+const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 
 export default async function handler(req, res) {
   if (req.method === "POST") {
