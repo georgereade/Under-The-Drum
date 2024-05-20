@@ -31,10 +31,10 @@ export default function Home() {
       </p>
       <p className="leading-loose text-center pt-6">Venue:</p>
       <button
-        href="https://breckenhill.co.uk/contact/"
+        role="link"
         className="text-yellow-200 font-bold border-2 border-yellow-200 rounded mb-12 breckenhill-button"
       >
-        Breckenhill
+        <Link href="https://breckenhill.co.uk/contact/">Breckenhill</Link>
       </button>
       <BuyTickets />
     </main>
