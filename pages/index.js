@@ -13,7 +13,7 @@ const stripePromise = loadStripe(
 export default function Home() {
   return (
     <main
-      className={`flex flex-col items-center grow place-content-center h-screen w-screen p-24 ${inter.className}`}
+      className={`flex flex-col items-center place-content-center h-screen w-screen p-24 ${inter.className}`}
     >
       <Image
         src="/drum-logo.jpeg"
