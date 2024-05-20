@@ -24,7 +24,12 @@ export default function BuyTickets() {
   return (
     <form action="/api/checkout_sessions" method="POST">
       <section className="checkout-button-section">
-        <button type="submit" role="link" className="checkout-button">
+        <button
+          type="submit"
+          role="link"
+          className="checkout-button bg-gray-300 cursor-not-allowed"
+          disabled
+        >
           Buy Tickets
         </button>
       </section>
