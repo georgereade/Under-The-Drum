@@ -29,14 +29,13 @@ export default function Home() {
         <br />
         An eclectic weekend of music in the Antrim hills
       </p>
-      <BuyTickets />
-      <hr />
-      <p className="leading-loose text-center pt-12">Venue:</p>
+      <p className="leading-loose text-center pt-6">Venue:</p>
       <Link href="https://breckenhill.co.uk/contact/">
-        <p className="text-yellow-200 font-bold border-2 rounded p-2">
+        <p className="text-yellow-200 font-bold border-2 rounded p-2 mb-12">
           Breckenhill
         </p>
       </Link>{" "}
+      <BuyTickets />
     </main>
   );
 }

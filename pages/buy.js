@@ -30,7 +30,7 @@ export default function BuyTickets() {
           className="checkout-button bg-gray-300 cursor-not-allowed"
           disabled
         >
-          Buy Tickets
+          Buy Tickets (On Sale Soon)
         </button>
       </section>
     </form>
