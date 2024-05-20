@@ -1,5 +1,5 @@
 const stripe = require("stripe")(
-  process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY
+  "pk_live_51PFz1BP2rqQbA2GkbsACsGpLA5ML3wkT1uiS9mCMKmLCxKyDnwJRR2VpZnsBXjiN8omL9cWS4cfLYePmlGEHDxzk00WLlfj2io"
 );
 
 export default async function handler(req, res) {
