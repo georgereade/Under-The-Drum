@@ -3,7 +3,8 @@ import React from "react";
 import { loadStripe } from "@stripe/stripe-js";
 import BuyTickets from "./buy";
 import Image from "next/image";
-import Link from "next/link";
+import BreckenhillButton from "./components/breckenhill-button";
+import Contact from "./components/contact";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,14 +30,9 @@ export default function Home() {
         <br />
         An eclectic weekend of music in the Antrim hills
       </p>
-      <p className="leading-loose text-center pt-6">Venue:</p>
-      <button
-        role="link"
-        className="text-yellow-200 font-bold border-2 border-yellow-200 rounded mb-12 breckenhill-button"
-      >
-        <Link href="https://breckenhill.co.uk/contact/">Breckenhill</Link>
-      </button>
+      <BreckenhillButton />
       <BuyTickets />
+      <Contact />
     </main>
   );
 }
