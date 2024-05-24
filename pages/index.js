@@ -18,7 +18,7 @@ export default function Home() {
       className={`flex flex-col items-center place-content-center h-screen w-screen p-6 ${inter.className}`}
     >
       <Image
-        src="/drum-logo.jpeg"
+        src="/utd-logo.png"
         className=""
         alt="Under The Drum"
         width="300"
