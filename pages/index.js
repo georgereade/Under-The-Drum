@@ -19,7 +19,14 @@ export default function Home() {
     >
       <Image
         src="/main-logo.png"
-        className=""
+        className="block dark:hidden"
+        alt="Under The Drum"
+        width="400"
+        height="400"
+      />
+      <Image
+        src="/main-logo-white.png"
+        className="hidden dark:block"
         alt="Under The Drum"
         width="400"
         height="400"
