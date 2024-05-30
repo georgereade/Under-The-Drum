@@ -8,19 +8,6 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-  .breckenhill-button:hover {
-    background-color: #ca8a04;
-    color: black;
-    opacity: 0.8;
-  }
-}
-
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -75,4 +62,17 @@ body {
   background-color: #ffffff;
   color: black;
   opacity: 0.8;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+  .breckenhill-button:hover {
+    background-color: #ca8a04;
+    color: black;
+    opacity: 0.8;
+  }
 }
