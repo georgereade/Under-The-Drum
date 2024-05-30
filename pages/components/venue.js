@@ -4,10 +4,14 @@ const mapsAPIKey = process.env.GOOGLE_MAPS_KEY;
 export default function Venue() {
   return (
     <div className="flex flex-col items-center">
-      <h1 className="font-extrabold leading-loose text-center py-6 text-4xl">
+      <h1 className="font-extrabold leading-loose text-center pt-6 text-4xl">
         Venue:
       </h1>
-
+      <p className="pb-6 text-center">
+        Breckenhill <br />
+        45 Breckenhill Road <br />
+        BT39 0TB
+      </p>
       <div className="iframe_container">
         {" "}
         <iframe

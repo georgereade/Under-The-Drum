@@ -39,8 +39,7 @@ export default function Home() {
       <h1 className="font-extrabold text-4xl pt-4">Under The Drum</h1>
       <p className="leading-loose text-center">
         Saturday September 28th 2024
-        <br />
-        An eclectic weekend of music in the Antrim hills
+        <br />A weekend of music in the Antrim hills
       </p>
 
       <BuyTickets />
