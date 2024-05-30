@@ -23,7 +23,9 @@ export default function BuyTickets() {
 
   return (
     <form action="/api/checkout_sessions" method="POST">
-      <p className="text-center leading-loose">Tickets:</p>
+      <p className="font-extrabold text-2xl text-center leading-loose">
+        Tickets:
+      </p>
       <section className="checkout-button-section">
         <button
           type="submit"

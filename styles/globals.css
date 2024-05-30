@@ -27,7 +27,7 @@ body {
 .checkout-button-section {
   display: flex;
   flex-direction: column;
-  width: 400px;
+  width: 300px;
   /* height: 112px; */
   border-radius: 6px;
   justify-content: justify;
@@ -51,7 +51,7 @@ body {
 }
 .breckenhill-button {
   height: 36px;
-  width: 400px;
+  width: 300px;
   /* background: grey; */
   font-weight: 600;
   /* cursor: pointer; */
@@ -60,8 +60,21 @@ body {
 }
 .breckenhill-button:hover {
   background-color: #ffffff;
-  color: black;
+  color: #ca8a04;
   opacity: 0.8;
+}
+
+.r_iframe {
+  width: 60vw;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-logo {
+  height: 80vh;
+  width: 400px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -74,5 +87,12 @@ body {
     background-color: #ca8a04;
     color: black;
     opacity: 0.8;
+  }
+}
+
+@media (max-width: 800px) {
+  .r_iframe {
+    width: 80vw;
+    height: 300px;
   }
 }
