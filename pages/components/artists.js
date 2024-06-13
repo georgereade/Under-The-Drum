@@ -7,10 +7,8 @@ const artistUrls = [
 
 export default function Artists() {
   return (
-    <div className="flex flex-col flex-wrap items-center w-screen p-4 bg-black dark:bg-white mt-12 py-12">
-      <h1 className="font-extrabold py-4 text-white dark:text-black text-4xl">
-        Featuring...
-      </h1>
+    <div className="flex flex-col flex-wrap items-center w-screen p-4 bg-black dark:bg-white py-12">
+      <h2 className="font-extrabold py-4 text-4xl">Featuring...</h2>
       <div className="flex flex-col items-center md:flex-row">
         {" "}
         {artistUrls.map((url, index) => (

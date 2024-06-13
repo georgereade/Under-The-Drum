@@ -61,7 +61,7 @@ body {
 }
 .breckenhill-button:hover {
   background-color: #ffffff;
-  color: #ca8a04;
+  color: #db4c44;
   opacity: 0.8;
 }
 
@@ -74,8 +74,20 @@ body {
 }
 
 .main-logo {
-  height: 80vh;
+  /* height: 80vh; */
   width: 400px;
+}
+
+h1 {
+  color: #736de0;
+}
+
+h2 {
+  color: #db4c44;
+}
+
+h3 {
+  color: #a9de7c;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -85,7 +97,7 @@ body {
     --background-end-rgb: 0, 0, 0;
   }
   .breckenhill-button:hover {
-    background-color: #ca8a04;
+    background-color: #db4c44;
     color: black;
     opacity: 0.8;
   }
