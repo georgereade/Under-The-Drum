@@ -6,7 +6,7 @@ const roboto = Roboto({ subsets: ["latin"], weight: "400" });
 
 export default function Hero() {
   return (
-    <div className="flex flex-col items-center pb-6 my-0 bg-utd-navy">
+    <div className="flex flex-col items-center pb-0 my-0 bg-utd-navy">
       <div className="w">
         {" "}
         <Image
@@ -35,14 +35,6 @@ export default function Hero() {
           height="400"
         />
       </div>
-      <Image
-        src="/Banner1.png"
-        className="md:hidden w-dvw"
-        alt="Under The Drum"
-        width="2500"
-        height="998"
-      />
-      {/* <h1 className="font-extrabold text-4xl pt-4">Under The Drum</h1> */}
       <h1
         className={`font-light text-4xl md:text-5xl pt-4 leading-loose text-center uppercase" ${roboto.className}`}
       >
@@ -54,6 +46,13 @@ export default function Hero() {
       <p className="text-xl md:text-2xl leading-loose text-center uppercase py-6">
         Saturday September 28th 2024
       </p>
+      <Image
+        src="/Banner1.png"
+        className="md:hidden w-dvw"
+        alt="Under The Drum"
+        width="2500"
+        height="998"
+      />
     </div>
   );
 }

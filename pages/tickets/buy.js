@@ -1,6 +1,7 @@
 import React from "react";
 import { loadStripe } from "@stripe/stripe-js";
 import CountdownTimer from "../components/countdownTImer";
+import Image from "next/image";
 
 // Make sure to call `loadStripe` outside of a component’s render to avoid
 // recreating the `Stripe` object on every render.
@@ -24,10 +25,16 @@ export default function BuyTickets() {
 
   return (
     <div
-      className="flex flex-col items-center bg-utd-navy w-screen py-12"
+      className="flex flex-col items-center bg-utd-navy w-screen pb-12"
       id="tickets"
     >
-      {" "}
+      <Image
+        src="/Banner1.png"
+        className="md:hidden w-dvw pb-6"
+        alt="Under The Drum"
+        width="2500"
+        height="998"
+      />{" "}
       <form action="/api/checkout_sessions" method="POST">
         <p className="font-extrabold text-2xl text-center leading-loose uppercase">
           Tickets:
