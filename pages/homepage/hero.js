@@ -1,5 +1,8 @@
 import React from "react";
 import Image from "next/image";
+import { Roboto } from "next/font/google";
+
+const roboto = Roboto({ subsets: ["latin"], weight: "400" });
 
 export default function Hero() {
   return (
@@ -40,8 +43,10 @@ export default function Hero() {
         height="998"
       />
       {/* <h1 className="font-extrabold text-4xl pt-4">Under The Drum</h1> */}
-      <h1 className="font-extrabold text-4xl md:text-5xl pt-4 leading-loose text-center uppercase">
-        under the drum
+      <h1
+        className={`font-light text-4xl md:text-5xl pt-4 leading-loose text-center uppercase" ${roboto.className}`}
+      >
+        UNDER THE DRUM
       </h1>
       <h2 className="lowercase italic text-xl md:text-2xl">
         a music festival in the Antrim Hills

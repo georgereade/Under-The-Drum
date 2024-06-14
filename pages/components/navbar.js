@@ -12,6 +12,9 @@ import {
 } from "@nextui-org/react";
 import Image from "next/image";
 import CountdownTimer from "./countdownTImer";
+import { Nunito } from "next/font/google";
+
+const nunito = Nunito({ subsets: ["latin"] });
 
 export default function Navigationbar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -30,6 +33,7 @@ export default function Navigationbar() {
       isMenuOpen={isMenuOpen}
       position="sticky"
       id="navibar"
+      className={`${nunito.className}`}
     >
       <NavbarContent>
         <NavbarMenuToggle
@@ -94,7 +98,7 @@ export default function Navigationbar() {
                   ? "danger"
                   : "foreground"
               }
-              className="w-full py-6 text-3xl"
+              className="w-full py-8 text-3xl border-b-2 border-utd-blue"
               onClick={handleMenuClose}
               href={menuLinks[index]}
               size="lg"
