@@ -107,7 +107,10 @@ export default function Navigationbar() {
             </Link>
           </NavbarMenuItem>
         ))}
-        <CountdownTimer />
+        <span className="text-3xl pt-8">
+          Countdown:
+          <CountdownTimer />
+        </span>
       </NavbarMenu>
     </Navbar>
   );
