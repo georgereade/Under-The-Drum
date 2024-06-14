@@ -22,17 +22,20 @@ export default function BuyTickets() {
   }, []);
 
   return (
-    <div className="flex flex-col items-center bg-utd-navy w-screen pb-12">
+    <div
+      className="flex flex-col items-center bg-utd-navy w-screen py-12"
+      id="tickets"
+    >
       {" "}
       <form action="/api/checkout_sessions" method="POST">
-        <p className="font-extrabold text-2xl text-center leading-loose">
+        <p className="font-extrabold text-2xl text-center leading-loose uppercase">
           Tickets:
         </p>
         <section className="checkout-button-section">
           <button
             type="submit"
             role="link"
-            className="checkout-button bg-gray-300 cursor-not-allowed"
+            className="checkout-button bg-gray-300 cursor-not-allowed uppercase"
             disabled
           >
             On Sale Soon

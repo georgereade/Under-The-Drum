@@ -19,8 +19,8 @@ export default function Home() {
       className={`flex flex-col items-center h-screen w-screen pb-6 font-nunito bg-utd-navy ${nunito.className}`}
     >
       <Hero />
-      <BuyTickets />
       <Artists />
+      <BuyTickets />
       <Venue />
       <Contact />
     </main>

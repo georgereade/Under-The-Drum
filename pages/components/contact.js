@@ -1,15 +1,18 @@
 export default function Contact() {
   return (
-    <div className="flex flex-col items-center dark:border-white w-screen bg-utd-navy">
+    <div
+      className="flex flex-col items-center dark:border-white w-screen bg-utd-navy"
+      id="contact"
+    >
       <h3
         className="font-extrabold
-text-2xl leading-loose mt-12"
+text-2xl leading-loose mt-12 uppercase"
       >
-        Contact:
+        Contact
       </h3>
-      <h3 className="mb-6">
+      <h3 className="mb-6 transition ease-in-out delay-10 hover:scale-110">
         <a
-          className="font-normal text-base"
+          className="font-normal text-base "
           href="mailto:info@underthedrum.co.uk"
         >
           info@underthedrum.co.uk

@@ -3,9 +3,9 @@ const mapsAPIKey = process.env.GOOGLE_MAPS_KEY;
 
 export default function Venue() {
   return (
-    <div className="flex flex-col items-center w-screen bg-utd-navy">
-      <h2 className="font-extrabold leading-loose text-center pt-6 text-4xl">
-        Venue:
+    <div className="flex flex-col items-center w-screen bg-utd-navy" id="venue">
+      <h2 className="font-extrabold leading-loose text-center pt-6 text-4xl uppercase">
+        Venue
       </h2>
       <p className="pb-6 text-center">
         Breckenhill <br />
@@ -28,7 +28,7 @@ export default function Venue() {
       <section className="checkout-button-section flex flex-col items-center">
         <Link href="https://breckenhill.co.uk/contact/">
           {" "}
-          <button className="text-utd-red font-bold border-2 border-utd-red rounded mt-8 breckenhill-button">
+          <button className="text-utd-red font-bold border-2 border-utd-red rounded mt-8 breckenhill-button hidden">
             Breckenhill
           </button>
         </Link>

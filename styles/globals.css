@@ -78,16 +78,21 @@ body {
   width: 400px;
 }
 
-h1 {
+h2 {
   color: #736de0;
 }
 
-h2 {
+h1 {
   color: #db4c44;
 }
 
 h3 {
   color: #a9de7c;
+}
+
+#navibar {
+  position: sticky;
+  top: 0;
 }
 
 @media (prefers-color-scheme: dark) {

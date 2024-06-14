@@ -18,16 +18,16 @@ export default function Hero() {
 
       <div className="main-logo px-0 mx-0 place-content-center md:hidden">
         {" "}
-        <Image
+        {/* <Image
           src="/Vector LOGO - MAIN.jpg"
           className="block dark:hidden"
           alt="Under The Drum"
           width="400"
           height="400"
-        />
+        /> */}
         <Image
           src="/UTDLogoWhite.png"
-          className="hidden dark:block"
+          className=""
           alt="Under The Drum"
           width="400"
           height="400"
@@ -41,10 +41,12 @@ export default function Hero() {
         height="998"
       />
       {/* <h1 className="font-extrabold text-4xl pt-4">Under The Drum</h1> */}
-      <h1 className="font-extrabold text-4xl pt-4 leading-loose text-center">
+      <h1 className="font-extrabold text-2xl md:text-4xl pt-4 leading-loose text-center uppercase">
         A weekend of music in the Antrim hills
       </h1>
-      <p className="leading-loose text-center">Saturday September 28th 2024</p>
+      <p className="leading-loose text-center uppercase">
+        Saturday September 28th 2024
+      </p>
       <CountdownTimer />
     </div>
   );
