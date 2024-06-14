@@ -1,11 +1,11 @@
 import { Nunito } from "next/font/google";
 import React from "react";
 import { loadStripe } from "@stripe/stripe-js";
-import BuyTickets from "./buy";
-import Venue from "./components/venue";
-import Contact from "./components/contact";
-import Artists from "./components/artists";
-import Hero from "./components/hero";
+import BuyTickets from "./tickets/buy";
+import Venue from "./homepage/venue";
+import Contact from "./homepage/contact";
+import Artists from "./homepage/artists";
+import Hero from "./homepage/hero";
 
 const nunito = Nunito({ subsets: ["latin"] });
 
@@ -16,7 +16,7 @@ const stripePromise = loadStripe(
 export default function Home() {
   return (
     <main
-      className={`flex flex-col items-center h-screen w-screen pb-6 font-nunito bg-utd-navy ${nunito.className}`}
+      className={`flex flex-col items-center w-screen pb-6 font-nunito bg-utd-navy ${nunito.className}`}
     >
       <Hero />
       <Artists />

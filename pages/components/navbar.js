@@ -18,7 +18,12 @@ export default function Navigationbar() {
   const menuItems = ["Artists", "Contact", "FAQs", "Venue"];
 
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen} position="sticky" id="navibar">
+    <Navbar
+      shouldHideOnScroll={false}
+      onMenuOpenChange={setIsMenuOpen}
+      position="sticky"
+      id="navibar"
+    >
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}

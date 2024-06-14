@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import CountdownTimer from "./countdownTImer";
+import CountdownTimer from "../components/countdownTImer";
 
 export default function Hero() {
   return (
