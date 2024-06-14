@@ -4,6 +4,7 @@ import { NextUIProvider } from "@nextui-org/react";
 import Head from "next/head";
 import { GoogleTagManager } from "@next/third-parties/google";
 import Navigationbar from "./components/navbar";
+import Footer from "./components/footer";
 
 export default function App({ Component, pageProps }) {
   return (
@@ -27,7 +28,7 @@ export default function App({ Component, pageProps }) {
           <meta property="og:image" content="public\Vector LOGO - MAIN.jpg" />
         </Head>
         <Navigationbar />
-        <Component {...pageProps} />{" "}
+        <Component {...pageProps} /> <Footer />
         <GoogleTagManager
           gtmId="G-L3XTL8FY14
 "

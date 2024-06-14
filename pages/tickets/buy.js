@@ -1,5 +1,6 @@
 import React from "react";
 import { loadStripe } from "@stripe/stripe-js";
+import CountdownTimer from "../components/countdownTImer";
 
 // Make sure to call `loadStripe` outside of a component’s render to avoid
 // recreating the `Stripe` object on every render.
@@ -42,6 +43,10 @@ export default function BuyTickets() {
           </button>
         </section>
       </form>
+      <p className="font-extrabold text-2xl text-center leading-loose uppercase pt-3">
+        Earlybirds £40 Standard £50
+      </p>
+      <CountdownTimer />
     </div>
   );
 }

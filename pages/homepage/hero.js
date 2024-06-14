@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import CountdownTimer from "../components/countdownTImer";
 
 export default function Hero() {
   return (
@@ -41,13 +40,15 @@ export default function Hero() {
         height="998"
       />
       {/* <h1 className="font-extrabold text-4xl pt-4">Under The Drum</h1> */}
-      <h1 className="font-extrabold text-2xl md:text-4xl pt-4 leading-loose text-center uppercase">
-        A weekend of music in the Antrim hills
+      <h1 className="font-extrabold text-4xl md:text-5xl pt-4 leading-loose text-center uppercase">
+        under the drum
       </h1>
-      <p className="leading-loose text-center uppercase">
+      <h2 className="lowercase italic text-xl md:text-2xl">
+        a music festival in the Antrim Hills
+      </h2>
+      <p className="text-xl md:text-2xl leading-loose text-center uppercase py-6">
         Saturday September 28th 2024
       </p>
-      <CountdownTimer />
     </div>
   );
 }

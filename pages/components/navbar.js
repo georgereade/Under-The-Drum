@@ -11,16 +11,23 @@ import {
   NavbarMenuItem,
 } from "@nextui-org/react";
 import Image from "next/image";
+import CountdownTimer from "./countdownTImer";
 
 export default function Navigationbar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const handleMenuClose = () => {
+    setIsMenuOpen(false);
+  };
 
-  const menuItems = ["Artists", "Contact", "FAQs", "Venue"];
+  const menuItems = ["Artists", "Venue", "Contact"];
+  const menuLinks = ["#artists", "#venue", "#faqs", "#contact"];
 
   return (
     <Navbar
       shouldHideOnScroll={false}
+      isBordered
       onMenuOpenChange={setIsMenuOpen}
+      isMenuOpen={isMenuOpen}
       position="sticky"
       id="navibar"
     >
@@ -30,13 +37,15 @@ export default function Navigationbar() {
           className="sm:hidden"
         />
         <NavbarBrand>
-          <Image
-            src="/UTDLogoWhite.png"
-            alt="Under The Drum"
-            className="mx-2"
-            width="50"
-            height="50"
-          />
+          <Link color="foreground" href="#">
+            <Image
+              src="/UTDLogoWhite.png"
+              alt="Under The Drum"
+              className="mx-2"
+              width="50"
+              height="50"
+            />
+          </Link>
           <p className="font-bold text-inherit uppercase hidden md:block">
             Under The Drum
           </p>
@@ -51,27 +60,28 @@ export default function Navigationbar() {
         </NavbarItem>
 
         <NavbarItem>
-          <Link color="foreground" href="#contact">
-            Contact
+          <Link color="foreground" href="#venue">
+            Venue
           </Link>
         </NavbarItem>
         <NavbarItem>
           <Link color="foreground" href="#venue">
-            Venue
+            FAQs
           </Link>
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem isActive>
-          <Link href="#tickets" aria-current="page">
+          <Link href="#tickets" aria-current="page" className="text-utd-blue">
             Tickets
           </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Button as={Link} color="primary" href="#" variant="flat">
+          <Link href="#faqs" aria-current="page" className="sm:hidden mx-4">
             FAQs
-          </Button>
+          </Link>
         </NavbarItem>
+        <div className="hidden sm:flex pb-1">
+          <CountdownTimer />
+        </div>
       </NavbarContent>
       <NavbarMenu>
         {menuItems.map((item, index) => (
@@ -84,14 +94,16 @@ export default function Navigationbar() {
                   ? "danger"
                   : "foreground"
               }
-              className="w-full"
-              href="#"
+              className="w-full py-6 text-3xl"
+              onClick={handleMenuClose}
+              href={menuLinks[index]}
               size="lg"
             >
               {item}
             </Link>
           </NavbarMenuItem>
         ))}
+        <CountdownTimer />
       </NavbarMenu>
     </Navbar>
   );

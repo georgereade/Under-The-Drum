@@ -6,6 +6,7 @@ import Venue from "./homepage/venue";
 import Contact from "./homepage/contact";
 import Artists from "./homepage/artists";
 import Hero from "./homepage/hero";
+import Footer from "./components/footer";
 
 const nunito = Nunito({ subsets: ["latin"] });
 
