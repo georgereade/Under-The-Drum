@@ -46,7 +46,7 @@ export default function Navigationbar() {
           className="sm:hidden"
         />
         <NavbarBrand>
-          <Link color="foreground" href="/">
+          <Link color="foreground" href="/#hero">
             <Image
               src="/UTDLogoWhite.png"
               alt="Under The Drum"
@@ -68,7 +68,7 @@ export default function Navigationbar() {
             color="foreground"
             scroll={false}
             duration={500}
-            href="https://underthedrum-git-spotify-georgereades-projects.vercel.app/#artists"
+            href="/#artists"
             className="cursor-pointer"
           >
             Artists

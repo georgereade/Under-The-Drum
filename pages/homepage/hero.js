@@ -8,7 +8,10 @@ const roboto = Roboto({ subsets: ["latin"], weight: "400" });
 
 export default function Hero() {
   return (
-    <div className="flex flex-col items-center px-0 mx-0 pb-0 my-0 bg-utd-navy">
+    <div
+      className="flex flex-col items-center px-0 mx-0 pb-0 my-0 bg-utd-navy"
+      id="hero"
+    >
       <div className="main-logo place-content-center">
         <Image
           src="/UTDpost1.png"
