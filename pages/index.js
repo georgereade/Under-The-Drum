@@ -7,6 +7,7 @@ import Contact from "./homepage/contact";
 import Artists from "./homepage/artists";
 import Hero from "./homepage/hero";
 import MailchimpForm from "./components/mailchimpForm";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const nunito = Nunito({ subsets: ["latin"] });
 
@@ -25,6 +26,7 @@ export default function Home() {
       <BuyTickets />
       <Venue />
       <Contact />
+      <SpeedInsights />
     </main>
   );
 }
