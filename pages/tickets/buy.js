@@ -38,7 +38,7 @@ export default function BuyTickets() {
       />{" "}
       <form action="/api/checkout_sessions" method="POST">
         <p className="font-extrabold text-2xl text-center leading-loose uppercase">
-          Tickets:
+          Tickets
         </p>
         <section className="checkout-button-section">
           <button

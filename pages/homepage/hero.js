@@ -15,6 +15,7 @@ export default function Hero() {
           alt="Under The Drum"
           width="500"
           height="500"
+          priority
         />
       </div>
 

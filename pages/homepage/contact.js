@@ -1,7 +1,7 @@
 export default function Contact() {
   return (
     <div
-      className="flex flex-col items-center dark:border-white w-screen bg-utd-navy"
+      className="flex flex-col items-center w-screen bg-utd-navy"
       id="contact"
     >
       <h3

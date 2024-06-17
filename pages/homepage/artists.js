@@ -21,7 +21,6 @@ export default function Artists() {
             src={url}
             width=""
             height="152"
-            allowFullScreen
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             loading="lazy"
           ></iframe>

@@ -5,7 +5,6 @@ import {
   NavbarContent,
   NavbarItem,
   Link,
-  Button,
   NavbarMenu,
   NavbarMenuToggle,
   NavbarMenuItem,
@@ -48,6 +47,7 @@ export default function Navigationbar() {
               className="mx-2"
               width="50"
               height="50"
+              priority
             />
           </Link>
           <p className="font-bold text-inherit uppercase hidden md:block">

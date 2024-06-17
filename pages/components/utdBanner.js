@@ -7,30 +7,30 @@ export default function UtdBanner() {
         <Image
           src="/Banner.jpg"
           alt="Under The Drum"
-          layout="responsive"
-          width={500}
+          width={1000}
           height={250}
-          objectFit="cover"
+          style={{ layout: "responsive", objectFit: "cover" }}
+          priority
         />
       </div>
       <div className="w-1/3 h-auto">
         <Image
           src="/Banner.jpg"
           alt="Under The Drum"
-          layout="responsive"
-          width={500}
+          width={1000}
           height={250}
-          objectFit="cover"
+          style={{ layout: "responsive", objectFit: "cover" }}
+          priority
         />
       </div>
       <div className="w-1/3 h-auto">
         <Image
           src="/Banner.jpg"
           alt="Under The Drum"
-          layout="responsive"
-          width={500}
+          width={1000}
           height={250}
-          objectFit="cover"
+          style={{ layout: "responsive", objectFit: "cover" }}
+          priority
         />
       </div>
     </div>
