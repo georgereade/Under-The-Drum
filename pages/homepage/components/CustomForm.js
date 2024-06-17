@@ -46,7 +46,11 @@ export default function CustomForm({
     } else if (status === "sending") {
       return "Sending...";
     }
-    return "Sign up for updates on tickets, artists and more!";
+    return (
+      <span className="text-xl">
+        Sign up for updates on tickets, artists and more!
+      </span>
+    );
   };
 
   return (
@@ -85,7 +89,18 @@ export default function CustomForm({
         </div>
       ) : null}
 
-      {status === "success" ? "" : <Button type="submit">Subscribe</Button>}
+      {status === "success" ? (
+        ""
+      ) : (
+        <Button
+          type="submit"
+          radius="full"
+          size="lg"
+          className="transition ease-in-out delay-10 hover:scale-110"
+        >
+          Subscribe
+        </Button>
+      )}
     </form>
   );
 }

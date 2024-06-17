@@ -8,7 +8,7 @@ const CountdownTimer = () => {
     if (difference > 0) {
       timeLeft = {
         days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+        // hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
       };
     }
 
@@ -34,14 +34,17 @@ const CountdownTimer = () => {
 
     timerComponents.push(
       <span key={interval}>
-        <span className="text-4xl text-utd-green">{timeLeft[interval]}</span>{" "}
+        <span className="text-4xl md:text-xl text-utd-green font-extrabold">
+          {timeLeft[interval]}
+        </span>{" "}
         {interval}{" "}
       </span>
     );
   });
 
   return (
-    <div className="py-6">
+    <div className="mt-0.5 align-middle">
+      <span>Festival starts in </span>
       {timerComponents.length ? (
         timerComponents
       ) : (

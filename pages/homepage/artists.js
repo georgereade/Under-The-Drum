@@ -11,7 +11,7 @@ export default function Artists() {
       className="flex flex-col flex-wrap items-center w-screen p-4 bg-utd-grey py-12"
       id="artists"
     >
-      <h2 className="font-extrabold py-4 text-4xl uppercase">Featuring</h2>
+      <h2 className="font-extrabold py-4 text-4xl uppercase">Line-up 2024</h2>
       <div className="flex flex-col items-center md:flex-row">
         {" "}
         {artistUrls.map((url, index) => (

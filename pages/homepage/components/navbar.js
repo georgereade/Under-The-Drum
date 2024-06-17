@@ -12,6 +12,7 @@ import {
 import Image from "next/image";
 import CountdownTimer from "./countdownTImer";
 import { Nunito } from "next/font/google";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 const nunito = Nunito({ subsets: ["latin"] });
 
@@ -33,6 +34,7 @@ export default function Navigationbar() {
       position="sticky"
       id="navibar"
       className={`${nunito.className}`}
+      maxWidth="xl"
     >
       <NavbarContent>
         <NavbarMenuToggle
@@ -40,7 +42,7 @@ export default function Navigationbar() {
           className="sm:hidden"
         />
         <NavbarBrand>
-          <Link color="foreground" href="#">
+          <Link color="foreground" href="/">
             <Image
               src="/UTDLogoWhite.png"
               alt="Under The Drum"
@@ -58,28 +60,50 @@ export default function Navigationbar() {
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
-          <Link color="foreground" href="#artists">
+          <Link
+            color="foreground"
+            smooth={true}
+            duration={500}
+            href="http://localhost:3000/#artists"
+            className="cursor-pointer"
+          >
             Artists
           </Link>
         </NavbarItem>
 
         <NavbarItem>
-          <Link color="foreground" href="#venue">
+          <ScrollLink
+            color="foreground"
+            smooth={true}
+            duration={500}
+            to="/index#venue"
+            className="cursor-pointer"
+          >
             Venue
-          </Link>
+          </ScrollLink>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#venue">
+          <Link
+            color="foreground"
+            smooth={true}
+            duration={500}
+            href="/faqs"
+            className="cursor-pointer"
+          >
             FAQs
           </Link>
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem isActive>
-          <Link href="#tickets" aria-current="page" className="text-utd-blue">
+          <Link href="/tickets" aria-current="page" className="text-utd-blue">
             Tickets
           </Link>
-          <Link href="#faqs" aria-current="page" className="sm:hidden mx-4">
+          <Link
+            href="/faqs"
+            aria-current="page"
+            className="sm:hidden mx-4 text-utd-red"
+          >
             FAQs
           </Link>
         </NavbarItem>
@@ -108,7 +132,6 @@ export default function Navigationbar() {
           </NavbarMenuItem>
         ))}
         <span className="text-3xl pt-8">
-          Countdown:
           <CountdownTimer />
         </span>
       </NavbarMenu>

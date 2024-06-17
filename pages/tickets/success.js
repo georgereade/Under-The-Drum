@@ -1,6 +1,6 @@
 import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
-import ReturnButton from "../components/returnButton";
+import ReturnButton from "../homepage/components/returnButton";
 
 export default function Success() {
   return (

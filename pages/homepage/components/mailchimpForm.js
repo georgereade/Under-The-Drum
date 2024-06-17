@@ -8,7 +8,7 @@ export default function MailchimpForm() {
   const postUrl = process.env.NEXT_PUBLIC_MAILCHIMP_URL;
 
   return (
-    <div className="mc__form-container">
+    <div className="flex flex-col mc__form-container w-screen items-center place-content-center text-center">
       <MailchimpSubscribe
         url={postUrl}
         render={({ subscribe, status, message }) => (

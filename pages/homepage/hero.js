@@ -1,7 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import { Roboto } from "next/font/google";
-import UtdBanner from "../components/utdBanner";
+import UtdBanner from "./components/utdBanner";
+import BuyTickets from "./components/buyTickets";
 
 const roboto = Roboto({ subsets: ["latin"], weight: "400" });
 
@@ -30,15 +31,8 @@ export default function Hero() {
       <p className="text-xl md:text-2xl leading-loose text-center uppercase py-6">
         Saturday September 28th 2024
       </p>
+      <BuyTickets />
       <UtdBanner />
-
-      <Image
-        src="/Banner1.png"
-        className="md:hidden"
-        alt="Under The Drum"
-        width="2500"
-        height="998"
-      />
     </div>
   );
 }

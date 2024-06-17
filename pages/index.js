@@ -1,13 +1,12 @@
 import { Nunito } from "next/font/google";
 import React from "react";
 import { loadStripe } from "@stripe/stripe-js";
-import BuyTickets from "./tickets/buy";
 import Venue from "./homepage/venue";
 import Contact from "./homepage/contact";
 import Artists from "./homepage/artists";
 import Hero from "./homepage/hero";
-import MailchimpForm from "./components/mailchimpForm";
-import { SpeedInsights } from "@vercel/speed-insights/next";
+import MailchimpForm from "./homepage/components/mailchimpForm";
+import BuyTickets from "./homepage/components/buyTickets";
 
 const nunito = Nunito({ subsets: ["latin"] });
 
@@ -21,12 +20,10 @@ export default function Home() {
       className={`flex flex-col items-center w-screen pb-6 font-nunito bg-utd-navy ${nunito.className}`}
     >
       <Hero />
-      <MailchimpForm />
       <Artists />
-      <BuyTickets />
+      <MailchimpForm />
       <Venue />
       <Contact />
-      <SpeedInsights />
     </main>
   );
 }
