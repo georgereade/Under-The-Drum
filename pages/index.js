@@ -5,6 +5,7 @@ import BuyTickets from "./buy";
 import Image from "next/image";
 import BreckenhillButton from "./components/breckenhill-button";
 import Contact from "./components/contact";
+import MailchimpForm from "./components/mailchimpForm";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,7 +16,7 @@ const stripePromise = loadStripe(
 export default function Home() {
   return (
     <main
-      className={`flex flex-col items-center place-content-center h-screen w-screen p-6 ${inter.className}`}
+      className={`flex flex-col items-center place-content-center h-full w-screen p-6 ${inter.className}`}
     >
       <Image
         src="/main-logo.png"
@@ -39,6 +40,7 @@ export default function Home() {
       </p>
       <BreckenhillButton />
       <BuyTickets />
+      <MailchimpForm />
       <Contact />
     </main>
   );
