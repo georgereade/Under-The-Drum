@@ -19,14 +19,14 @@ export default function Home() {
       className={`flex flex-col items-center place-content-center h-full w-screen p-6 ${inter.className}`}
     >
       <Image
-        src="/main-logo.png"
+        src="/UTDLogoBlack.jpg"
         className="block dark:hidden"
         alt="Under The Drum"
         width="400"
         height="400"
       />
       <Image
-        src="/main-logo-white.png"
+        src="/UTDLogoWhite.png"
         className="hidden dark:block"
         alt="Under The Drum"
         width="400"
@@ -35,8 +35,7 @@ export default function Home() {
       <h1 className="font-extrabold pt-4">Under The Drum</h1>
       <p className="leading-loose text-center">
         Saturday September 28th 2024
-        <br />
-        An eclectic weekend of music in the Antrim hills
+        <br />A new music festival in the Antrim hills
       </p>
       <BreckenhillButton />
       <BuyTickets />
