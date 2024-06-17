@@ -7,9 +7,9 @@ export default function Venue() {
   return (
     <div className="flex flex-col items-center w-screen bg-utd-navy" id="venue">
       <UtdBanner />
-      <h2 className="font-extrabold leading-loose text-center pt-6 text-4xl uppercase">
+      <h3 className="font-extrabold leading-loose text-center pt-6 text-2xl uppercase">
         Venue
-      </h2>
+      </h3>
       <p className="pb-6 text-center">
         Breckenhill <br />
         45 Breckenhill Road <br />

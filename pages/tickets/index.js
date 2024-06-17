@@ -48,7 +48,7 @@ export default function Tickets() {
       <p className="font-extrabold text-2xl text-center leading-loose uppercase pt-3">
         Earlybirds <span className="text-utd-blue">£40</span>{" "}
       </p>{" "}
-      <p className="font-extrabold text-2xl text-center leading-loose uppercase pt-3">
+      <p className="font-extrabold text-2xl text-center leading-loose uppercase pt-3 pb-12">
         Standard <span className="text-utd-blue">£50</span>
       </p>
       <CountdownTimer />

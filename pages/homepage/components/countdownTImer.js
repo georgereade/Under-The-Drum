@@ -7,44 +7,49 @@ const CountdownTimer = () => {
 
     if (difference > 0) {
       timeLeft = {
-        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        // hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+        d: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        h: Math.floor((difference / (1000 * 60 * 60)) % 24),
+        m: Math.floor((difference / 1000 / 60) % 60),
+        s: Math.floor((difference / 1000) % 60),
       };
     }
 
     return timeLeft;
   };
 
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+  const [timeLeft, setTimeLeft] = useState(null);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
+    setTimeLeft(calculateTimeLeft());
+    const timer = setInterval(() => {
       setTimeLeft(calculateTimeLeft());
     }, 1000);
 
-    return () => clearTimeout(timer);
-  });
+    return () => clearInterval(timer);
+  }, []);
 
   const timerComponents = [];
 
-  Object.keys(timeLeft).forEach((interval) => {
-    if (!timeLeft[interval]) {
-      return;
-    }
+  if (timeLeft) {
+    Object.keys(timeLeft).forEach((interval) => {
+      if (!timeLeft[interval]) {
+        return;
+      }
 
-    timerComponents.push(
-      <span key={interval}>
-        <span className="text-4xl md:text-xl text-utd-green font-extrabold">
-          {timeLeft[interval]}
-        </span>{" "}
-        {interval}{" "}
-      </span>
-    );
-  });
+      timerComponents.push(
+        <span key={interval}>
+          <span className="text-4xl md:text-xl text-utd-green font-extrabold">
+            {timeLeft[interval]}
+          </span>
+          {interval}{" "}
+        </span>
+      );
+    });
+  }
 
   return (
     <div className="mt-0.5 align-middle">
-      <span>Festival starts in </span>
+      <span>Starts in </span>
       {timerComponents.length ? (
         timerComponents
       ) : (
