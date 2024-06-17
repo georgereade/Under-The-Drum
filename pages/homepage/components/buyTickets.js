@@ -9,13 +9,12 @@ export default function BuyTickets() {
       size="lg"
       radius="full"
       variant="shadow"
-      color="secondary"
       href="/tickets"
       as={Link}
-      className="text-4xl my-6 border-2 border-white p-10 transition ease-in-out delay-10 hover:scale-110"
+      className="text-4xl mb-6 mt-3 border-2 border-utd-blue text-utd-blue p-10 transition ease-in-out delay-10 hover:scale-110"
     >
-      Buy Tickets
       <FontAwesomeIcon icon={faTicket} />
+      Buy Tickets
     </Button>
   );
 }
