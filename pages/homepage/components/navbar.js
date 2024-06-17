@@ -23,7 +23,11 @@ export default function Navigationbar() {
   };
 
   const menuItems = ["Artists", "Venue", "Contact"];
-  const menuLinks = ["#artists", "#venue", "#faqs", "#contact"];
+  const menuLinks = [
+    "https://underthedrum-git-spotify-georgereades-projects.vercel.app/#artists",
+    "https://underthedrum-git-spotify-georgereades-projects.vercel.app/#venue",
+    "https://underthedrum-git-spotify-georgereades-projects.vercel.app/#contact",
+  ];
 
   return (
     <Navbar
@@ -64,7 +68,7 @@ export default function Navigationbar() {
             color="foreground"
             smooth={true}
             duration={500}
-            href="http://localhost:3000/#artists"
+            href="https://underthedrum-git-spotify-georgereades-projects.vercel.app/#artists"
             className="cursor-pointer"
           >
             Artists
@@ -76,7 +80,7 @@ export default function Navigationbar() {
             color="foreground"
             smooth={true}
             duration={500}
-            to="/index#venue"
+            to="/https://underthedrum-git-spotify-georgereades-projects.vercel.app/#venue"
             className="cursor-pointer"
           >
             Venue
