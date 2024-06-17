@@ -80,7 +80,7 @@ export default function Navigationbar() {
             color="foreground"
             scroll={false}
             duration={500}
-            href="/https://underthedrum-git-spotify-georgereades-projects.vercel.app/#venue"
+            href="/#venue"
             className="cursor-pointer"
           >
             Venue
