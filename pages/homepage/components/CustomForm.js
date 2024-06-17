@@ -74,6 +74,7 @@ export default function CustomForm({
             onChange={(e) => setLastName(e.target.value)}
             type="text"
             value={lastName}
+            className="py-3"
             placeholder="Last name"
             required
           />
@@ -83,6 +84,7 @@ export default function CustomForm({
             onChange={(e) => setEmail(e.target.value)}
             type="email"
             value={email}
+            className="py-3"
             placeholder="your@email.com"
             required
           />
@@ -96,7 +98,7 @@ export default function CustomForm({
           type="submit"
           radius="full"
           size="lg"
-          className="transition ease-in-out delay-10 hover:scale-110"
+          className="transition ease-in-out delay-10 hover:scale-110 py-3"
         >
           Subscribe
         </Button>

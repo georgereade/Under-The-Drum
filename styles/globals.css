@@ -25,6 +25,10 @@ body {
   }
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 .checkout-button-section {
   display: flex;
   flex-direction: column;

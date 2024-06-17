@@ -4,8 +4,9 @@ import UtdBanner from "../homepage/components/utdBanner";
 
 export default function FAQs() {
   return (
-    <div className="flex flex-col items-center bg-utd-navy w-screen h-full py-12 px-3 text-center text-xl md:text-2xl leading-loose">
-      <h1 className="text-5xl">FAQs</h1>
+    <div className="flex flex-col items-center bg-utd-navy w-screen h-full px-3 text-center text-xl md:text-2xl leading-loose">
+      <UtdBanner />
+      <h1 className="text-5xl py-6">FAQs</h1>
       <h2>What is Under The Drum?</h2>
       <p>
         A new music festival for 2024, taking place at Breckenhill in the Antrim
@@ -17,7 +18,6 @@ export default function FAQs() {
         option. The main day will be Saturday, with food and drink provided
         throughout the day.
       </p>
-      <UtdBanner />
       <BuyTickets />
       <MailchimpForm />
     </div>

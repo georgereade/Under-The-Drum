@@ -26,7 +26,7 @@ export default function Tickets() {
 
   return (
     <div
-      className="flex flex-col items-center bg-utd-navy w-screen pb-12 h-screen place-content-center"
+      className="flex flex-col items-center bg-utd-navy w-screen pb-12 h-screen"
       id="tickets"
     >
       <UtdBanner />
@@ -52,7 +52,6 @@ export default function Tickets() {
         Standard <span className="text-utd-blue">£50</span>
       </p>
       <CountdownTimer />
-      <UtdBanner />
     </div>
   );
 }

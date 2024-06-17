@@ -66,7 +66,7 @@ export default function Navigationbar() {
         <NavbarItem>
           <Link
             color="foreground"
-            smooth={true}
+            scroll={false}
             duration={500}
             href="https://underthedrum-git-spotify-georgereades-projects.vercel.app/#artists"
             className="cursor-pointer"
@@ -76,20 +76,20 @@ export default function Navigationbar() {
         </NavbarItem>
 
         <NavbarItem>
-          <ScrollLink
+          <Link
             color="foreground"
-            smooth={true}
+            scroll={false}
             duration={500}
-            to="/https://underthedrum-git-spotify-georgereades-projects.vercel.app/#venue"
+            href="/https://underthedrum-git-spotify-georgereades-projects.vercel.app/#venue"
             className="cursor-pointer"
           >
             Venue
-          </ScrollLink>
+          </Link>
         </NavbarItem>
         <NavbarItem>
           <Link
             color="foreground"
-            smooth={true}
+            scroll={false}
             duration={500}
             href="/faqs"
             className="cursor-pointer"
