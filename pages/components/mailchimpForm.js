@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
 import CustomForm from "./CustomForm";
 
-const postUrl = process.env.NEXT_PUBLIC_MAILCHIMP_URL;
-
 export default function MailchimpForm() {
   const [modalOpen, setModalOpen] = useState(false);
+
+  const postUrl = process.env.NEXT_PUBLIC_MAILCHIMP_URL;
 
   return (
     <div className="mc__form-container">
