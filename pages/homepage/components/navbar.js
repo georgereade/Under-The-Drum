@@ -46,7 +46,7 @@ export default function Navigationbar() {
           className="sm:hidden"
         />
         <NavbarBrand>
-          <Link color="foreground" href="/#hero">
+          <Link color="foreground" href="/#home">
             <Image
               src="/UTDLogoWhite.png"
               alt="Under The Drum"
@@ -54,6 +54,7 @@ export default function Navigationbar() {
               width="50"
               height="50"
               priority
+              id="home"
             />
           </Link>
           <p className="font-bold text-inherit uppercase hidden md:block">
@@ -66,7 +67,6 @@ export default function Navigationbar() {
         <NavbarItem>
           <Link
             color="foreground"
-            scroll={false}
             duration={500}
             href="/#artists"
             className="cursor-pointer"
@@ -78,7 +78,6 @@ export default function Navigationbar() {
         <NavbarItem>
           <Link
             color="foreground"
-            scroll={false}
             duration={500}
             href="/#venue"
             className="cursor-pointer"
@@ -89,7 +88,6 @@ export default function Navigationbar() {
         <NavbarItem>
           <Link
             color="foreground"
-            scroll={false}
             duration={500}
             href="/faqs"
             className="cursor-pointer"

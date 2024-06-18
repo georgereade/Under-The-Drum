@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function UtdBanner() {
   return (
     <div className="w-screen h-auto">
-      <div className="hidden md:flex flex-row">
+      <div className="hidden md:flex flex-row saturate-50">
         {" "}
         <div className="w-1/3 h-auto">
           <Image
@@ -12,7 +12,6 @@ export default function UtdBanner() {
             width={1000}
             height={250}
             style={{ layout: "responsive", objectFit: "cover" }}
-            priority
           />
         </div>
         <div className="w-1/3 h-auto">
@@ -22,7 +21,6 @@ export default function UtdBanner() {
             width={1000}
             height={250}
             style={{ layout: "responsive", objectFit: "cover" }}
-            priority
           />
         </div>
         <div className="w-1/3 h-auto">
@@ -32,7 +30,6 @@ export default function UtdBanner() {
             width={1000}
             height={250}
             style={{ layout: "responsive", objectFit: "cover" }}
-            priority
           />
         </div>
       </div>
