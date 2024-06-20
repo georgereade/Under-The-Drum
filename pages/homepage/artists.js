@@ -5,6 +5,8 @@ const artistUrls = [
   "https://open.spotify.com/embed/artist/2HmnALl2GrcNUuI9C5visw?utm_source=generator",
   "https://open.spotify.com/embed/artist/6ZgfyJzSGlummUBhUK1hxw?utm_source=generator",
   "https://open.spotify.com/embed/artist/2md5CaM27EV4MySPaSUkgT?utm_source=generator",
+  "https://open.spotify.com/embed/artist/73NsXu8p63LKM2s24QwxAr?utm_source=generator",
+  "https://open.spotify.com/embed/artist/049UBlja7brPQkfnuStRth?utm_source=generator",
 ];
 
 export default function Artists() {

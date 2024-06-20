@@ -14,7 +14,7 @@ export default function Hero() {
     >
       <div className="main-logo place-content-center w-screen h-4/5">
         <Image
-          src="/169poster2.jpg"
+          src="/169poster3.jpg"
           className="hidden md:block -mt-6"
           alt="Under The Drum"
           width="2048"
@@ -22,7 +22,7 @@ export default function Hero() {
           priority
         />
         <Image
-          src="/UTDpost1.png"
+          src="/PosterA3.jpg"
           className="w-screen md:hidden"
           alt="Under The Drum"
           width="500"
@@ -39,7 +39,7 @@ export default function Hero() {
         <h2 className="lowercase italic text-xl md:text-2xl">
           a music festival in the Antrim Hills
         </h2>
-        <p className="text-xl md:text-2xl leading-loose text-center uppercase py-6">
+        <p className="text-xl md:text-2xl font-extrabold leading-loose text-center uppercase py-1 md:py-6">
           Saturday September 28th 2024
         </p>
         <BuyTickets />

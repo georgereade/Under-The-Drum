@@ -30,7 +30,7 @@ export default function Tickets() {
     >
       <UtdBanner />
       <form action="/api/checkout_sessions" method="POST">
-        <p className="font-extrabold text-2xl text-center leading-loose uppercase">
+        <p className="font-extrabold text-2xl py-8 text-center leading-loose uppercase">
           Tickets on sale now
         </p>
         <section className="checkout-button-section">
@@ -54,15 +54,7 @@ export default function Tickets() {
           </button>
         </section>
       </form>
-      {/* <p className="font-extrabold text-2xl text-center leading-loose uppercase pt-3">
-        Earlybirds <span className="text-utd-blue">£40</span>{" "}
-      </p>{" "}
-      <p className="font-extrabold text-2xl text-center leading-loose uppercase pt-3 pb-12">
-        Standard <span className="text-utd-blue">£50</span>
-      </p> */}
-      <h3 className="text-xl">First entry on Saturday: 2pm</h3>
-      <h3 className="text-xl">Check out the FAQs for more information</h3>
-      <table className="md:w-1/4 text-center my-12">
+      <table className="md:w-1/4 w-screen text-center my-12">
         <thead>
           <tr>
             <th className="font-extrabold text-xl uppercase pt-3"></th>
@@ -95,6 +87,8 @@ export default function Tickets() {
           </tr>
         </tbody>
       </table>
+      <h3 className="text-xl">First entry on Saturday: 2pm</h3>
+      <h3 className="text-xl pb-12">Check out the FAQs for more information</h3>
       <CountdownTimer />
     </div>
   );
