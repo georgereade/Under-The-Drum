@@ -15,14 +15,13 @@ export default function Footer() {
           >
             Website by George Reade
           </a>
-          . All Rights Reserved.
         </span>
         <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
-          <li>
+          {/* <li>
             <Link href="#" className="hover:underline me-4 md:me-6">
               Privacy Policy
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link href="/#contact" className="hover:underline">
               Contact
