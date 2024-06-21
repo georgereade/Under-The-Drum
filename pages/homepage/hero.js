@@ -1,10 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import { Roboto } from "next/font/google";
 import UtdBanner from "./components/utdBanner";
 import BuyTickets from "./components/buyTickets";
-
-const roboto = Roboto({ subsets: ["latin"], weight: "400" });
 
 export default function Hero() {
   return (

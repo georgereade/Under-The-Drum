@@ -34,13 +34,11 @@ body {
   flex-direction: column;
   width: 300px;
   /* height: 112px; */
-  border-radius: 6px;
   justify-content: justify;
 }
 .checkout-button {
   height: 36px;
   /* background: #556cd6; */
-  border-radius: 4px;
   color: black;
   border: 0;
   font-weight: 600;

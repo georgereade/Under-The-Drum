@@ -1,11 +1,11 @@
-import { Inter } from "next/font/google";
-const inter = Inter({ subsets: ["latin"] });
+import { Bitter } from "next/font/google";
+const bitter = Bitter({ subsets: ["latin"] });
 import ReturnButton from "../homepage/components/returnButton";
 
 export default function Success() {
   return (
     <main
-      className={`flex flex-col items-center place-content-center h-screen p-6 ${inter.className}`}
+      className={`flex flex-col items-center place-content-center h-screen p-6 ${bitter.className}`}
     >
       <div className="text-center leading-loose">
         <p>Payment successful, thanks!</p>

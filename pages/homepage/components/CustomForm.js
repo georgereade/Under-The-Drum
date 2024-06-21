@@ -6,7 +6,6 @@ export default function CustomForm({
   message,
   onValidated,
   modalOpen,
-  setModalOpen,
 }) {
   const [email, setEmail] = useState("");
   const [firstName, setFirstName] = useState("");
@@ -96,7 +95,6 @@ export default function CustomForm({
       ) : (
         <Button
           type="submit"
-          radius="full"
           size="lg"
           className="transition ease-in-out delay-10 hover:scale-110 py-3"
         >

@@ -1,5 +1,5 @@
 import { CSSTransition } from "react-transition-group";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const artistUrls = [
@@ -15,32 +15,6 @@ const artistUrls = [
 
 export default function Artists() {
   const [isOpen, setIsOpen] = useState(false);
-  // const [isPreloaded, setIsPreloaded] = useState(false);
-
-  // useEffect(() => {
-  //   // Preload the iframes
-  //   const preloader = document.createElement("div");
-  //   preloader.style.position = "absolute";
-  //   preloader.style.width = "0";
-  //   preloader.style.height = "0";
-  //   preloader.style.overflow = "hidden";
-  //   document.body.appendChild(preloader);
-
-  //   artistUrls.forEach((url, index) => {
-  //     const iframe = document.createElement("iframe");
-  //     iframe.src = url;
-  //     iframe.style.visibility = "hidden";
-  //     preloader.appendChild(iframe);
-  //   });
-
-  //   // Remove the preloader after a short delay
-  //   const preloadTimeout = setTimeout(() => {
-  //     setIsPreloaded(true);
-  //     document.body.removeChild(preloader);
-  //   }, 1000);
-
-  //   return () => clearTimeout(preloadTimeout);
-  // }, []);
 
   return (
     <div className="w-screen p-4 bg-utd-grey py-12" id="artists">
@@ -49,13 +23,12 @@ export default function Artists() {
           className="font-extrabold py-4 text-4xl uppercase cursor-pointer flex items-center"
           onClick={() => setIsOpen(!isOpen)}
         >
-          Line-up 2024
+          Full Line-up 2024
           <span className={`arrow-icon ${isOpen ? "rotate" : ""}`}>
             <i className="fas fa-chevron-down"></i>
           </span>
         </h2>
       </div>
-      {/* {isPreloaded && ( */}
       <CSSTransition
         in={isOpen}
         timeout={300}
@@ -78,7 +51,6 @@ export default function Artists() {
           </div>
         </div>
       </CSSTransition>
-      {/* )} */}
     </div>
   );
 }

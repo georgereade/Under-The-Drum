@@ -1,14 +1,15 @@
 import BuyTickets from "../homepage/components/buyTickets";
 import MailchimpForm from "../homepage/components/mailchimpForm";
 import UtdBanner from "../homepage/components/utdBanner";
-import { Montserrat } from "next/font/google";
+import { Montserrat, Bitter } from "next/font/google";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
+const bitter = Bitter({ subsets: ["latin"] });
 
 export default function FAQs() {
   return (
     <div
-      className={`flex flex-col items-center bg-utd-navy w-screen h-full px-3 text-left text-xl md:text-2xl leading-loose ${montserrat.className}`}
+      className={`flex flex-col items-center bg-utd-navy w-screen h-full px-3 text-left text-xl md:text-2xl leading-loose ${bitter.className}`}
     >
       <UtdBanner />
       <div className="md:w-4/5 pb-8">
@@ -23,10 +24,9 @@ export default function FAQs() {
         </p>
         <h2 className="pt-4">When is it taking place?</h2>
         <p>
-          There will be an evening session on the evening of Friday 27th of
-          September, and camping is an option. The main day will be Saturday,
-          with a variety of food and drink options available for purchase
-          throughout the day.
+          The festival is on Saturday 28th of September, with optional camping.
+          Events will start early on Saturday, and a variety of food and drink
+          options will be available for purchase throughout the day.
         </p>
         <h2 className="pt-4">How can I buy tickets?</h2>
         <p>

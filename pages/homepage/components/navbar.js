@@ -11,10 +11,8 @@ import {
 } from "@nextui-org/react";
 import Image from "next/image";
 import CountdownTimer from "./countdownTImer";
-import { Nunito } from "next/font/google";
 import { Montserrat } from "next/font/google";
 
-const nunito = Nunito({ subsets: ["latin"] });
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 export default function Navigationbar() {
