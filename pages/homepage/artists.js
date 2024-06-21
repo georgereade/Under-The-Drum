@@ -45,7 +45,7 @@ export default function Artists() {
                 width=""
                 height="152"
                 allow="autoplay; fullscreen;"
-                loading="lazy"
+                loading="eager"
               ></iframe>
             ))}
           </div>

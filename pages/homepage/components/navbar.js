@@ -21,11 +21,12 @@ export default function Navigationbar() {
     setIsMenuOpen(false);
   };
 
-  const menuItems = ["Artists", "Venue", "Contact"];
+  const menuItems = ["Artists", "Venue", "Contact", "News"];
   const menuLinks = [
     "https://underthedrum-git-spotify-georgereades-projects.vercel.app/#artists",
     "https://underthedrum-git-spotify-georgereades-projects.vercel.app/#venue",
     "https://underthedrum-git-spotify-georgereades-projects.vercel.app/#contact",
+    "https://underthedrum-git-spotify-georgereades-projects.vercel.app/news",
   ];
 
   return (
@@ -94,16 +95,30 @@ export default function Navigationbar() {
             FAQs
           </Link>
         </NavbarItem>
+        <NavbarItem>
+          <Link
+            color="foreground"
+            duration={500}
+            href="/news"
+            className="cursor-pointer"
+          >
+            News
+          </Link>
+        </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem isActive>
-          <Link href="/tickets" aria-current="page" className="text-utd-blue">
+          <Link
+            href="/tickets"
+            aria-current="page"
+            className="text-utd-blue uppercase"
+          >
             Tickets
           </Link>
           <Link
             href="/faqs"
             aria-current="page"
-            className="sm:hidden mx-4 text-utd-red"
+            className="sm:hidden mx-4 text-utd-red uppercase"
           >
             FAQs
           </Link>
