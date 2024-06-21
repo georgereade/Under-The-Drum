@@ -14,16 +14,16 @@ const newsItems = [
     title: "Follow us on Instagram",
     date: "21st June",
     content: (
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center max-w-screen">
         <p>
           We are on Instagram! Go give us a follow for more news and updates on
           artists
         </p>
         <div
-          className="md:w-1/2 py-6"
+          className="w-80 md:w-1/2 py-6"
           dangerouslySetInnerHTML={{
             __html: `
-          <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/under.the.drum/" data-instgrm-version="13" style="background:#FFF; border:0; margin: 1px; padding:0; width:100%;"></blockquote>
+          <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/under.the.drum/" data-instgrm-version="13" style="background:#FFF; border:0; margin: 1px; padding:0; "></blockquote>
           <script async defer src="//www.instagram.com/embed.js"></script>
         `,
           }}
@@ -36,7 +36,7 @@ const newsItems = [
 export default function News() {
   return (
     <div
-      className={`flex flex-col items-center bg-utd-navy w-screen h-full px-3 text-left text-xl md:text-2xl leading-loose ${bitter.className} min-h-full`}
+      className={`flex flex-col items-center bg-utd-navy w-screen h-full px-3 text-left text-xl md:text-2xl leading-loose ${bitter.className} overflow-hidden`}
     >
       <UtdBanner />
       <div className="flex flex-col items-center pb-12 md:w-4/5">
