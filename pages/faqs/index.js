@@ -1,10 +1,15 @@
 import BuyTickets from "../homepage/components/buyTickets";
 import MailchimpForm from "../homepage/components/mailchimpForm";
 import UtdBanner from "../homepage/components/utdBanner";
+import { Montserrat } from "next/font/google";
+
+const montserrat = Montserrat({ subsets: ["latin"] });
 
 export default function FAQs() {
   return (
-    <div className="flex flex-col items-center bg-utd-navy w-screen h-full px-3 text-left text-xl md:text-2xl leading-loose">
+    <div
+      className={`flex flex-col items-center bg-utd-navy w-screen h-full px-3 text-left text-xl md:text-2xl leading-loose ${montserrat.className}`}
+    >
       <UtdBanner />
       <div className="md:w-4/5 pb-8">
         {" "}

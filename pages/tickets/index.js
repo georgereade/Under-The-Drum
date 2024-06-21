@@ -2,6 +2,8 @@ import React from "react";
 import { loadStripe } from "@stripe/stripe-js";
 import CountdownTimer from "../homepage/components/countdownTImer";
 import UtdBanner from "../homepage/components/utdBanner";
+import { Montserrat } from "next/font/google";
+const montserrat = Montserrat({ subsets: ["latin"] });
 
 // Make sure to call `loadStripe` outside of a component’s render to avoid
 // recreating the `Stripe` object on every render.
@@ -25,7 +27,7 @@ export default function Tickets() {
 
   return (
     <div
-      className="flex flex-col items-center bg-utd-navy w-screen pb-12 h-screen"
+      className={`flex flex-col items-center bg-utd-navy w-screen pb-12 h-screen ${montserrat.className} text-center`}
       id="tickets"
     >
       <UtdBanner />

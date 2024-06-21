@@ -99,6 +99,68 @@ h3 {
   top: 0;
 }
 
+/* Transition styles */
+.dropdown-enter {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+.dropdown-enter-active {
+  max-height: 1000px; /* a value larger than the max height of the content */
+  opacity: 1;
+  transition: max-height 300ms ease-in-out, opacity 300ms ease-in-out;
+}
+.dropdown-exit {
+  max-height: 1000px;
+  opacity: 1;
+}
+.dropdown-exit-active {
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 300ms ease-in-out, opacity 300ms ease-in-out;
+}
+
+/* Preloaded iframe hidden initially */
+iframe.preloaded {
+  opacity: 0;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+/* Make iframes visible once the dropdown is open */
+.dropdown-enter .preloaded,
+.dropdown-enter-active .preloaded,
+.dropdown-exit .preloaded,
+.dropdown-exit-active .preloaded {
+  opacity: 1;
+  position: relative;
+  width: auto;
+  height: auto;
+}
+
+/* Header container to ensure only the h2 is clickable */
+.header-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Arrow icon styles */
+.arrow-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.arrow-icon.rotate {
+  transform: rotate(-180deg);
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;

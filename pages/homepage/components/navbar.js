@@ -12,9 +12,10 @@ import {
 import Image from "next/image";
 import CountdownTimer from "./countdownTImer";
 import { Nunito } from "next/font/google";
-import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+import { Montserrat } from "next/font/google";
 
 const nunito = Nunito({ subsets: ["latin"] });
+const montserrat = Montserrat({ subsets: ["latin"] });
 
 export default function Navigationbar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -37,7 +38,7 @@ export default function Navigationbar() {
       isMenuOpen={isMenuOpen}
       position="sticky"
       id="navibar"
-      className={`${nunito.className}`}
+      className={`${montserrat.className}`}
       maxWidth="xl"
     >
       <NavbarContent>
