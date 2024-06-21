@@ -12,6 +12,7 @@ export default function UtdBanner() {
             width={1000}
             height={250}
             style={{ layout: "responsive", objectFit: "cover" }}
+            loading="eager"
           />
         </div>
         <div className="w-1/3 h-auto">
@@ -21,6 +22,7 @@ export default function UtdBanner() {
             width={1000}
             height={250}
             style={{ layout: "responsive", objectFit: "cover" }}
+            loading="eager"
           />
         </div>
         <div className="w-1/3 h-auto">
@@ -30,6 +32,7 @@ export default function UtdBanner() {
             width={1000}
             height={250}
             style={{ layout: "responsive", objectFit: "cover" }}
+            loading="eager"
           />
         </div>
       </div>
@@ -42,6 +45,7 @@ export default function UtdBanner() {
           alt="Under The Drum"
           width="2500"
           height="998"
+          loading="eager"
         />
       </div>
     </div>
