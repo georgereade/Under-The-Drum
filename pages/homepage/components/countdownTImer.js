@@ -48,7 +48,7 @@ const CountdownTimer = () => {
   }
 
   return (
-    <div className="mt-0.5 align-middle text-left md:text-justify md:w-64 w-48">
+    <div className="mt-0.5 align-middle md:text-justify md:w-64 w-80">
       <span>Starts in </span>
       {timerComponents.length ? (
         timerComponents

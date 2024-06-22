@@ -54,10 +54,11 @@ export default function Artists() {
       </div>
       <div className="flex flex-col items-center">
         <div
-          className={`flex flex-wrap justify-center transition-all duration-500 ${
-            isOpen ? "block" : "hidden"
+          className={`flex flex-wrap justify-center transition-all duration-500 ease-in-out overflow-hidden ${
+            isOpen ? "max-h-screen" : "max-h-0"
           }`}
           id="artistsContainer"
+          style={{ transitionProperty: "max-height, opacity" }}
         >
           {artistUrls.map(({ name, url }, index) => (
             <div

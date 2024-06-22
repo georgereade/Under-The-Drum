@@ -92,7 +92,9 @@ export default function Tickets() {
       </table>
       <h3 className="text-xl">First entry on Saturday: 2pm</h3>
       <h3 className="text-xl pb-12">Check out the FAQs for more information</h3>
-      <CountdownTimer />
+      <div className="sm:hidden">
+        <CountdownTimer />
+      </div>
     </div>
   );
 }
