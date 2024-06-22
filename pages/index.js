@@ -17,7 +17,7 @@ const bitter = Bitter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <main
-      className={`flex flex-col items-center w-screen pb-6 font-nunito bg-utd-navy ${bitter.className}`}
+      className={`flex flex-col items-center w-screen dark pb-6 font-nunito bg-utd-navy ${bitter.className}`}
     >
       <Hero />
       <Artists />

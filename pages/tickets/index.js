@@ -28,7 +28,7 @@ export default function Tickets() {
 
   return (
     <div
-      className={`flex flex-col items-center bg-utd-navy w-screen pb-12 h-screen ${bitter.className} text-center`}
+      className={`flex flex-col dark items-center bg-utd-navy w-screen pb-12 h-screen ${bitter.className} text-center`}
       id="tickets"
     >
       <UtdBanner />

@@ -36,7 +36,7 @@ const newsItems = [
 export default function News() {
   return (
     <div
-      className={`flex flex-col items-center bg-utd-navy w-screen h-full px-3 text-left text-xl md:text-2xl leading-loose ${bitter.className} overflow-hidden`}
+      className={`flex dark flex-col items-center bg-utd-navy w-screen h-full px-3 text-left text-xl md:text-2xl leading-loose ${bitter.className} overflow-hidden`}
     >
       <UtdBanner />
       <div className="flex flex-col items-center pb-12 md:w-4/5">

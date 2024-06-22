@@ -37,7 +37,7 @@ export default function Navigationbar() {
       isMenuOpen={isMenuOpen}
       position="sticky"
       id="navibar"
-      className={`${montserrat.className}`}
+      className={`${montserrat.className} dark`}
       maxWidth="xl"
     >
       <NavbarContent>

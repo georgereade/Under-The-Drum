@@ -5,7 +5,7 @@ const montserrat = Montserrat({ subsets: ["latin"] });
 
 export default function Footer() {
   return (
-    <footer className={`shadow m-4 ${montserrat.className}`}>
+    <footer className={`shadow dark m-4 ${montserrat.className}`}>
       <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between bottom-0">
         <span className="text-sm text-utd-blue sm:text-center">
           © 2024 {/* <p */}

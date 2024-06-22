@@ -54,7 +54,7 @@ export default function Artists() {
       </div>
       <div className="flex flex-col items-center">
         <div
-          className={`flex flex-wrap justify-center transition-all duration-500 ease-in-out overflow-hidden ${
+          className={`flex flex-wrap justify-center overflow-scroll sm:overflow-hidden overflow-x-hidden transition-all duration-500 ease-in-out ${
             isOpen ? "max-h-screen" : "max-h-0"
           }`}
           id="artistsContainer"
