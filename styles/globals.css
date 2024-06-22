@@ -2,18 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  html {
-    color-scheme: dark;
-  }
-}
-
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -169,6 +157,18 @@ iframe.preloaded {
 
 .arrow-icon.rotate {
   transform: rotate(-180deg);
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  html {
+    color-scheme: dark;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
