@@ -33,14 +33,14 @@ export default function Tickets() {
     >
       <UtdBanner />
       <form action="/api/checkout_sessions" method="POST">
-        <p className="font-extrabold text-2xl py-8 text-center leading-loose uppercase">
+        <p className="font-extrabold text-2xl py-8 text-center leading-loose uppercase text-white">
           Tickets on sale now
         </p>
         <section className="checkout-button-section">
           <button
             type="submit"
             role="link"
-            className="checkout-button bg-gray-300 uppercase"
+            className="checkout-button bg-gray-300 uppercase text-white"
           >
             Day tickets
           </button>
@@ -51,7 +51,7 @@ export default function Tickets() {
           <button
             type="submit"
             role="link"
-            className="checkout-button bg-gray-300 uppercase"
+            className="checkout-button bg-gray-300 uppercase text-white"
           >
             camping tickets
           </button>
@@ -61,15 +61,17 @@ export default function Tickets() {
         <thead>
           <tr>
             <th className="font-extrabold text-xl uppercase pt-3"></th>
-            <th className="font-extrabold text-xl uppercase pt-3">
+            <th className="font-extrabold text-xl uppercase pt-3 text-white">
               Day Ticket
             </th>
-            <th className="font-extrabold text-xl uppercase pt-3">Camping</th>
+            <th className="font-extrabold text-xl uppercase pt-3 text-white">
+              Camping
+            </th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td className="font-extrabold text-xl uppercase pt-3">
+            <td className="font-extrabold text-xl uppercase pt-3 text-white">
               Earlybirds
             </td>
             <td className="font-extrabold text-xl uppercase pt-3">
@@ -80,7 +82,9 @@ export default function Tickets() {
             </td>
           </tr>
           <tr>
-            <td className="font-extrabold text-xl uppercase pt-3">Standard</td>
+            <td className="font-extrabold text-xl uppercase pt-3 text-white">
+              Standard
+            </td>
             <td className="font-extrabold text-xl uppercase pt-3">
               <span className="text-utd-blue">£50</span>
             </td>

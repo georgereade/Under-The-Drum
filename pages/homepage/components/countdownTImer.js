@@ -37,7 +37,7 @@ const CountdownTimer = () => {
       }
 
       timerComponents.push(
-        <span key={interval}>
+        <span className="text-white" key={interval}>
           <span className="text-4xl md:text-xl text-utd-green font-extrabold">
             {timeLeft[interval]}
           </span>
@@ -48,8 +48,8 @@ const CountdownTimer = () => {
   }
 
   return (
-    <div className="mt-0.5 align-middle md:text-justify md:w-64 w-80">
-      <span>Starts in </span>
+    <div className="mt-0.5 align-middle md:text-justify md:w-64 w-80 ">
+      <span className="text-white">Starts in </span>
       {timerComponents.length ? (
         timerComponents
       ) : (
