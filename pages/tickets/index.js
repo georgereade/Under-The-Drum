@@ -3,6 +3,8 @@ import { loadStripe } from "@stripe/stripe-js";
 import CountdownTimer from "../homepage/components/countdownTImer";
 import UtdBanner from "../homepage/components/utdBanner";
 import { Montserrat, Bitter } from "next/font/google";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import TicketPrices from "./components/ticketprices";
 const montserrat = Montserrat({ subsets: ["latin"] });
 const bitter = Bitter({ subsets: ["latin"] });
 
@@ -28,73 +30,54 @@ export default function Tickets() {
 
   return (
     <div
-      className={`flex flex-col dark items-center bg-utd-navy w-screen pb-12 h-screen ${bitter.className} text-center`}
+      className={`flex flex-col dark items-center bg-utd-navy w-screen pb-12 min-h-full ${bitter.className} text-center`}
       id="tickets"
     >
       <UtdBanner />
-      <form action="/api/checkout_sessions" method="POST">
-        <p className="font-extrabold text-2xl py-8 text-center leading-loose uppercase text-white">
-          Tickets on sale now
+      <TicketPrices />
+      <p className="font-extrabold text-2xl py-6 text-center leading-loose uppercase text-white">
+        Tickets on sale now
+      </p>
+      <div className="md:flex flex-row">
+        <form action="/api/checkout_sessions" method="POST">
+          <section className="checkout-button-section mx-8 pb-4">
+            <button
+              type="submit"
+              role="link"
+              className="text-2xl checkout-button rounded-xl transition ease-in-out delay-10 hover:scale-110 uppercase border-2 text-utd-green border-utd-green hover:text-white hover:bg-utd-red hover:border-utd-red"
+            >
+              buy Day tickets
+            </button>
+          </section>
+        </form>
+        <form action="/api/checkout_sessions_camping" method="POST">
+          <section className="checkout-button-section mx-8 pb-4">
+            <button
+              type="submit"
+              role="link"
+              className="text-2xl checkout-button rounded-xl transition ease-in-out delay-10 hover:scale-110 uppercase border-2 text-utd-green border-utd-green hover:text-white hover:bg-utd-red hover:border-utd-red"
+            >
+              buy camping tickets
+            </button>
+          </section>
+        </form>
+      </div>
+      <div>
+        <p className="text-sm pt-2 text-gray-200">
+          Payment through{" "}
+          <span>
+            <i class="fa-brands fa-cc-stripe text-green-600 text-2xl px-1 align-middle"></i>
+          </span>
+        </p>{" "}
+        <p className="text-sm text-gray-200 py-2">
+          All major cards and
+          <span>
+            <i class="fa-brands fa-google-pay text-2xl px-2 align-middle text-white"></i>
+            <i class="fa-brands fa-cc-apple-pay text-2xl px-1 align-middle text-white"></i>
+          </span>
         </p>
-        <section className="checkout-button-section">
-          <button
-            type="submit"
-            role="link"
-            className="checkout-button bg-gray-300 uppercase text-white"
-          >
-            Day tickets
-          </button>
-        </section>
-      </form>
-      <form action="/api/checkout_sessions_camping" method="POST">
-        <section className="checkout-button-section py-6">
-          <button
-            type="submit"
-            role="link"
-            className="checkout-button bg-gray-300 uppercase text-white"
-          >
-            camping tickets
-          </button>
-        </section>
-      </form>
-      <table className="md:w-1/4 w-screen text-center my-12">
-        <thead>
-          <tr>
-            <th className="font-extrabold text-xl uppercase pt-3"></th>
-            <th className="font-extrabold text-xl uppercase pt-3 text-white">
-              Day Ticket
-            </th>
-            <th className="font-extrabold text-xl uppercase pt-3 text-white">
-              Camping
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td className="font-extrabold text-xl uppercase pt-3 text-white">
-              Earlybirds
-            </td>
-            <td className="font-extrabold text-xl uppercase pt-3">
-              <span className="text-utd-blue">£40</span>
-            </td>
-            <td className="font-extrabold text-xl uppercase pt-3">
-              <span className="text-utd-blue">£50</span>
-            </td>
-          </tr>
-          <tr>
-            <td className="font-extrabold text-xl uppercase pt-3 text-white">
-              Standard
-            </td>
-            <td className="font-extrabold text-xl uppercase pt-3">
-              <span className="text-utd-blue">£50</span>
-            </td>
-            <td className="font-extrabold text-xl uppercase pt-3">
-              <span className="text-utd-blue">£60</span>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <h3 className="text-xl">First entry on Saturday: 2pm</h3>
+      </div>
+      <h3 className="text-xl pt-6">First entry on Saturday: 2pm</h3>
       <h3 className="text-xl pb-12">Check out the FAQs for more information</h3>
       <div className="sm:hidden">
         <CountdownTimer />

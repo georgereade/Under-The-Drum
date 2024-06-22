@@ -1,6 +1,6 @@
 import { Bitter } from "next/font/google";
 const bitter = Bitter({ subsets: ["latin"] });
-import ReturnButton from "../homepage/components/returnButton";
+import ReturnButton from "./components/returnButton";
 
 export default function Success() {
   return (

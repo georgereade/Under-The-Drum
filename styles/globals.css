@@ -32,32 +32,21 @@ body {
 .checkout-button-section {
   display: flex;
   flex-direction: column;
-  width: 300px;
-  /* height: 112px; */
+  width: 350px;
   justify-content: justify;
 }
 .checkout-button {
   height: 36px;
-  /* background: #556cd6; */
-  color: black;
-  border: 0;
-  font-weight: 600;
-  /* cursor: pointer; */
   transition: all 0.2s ease;
-  box-shadow: 0px 4px 5.5px 0px rgba(0, 0, 0, 0.07);
 }
 .checkout-button:hover {
-  border: 2px solid #d1d5db;
+  border: 2px solid;
   opacity: 0.8;
-  color: #d1d5db;
-  background-color: black;
 }
 .breckenhill-button {
   height: 36px;
   width: 300px;
-  /* background: grey; */
   font-weight: 600;
-  /* cursor: pointer; */
   transition: all 0.2s ease;
   box-shadow: 0px 4px 5.5px 0px rgba(0, 0, 0, 0.07);
 }
