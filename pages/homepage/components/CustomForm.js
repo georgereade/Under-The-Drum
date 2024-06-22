@@ -96,7 +96,7 @@ export default function CustomForm({
         <Button
           type="submit"
           size="lg"
-          className="transition ease-in-out delay-10 hover:scale-110 py-3"
+          className="transition ease-in-out delay-10 hover:scale-110 py-3 text-utd-green"
         >
           Subscribe
         </Button>
