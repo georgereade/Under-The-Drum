@@ -152,7 +152,7 @@ export default function Navigationbar() {
         </span>
         <a
           href="https://www.instagram.com/under.the.drum/"
-          className="absolute bottom-0"
+          className="absolute bottom-16"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
