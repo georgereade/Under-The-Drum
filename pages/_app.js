@@ -5,7 +5,7 @@ import Head from "next/head";
 import { GoogleTagManager } from "@next/third-parties/google";
 import Navigationbar from "./homepage/components/navbar";
 import Footer from "./homepage/components/footer";
-import CookieConsentBanner from "./homepage/components/CookieConsent";
+import { Providers } from "./Providers";
 
 export default function App({ Component, pageProps }) {
   return (
@@ -28,8 +28,10 @@ export default function App({ Component, pageProps }) {
           />
           <meta property="og:image" content="public\Vector LOGO - MAIN.jpg" />
         </Head>
-        <Navigationbar />
-        <Component {...pageProps} /> <Footer />
+        <Providers>
+          <Navigationbar />
+          <Component {...pageProps} /> <Footer />
+        </Providers>
         <GoogleTagManager
           gtmId="G-L3XTL8FY14
 "
