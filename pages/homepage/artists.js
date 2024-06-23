@@ -40,10 +40,10 @@ export default function Artists() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="w-screen p-4 bg-utd-grey py-12" id="artists">
+    <div className="w-screen p-4 bg-utd-grey py-12 z-10" id="artists">
       <div className="header-container">
         <h2
-          className="font-extrabold py-4 text-4xl uppercase cursor-pointer flex items-center"
+          className="font-extrabold py-4 text-4xl uppercase cursor-pointer flex items-center transition ease-in-out delay-10 hover:scale-110"
           onClick={() => setIsOpen(!isOpen)}
         >
           Full Line-up
