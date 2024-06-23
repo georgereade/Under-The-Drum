@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import UtdBanner from "./components/utdBanner";
 import BuyTickets from "./components/buyTickets";
-import { Parallax } from "react-scroll-parallax";
+// import { Parallax } from "react-scroll-parallax";
 
 export default function Hero() {
   return (
@@ -11,18 +11,18 @@ export default function Hero() {
       id="hero"
     >
       {" "}
-      <Parallax speed={-20}>
-        <div className="main-logo place-content-center w-screen h-4/5 sm:h-1/2 md:h-4/5 -z-50">
-          <Image
-            src="/169poster3.jpg"
-            className="hidden xl:block w-screen h-full -my-6"
-            alt="Under The Drum"
-            width="2048"
-            height="950"
-            priority
-          />
-        </div>
-      </Parallax>
+      {/* <Parallax speed={-20}> */}
+      <div className="main-logo place-content-center w-screen h-4/5 sm:h-1/2 md:h-4/5 -z-50">
+        <Image
+          src="/169poster3.jpg"
+          className="hidden xl:block w-screen h-full -my-6"
+          alt="Under The Drum"
+          width="2048"
+          height="950"
+          priority
+        />
+      </div>
+      {/* </Parallax> */}
       <div className="main-logo place-content-center w-screen h-4/5 sm:h-1/2 md:h-4/5">
         <Image
           src="/169poster.jpg"
