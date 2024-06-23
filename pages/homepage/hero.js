@@ -31,7 +31,7 @@ export default function Hero() {
           />
         </div>
       </Parallax>
-      <div className="main-logo place-content-center w-screen h-4/5 sm:h-1/2 md:h-4/5 -z-50">
+      <div className="main-logo place-content-center w-screen h-4/5 sm:h-1/2 md:h-4/5">
         <Image
           src="/PosterA3.jpg"
           className="block w-screen sm:hidden lg:hidden"
