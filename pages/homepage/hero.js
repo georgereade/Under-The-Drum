@@ -12,7 +12,7 @@ export default function Hero() {
     >
       {" "}
       {/* <Parallax speed={-20}> */}
-      <div className="main-logo place-content-center w-screen h-4/5 sm:h-1/2 md:h-4/5 -z-50">
+      <div className="main-logo place-content-center w-screen h-4/5 sm:h-1/2 md:h-4/5">
         <Image
           src="/169poster3.jpg"
           className="hidden xl:block w-screen h-full -my-6"
