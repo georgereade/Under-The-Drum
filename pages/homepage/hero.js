@@ -21,17 +21,17 @@ export default function Hero() {
             height="950"
             priority
           />
-          <Image
-            src="/169poster.jpg"
-            className="hidden sm:block xl:hidden h-full -mt-6"
-            alt="Under The Drum"
-            width="2048"
-            height="950"
-            priority
-          />
         </div>
       </Parallax>
       <div className="main-logo place-content-center w-screen h-4/5 sm:h-1/2 md:h-4/5">
+        <Image
+          src="/169poster.jpg"
+          className="hidden sm:block xl:hidden h-full -mt-6"
+          alt="Under The Drum"
+          width="2048"
+          height="950"
+          priority
+        />
         <Image
           src="/PosterA3.jpg"
           className="block w-screen sm:hidden lg:hidden"
