@@ -5,6 +5,7 @@ import Head from "next/head";
 import { GoogleTagManager } from "@next/third-parties/google";
 import Navigationbar from "./homepage/components/navbar";
 import Footer from "./homepage/components/footer";
+import CookieConsentBanner from "./homepage/components/CookieConsent";
 
 export default function App({ Component, pageProps }) {
   return (
