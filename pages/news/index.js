@@ -19,15 +19,15 @@ const newsItems = [
           We are on Instagram! Go give us a follow for more news and updates on
           artists
         </p>
-        <div
-          className="w-80 md:w-1/2 py-6"
-          dangerouslySetInnerHTML={{
-            __html: `
-          <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/under.the.drum/" data-instgrm-version="13" style="background:#FFF; border:0; margin: 1px; padding:0; "></blockquote>
-          <script async defer src="//www.instagram.com/embed.js"></script>
-        `,
-          }}
-        />
+        <iframe
+          className="instagram-media w-full md:w-1/2 bg-white rounded-xl border-2 border-black block p-0 h-96"
+          id="instagram-embed-0"
+          src="https://www.instagram.com/under.the.drum/embed/?cr=1&amp;v=13&amp;rd=http%3A%2F%2Flocalhost%3A3000&amp;rp=%2Fnews#%7B%22ci%22%3A0%2C%22os%22%3A1224.699999988079%2C%22ls%22%3A406.5%2C%22le%22%3A654.7999999523163%7D"
+          allowtransparency="true"
+          allowFullScreen
+          height="0"
+          data-instgrm-payload-id="instagram-media-payload-0"
+        ></iframe>
       </div>
     ),
   },

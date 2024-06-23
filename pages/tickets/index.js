@@ -66,14 +66,14 @@ export default function Tickets() {
         <p className="text-sm pt-2 text-gray-200">
           Payment through{" "}
           <span>
-            <i class="fa-brands fa-cc-stripe text-green-600 text-2xl px-1 align-middle"></i>
+            <i className="fa-brands fa-cc-stripe text-green-600 text-2xl px-1 align-middle"></i>
           </span>
         </p>{" "}
         <p className="text-sm text-gray-200 py-2">
           Accepts all major cards and
           <span>
-            <i class="fa-brands fa-google-pay text-2xl px-2 align-middle text-white"></i>
-            <i class="fa-brands fa-cc-apple-pay text-2xl px-1 align-middle text-white"></i>
+            <i className="fa-brands fa-google-pay text-2xl px-2 align-middle text-white"></i>
+            <i className="fa-brands fa-cc-apple-pay text-2xl px-1 align-middle text-white"></i>
           </span>
         </p>
       </div>

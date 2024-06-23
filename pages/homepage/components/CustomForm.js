@@ -53,7 +53,7 @@ export default function CustomForm({
   };
 
   return (
-    <form className="mc__form p-12" onSubmit={handleSubmit}>
+    <form className="mc__form p-12 bg-utd-navy" onSubmit={handleSubmit}>
       <h3 className="mc__title">{getStatusMessage()}</h3>
 
       {status !== "success" ? (
