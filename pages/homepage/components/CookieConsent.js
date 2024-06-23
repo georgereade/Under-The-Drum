@@ -30,7 +30,7 @@ const CookieConsentBanner = () => {
   }
 
   return (
-    <div className="floating-div w-fit rounded-xl p-6 ease-in-out transition-opacity">
+    <div className="floating-div w-fit rounded-xl p-6 ease-in-out transition-opacity text-center">
       <p>
         This website uses only essential cookies to improve your browsing
         experience.
