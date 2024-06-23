@@ -70,7 +70,7 @@ export default function Tickets() {
           </span>
         </p>{" "}
         <p className="text-sm text-gray-200 py-2">
-          All major cards and
+          Accepts all major cards and
           <span>
             <i class="fa-brands fa-google-pay text-2xl px-2 align-middle text-white"></i>
             <i class="fa-brands fa-cc-apple-pay text-2xl px-1 align-middle text-white"></i>
