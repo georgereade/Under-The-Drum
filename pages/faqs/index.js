@@ -16,20 +16,20 @@ export default function FAQs() {
         {" "}
         <h1 className="text-5xl py-6">FAQs</h1>
         <h2>What is Under The Drum?</h2>
-        <p>
+        <p className="text-md">
           A new music festival for 2024, taking place at Breckenhill in the
           Antrim Hills, featuring folk, rock, pop and trad artists from across
           Ireland. The festival takes its name from the surrounding Drumadarragh
           hills which overlook the countryside towards Belfast.
         </p>
         <h2 className="pt-4">When is it taking place?</h2>
-        <p>
+        <p className="text-md">
           The festival is on Saturday 28th of September, with optional camping.
           Events will start early on Saturday, and a variety of food and drink
           options will be available for purchase throughout the day.
         </p>
         <h2 className="pt-4">How can I buy tickets?</h2>
-        <p>
+        <p className="text-md">
           Tickets are available to purchase securely through Stripe on the
           website. You may use debit or credit cards, bank transfer or Google
           Pay and Apple Pay. Earlybird tickets are available until X and will

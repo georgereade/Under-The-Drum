@@ -44,7 +44,7 @@ export default function News() {
           {newsItems.map(({ title, date, content }, index) => (
             <div key={index} className="news-update">
               <h3 className="pt-6">{title}</h3>
-              <p className="pb-3">{date}</p>
+              <p className="pb-3 text-xs text-gray-400">{date}</p>
               <div>{content}</div>
             </div>
           ))}
