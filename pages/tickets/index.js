@@ -34,10 +34,10 @@ export default function Tickets() {
       id="tickets"
     >
       <UtdBanner />
-      <TicketPrices />
       <p className="font-extrabold text-2xl py-6 text-center leading-loose uppercase text-white">
         Tickets on sale now
       </p>
+      <TicketPrices />
       <div className="md:flex flex-row">
         <form action="/api/checkout_sessions" method="POST">
           <section className="checkout-button-section mx-8 pb-4">
