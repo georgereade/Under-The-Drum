@@ -3,7 +3,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export default function Document() {
   return (
-    <Html lang="en" className="dark">
+    <Html lang="en" className="dark select-none">
       <Head />
       <body>
         <Main />

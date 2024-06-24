@@ -1,9 +1,9 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const artistUrls = [
   {
-    name: "Josh Burnside",
+    name: "Joshua Burnside",
     url: "https://open.spotify.com/embed/artist/244AFgFclA9c1IcjWOAqoV?utm_source=generator",
   },
   {
@@ -38,12 +38,35 @@ const artistUrls = [
 
 export default function Artists() {
   const [isOpen, setIsOpen] = useState(false);
+  useEffect(() => {
+    const header = document.getElementById("artists-div");
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          header.classList.add("fade-in-visible");
+        }
+      },
+      { threshold: 1 }
+    );
+
+    if (header) {
+      observer.observe(header);
+    }
+
+    return () => {
+      if (header) {
+        observer.unobserve(header);
+      }
+    };
+  }, []);
 
   return (
     <div className="w-screen p-4 bg-utd-grey py-12 z-10" id="artists">
       <div className="header-container">
         <h2
-          className="font-extrabold py-4 text-4xl uppercase cursor-pointer flex items-center transition ease-in-out delay-10 hover:scale-110"
+          className="font-extrabold py-4 text-4xl uppercase cursor-pointer flex items-center transition ease-in-out delay-10 hover:scale-110 fade-in"
+          id="artists-div"
           onClick={() => setIsOpen(!isOpen)}
         >
           Full Line-up

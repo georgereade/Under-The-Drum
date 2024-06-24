@@ -18,7 +18,7 @@ const bitter = Bitter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <main
-      className={`flex flex-col items-center w-screen dark pb-6 font-nunito bg-utd-navy ${bitter.className} z-0`}
+      className={`flex flex-col items-center w-screen dark pb-6 font-nunito bg-utd-navy ${bitter.className} z-0 scroll-smooth`}
     >
       <CookieConsentBanner />
       <Hero />
