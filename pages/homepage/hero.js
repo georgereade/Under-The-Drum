@@ -65,9 +65,7 @@ export default function Hero() {
         <p className="text-xl md:text-2xl font-extrabold leading-loose text-center uppercase py-1 md:py-6 fade-in">
           Saturday September 28th 2024
         </p>
-        <div className="fade-in pb-2">
-          <BuyTickets />
-        </div>
+        <BuyTickets />
       </div>
       <UtdBanner />
     </div>
