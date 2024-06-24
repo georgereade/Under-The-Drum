@@ -46,7 +46,7 @@ export default function CustomForm({
       return "Sending...";
     }
     return (
-      <span className="text-xl">
+      <span className="text-xl text-utd-blue">
         Sign up for updates on tickets, artists and more!
       </span>
     );
@@ -96,7 +96,7 @@ export default function CustomForm({
         <Button
           type="submit"
           size="lg"
-          className="transition ease-in-out delay-10 hover:scale-110 py-3 text-utd-green"
+          className="transition ease-in-out delay-10 hover:scale-110 py-3 text-utd-blue"
         >
           Subscribe
         </Button>

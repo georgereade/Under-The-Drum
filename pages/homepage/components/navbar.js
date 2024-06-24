@@ -37,7 +37,7 @@ export default function Navigationbar() {
       isMenuOpen={isMenuOpen}
       position="sticky"
       id="navibar"
-      className={`${montserrat.className} dark`}
+      className={`${montserrat.className} dark bg-black`}
       maxWidth="xl"
     >
       <NavbarContent>
@@ -57,9 +57,9 @@ export default function Navigationbar() {
               id="home"
             />
           </Link>
-          <p className="font-bold text-inherit uppercase hidden md:block">
+          {/* <p className="font-bold text-inherit uppercase hidden md:block">
             Under The Drum
-          </p>
+          </p> */}
         </NavbarBrand>
       </NavbarContent>
 

@@ -15,7 +15,7 @@ const newsItems = [
     date: "21st June",
     content: (
       <div className="flex flex-col items-center max-w-screen">
-        <p>
+        <p className="pb-4">
           We are on Instagram! Go give us a follow for more news and updates on
           artists
         </p>

@@ -15,7 +15,7 @@ export default function Hero() {
       <div className="main-logo place-content-center w-screen h-4/5 sm:h-1/2 md:h-4/5">
         <Image
           src="/169poster3.jpg"
-          className="hidden xl:block w-screen h-full -my-6"
+          className="hidden xl:block w-screen h-full -mb-12"
           alt="Under The Drum"
           width="2048"
           height="950"
