@@ -78,6 +78,7 @@ export default function Artists() {
                 allow="autoplay; fullscreen; encrypted-media;"
                 loading="eager"
                 alt={name}
+                title={name}
               ></iframe>
             </div>
           ))}
