@@ -173,6 +173,15 @@ iframe.preloaded {
   opacity: 1;
 }
 
+.draw-item {
+  stroke: #db4c44;
+  stroke-width: 2;
+  /* stroke-linejoin: bevel;
+  stroke-linecap: butt; */
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
