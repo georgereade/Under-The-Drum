@@ -19,6 +19,11 @@ module.exports = {
         "utd-navy": "#012741",
         "utd-grey": "#f0f0f0",
       },
+      borderRadius: {
+        large: "1.5rem",
+        medium: "0.5rem",
+        small: "0.2rem",
+      },
       // backgroundImage: {
       //   "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
       //   "gradient-conic":

@@ -51,7 +51,7 @@ export default function Artists() {
   const [selectedTab, setSelectedTab] = useState(artistUrls[0]);
 
   return (
-    <div className="w-screen p-4 bg-utd-grey py-12 z-10" id="artists">
+    <div className="w-screen p-4 bg-utd-navy py-12 z-10" id="artists">
       <motion.div
         className="header-container"
         initial={{ opacity: 0 }}
@@ -91,12 +91,14 @@ export default function Artists() {
               <iframe
                 className="m-2"
                 src={url}
-                width="300"
-                height="152"
-                allow="autoplay; fullscreen; encrypted-media;"
-                loading="eager"
+                width="100%"
+                height="352"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture;"
+                loading="lazy"
                 alt={name}
                 title={name}
+                allowtransparency="true"
+                style={{ borderRadius: "12px" }}
               ></iframe>
             </div>
           ))}

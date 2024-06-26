@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <div
       className="flex flex-col items-center px-0 mx-0 pb-0 my-0 bg-utd-navy relative"
-      id="hero"
+      id="home"
     >
       {" "}
       <div className="hidden xl:block main-logo place-content-center w-screen h-4/5 sm:h-1/2 md:h-4/5 bg-fixed bg-[url('/169poster2.jpg')] bg-cover bg-no-repeat pt-16 bg-origin-padding">
@@ -49,14 +49,8 @@ export default function Hero() {
         <p className="text-xl md:text-2xl font-extrabold leading-loose text-center uppercase py-1 md:py-6">
           Saturday September 28th 2024
         </p>
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 2, delay: 0.5 }}
-        >
-          <BuyTickets />
-        </motion.div>
+
+        <BuyTickets />
       </motion.div>
       <UtdBanner />
     </div>

@@ -22,7 +22,7 @@ export default function Navigationbar() {
     setIsMenuOpen(false);
   };
 
-  const menuItems = ["Line-up", "Venue", "Contact", "News"];
+  const menuItems = ["LINE-UP", "VENUE", "CONTACT", "NEWS"];
   const menuLinks = [
     "https://underthedrum-git-spotify-georgereades-projects.vercel.app/#artists",
     "https://underthedrum-git-spotify-georgereades-projects.vercel.app/#venue",
@@ -66,11 +66,10 @@ export default function Navigationbar() {
             <Image
               src="/UTDLogoWhite.png"
               alt="Under The Drum"
-              className="mx-2"
+              className="mx-2 transition ease-in-out delay-10 hover:scale-110 "
               width="50"
               height="50"
               priority
-              id="home"
             />
           </Link>
           {/* <p className="font-bold text-inherit uppercase hidden md:block">
@@ -85,7 +84,7 @@ export default function Navigationbar() {
             color="foreground"
             duration={500}
             href="/#artists"
-            className="cursor-pointer uppercase hover:text-utd-purple"
+            className="cursor-pointer uppercase hover:text-utd-purple transition ease-in-out delay-10 hover:scale-110"
           >
             Line-up
           </Link>
@@ -96,7 +95,7 @@ export default function Navigationbar() {
             color="foreground"
             duration={500}
             href="/#venue"
-            className="cursor-pointer uppercase hover:text-utd-purple"
+            className="cursor-pointer uppercase hover:text-utd-purple transition ease-in-out delay-10 hover:scale-110"
           >
             Venue
           </Link>
@@ -106,7 +105,7 @@ export default function Navigationbar() {
             color="foreground"
             duration={500}
             href="/faqs"
-            className="cursor-pointer hover:text-utd-purple"
+            className="cursor-pointer hover:text-utd-purple transition ease-in-out delay-10 hover:scale-110"
           >
             FAQs
           </Link>
@@ -116,7 +115,7 @@ export default function Navigationbar() {
             color="foreground"
             duration={500}
             href="/news"
-            className="cursor-pointer uppercase hover:text-utd-purple"
+            className="cursor-pointer uppercase hover:text-utd-purple transition ease-in-out delay-10 hover:scale-110"
           >
             News
           </Link>
@@ -127,14 +126,14 @@ export default function Navigationbar() {
           <Link
             href="/tickets"
             aria-current="page"
-            className="text-utd-red uppercase font-extrabold"
+            className="text-utd-red uppercase font-extrabold transition ease-in-out delay-10 hover:scale-110"
           >
             Tickets
           </Link>
           <Link
             href="/faqs"
             aria-current="page"
-            className="sm:hidden mx-4 text-utd-blue uppercase font-extrabold"
+            className="sm:hidden mx-4 text-utd-blue uppercase font-extrabold transition ease-in-out delay-10 hover:scale-110"
           >
             FAQs
           </Link>

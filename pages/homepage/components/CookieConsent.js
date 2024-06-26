@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Button } from "@nextui-org/react";
 import cookie from "js-cookie";
+import { motion, AnimatePresence } from "framer-motion";
 
 const CookieConsentBanner = () => {
   const [showBanner, setShowBanner] = useState(false);
@@ -24,22 +25,32 @@ const CookieConsentBanner = () => {
     console.log("Cookies rejected.");
   };
 
-  if (!showBanner) {
-    return null;
-  }
-
   return (
-    <div className="floating-div w-fit rounded-xl p-6 ease-in-out transition-opacity text-center">
-      <p>
-        This website uses only essential cookies to improve your browsing
-        experience.
-      </p>
-      <p>Please click Accept if you are happy to.</p>
-      <div className="flex flex-row">
-        <Button onClick={handleAccept}>Accept</Button>
-        <Button onClick={handleReject}>Reject</Button>
-      </div>
-    </div>
+    <AnimatePresence>
+      {showBanner && (
+        <motion.div
+          initial={{ y: "100%" }}
+          animate={{ y: 0 }}
+          exit={{ y: "100%" }}
+          transition={{ type: "spring", stiffness: 300, damping: 30 }}
+          className="floating-div w-fit rounded-xl p-6 ease-in-out transition-opacity text-center md:left-0"
+        >
+          <p>
+            This website uses only essential cookies to improve your browsing
+            experience.
+          </p>
+          <p className="pt-4">Please click Accept if you are happy to do so.</p>
+          <div className="flex flex-row">
+            <Button onClick={handleAccept} className="hover:underline">
+              Accept
+            </Button>
+            <Button onClick={handleReject} className="hover:underline">
+              Reject
+            </Button>
+          </div>
+        </motion.div>
+      )}
+    </AnimatePresence>
   );
 };
 
