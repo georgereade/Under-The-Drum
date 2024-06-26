@@ -186,7 +186,7 @@ export default function Navigationbar() {
               viewport={{ once: true }}
               transition={{
                 default: { duration: 1, ease: "easeInOut" },
-                fill: { duration: 1, ease: [0, 1, 0, 1] },
+                fill: { duration: 2, ease: "easeInOut" },
               }}
             />
           </motion.svg>

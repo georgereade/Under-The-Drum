@@ -51,8 +51,8 @@ text-2xl leading-loose mt-12 uppercase"
             whileInView="visible"
             viewport={{ once: true }}
             transition={{
-              default: { duration: 2, ease: "easeInOut" },
-              fill: { duration: 2, ease: [0, 1, 0, 1] },
+              default: { duration: 1, ease: "easeInOut" },
+              fill: { duration: 2, ease: "easeInOut" },
             }}
           />
         </motion.svg>

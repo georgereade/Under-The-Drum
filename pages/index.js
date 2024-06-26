@@ -23,9 +23,9 @@ export default function Home() {
       <CookieConsentBanner />
       <Hero />
       <Artists />
-      <MailchimpForm />
       <Venue />
       <Contact />
+      <MailchimpForm />
     </main>
   );
 }

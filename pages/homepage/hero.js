@@ -2,31 +2,9 @@ import React, { useEffect } from "react";
 import Image from "next/image";
 import UtdBanner from "./components/utdBanner";
 import BuyTickets from "./components/buyTickets";
+import { motion } from "framer-motion";
 
 export default function Hero() {
-  useEffect(() => {
-    const headers = document.getElementsByClassName("fade-in");
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("fade-in-visible");
-        }
-      },
-      { threshold: 0.5 }
-    );
-
-    Array.from(headers).forEach((element) => {
-      observer.observe(element);
-    });
-
-    return () => {
-      Array.from(headers).forEach((element) => {
-        observer.unobserve(element);
-      });
-    };
-  }, []);
-
   return (
     <div
       className="flex flex-col items-center px-0 mx-0 pb-0 my-0 bg-utd-navy relative"
@@ -61,12 +39,25 @@ export default function Hero() {
           priority
         />
       </div>
-      <div className="md:w-screen flex flex-col items-center bg-utd-navy md:px-12 h-full z-10">
-        <p className="text-xl md:text-2xl font-extrabold leading-loose text-center uppercase py-1 md:py-6 fade-in">
+      <motion.div
+        className="md:w-screen flex flex-col items-center bg-utd-navy md:px-12 h-full z-10"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1 }}
+      >
+        <p className="text-xl md:text-2xl font-extrabold leading-loose text-center uppercase py-1 md:py-6">
           Saturday September 28th 2024
         </p>
-        <BuyTickets />
-      </div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 2, delay: 0.5 }}
+        >
+          <BuyTickets />
+        </motion.div>
+      </motion.div>
       <UtdBanner />
     </div>
   );
