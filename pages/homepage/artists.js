@@ -110,7 +110,7 @@ export default function Artists() {
           size={50}
           orientation="horizontal"
           offset={50}
-          visibility="auto"
+          visibility="right"
         >
           <div
             className={`flex flex-row w-screen sm:flex-wrap sm:justify-center sm:overflow-hidden overflow-x-scroll py-6`}
