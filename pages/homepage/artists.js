@@ -113,7 +113,7 @@ export default function Artists() {
           visibility="right"
         >
           <div
-            className={`flex flex-row w-screen sm:flex-wrap sm:justify-center sm:overflow-hidden overflow-x-scroll py-6`}
+            className={`flex flex-row w-screen lg:flex-wrap lg:justify-center lg:overflow-hidden overflow-x-scroll py-6`}
             id="artistsContainer"
           >
             {artistUrls.map(({ id, name, url, desc, profilepic }) => (
@@ -131,7 +131,7 @@ export default function Artists() {
                   }}
                 >
                   <Card
-                    className="rounded-md bg-utd-navy h-fit sm:mx-0 w-80 sm:w-96 shadow-lg"
+                    className="rounded-md bg-utd-navy h-fit md:mx-0 w-80 md:w-96 shadow-lg"
                     isBlurred={false}
                     isFooterBlurred={false}
                   >
@@ -152,7 +152,7 @@ export default function Artists() {
                     />
                     <CardFooter className="overflow-visible">
                       <i
-                        class="fa-brands fa-spotify text-3xl cursor-pointer"
+                        className="fa-brands fa-spotify text-3xl cursor-pointer transition ease-in-out hover:scale-110"
                         onClick={() => handleCardClick(id)}
                       ></i>
                     </CardFooter>
@@ -185,7 +185,7 @@ export default function Artists() {
                     <CardFooter>
                       {" "}
                       <i
-                        class="fa-solid fa-arrow-rotate-left cursor-pointer text-3xl"
+                        className="fa-solid fa-arrow-rotate-left cursor-pointer text-3xl transition ease-in-out hover:scale-110"
                         onClick={() => handleCardClick(id)}
                       ></i>
                     </CardFooter>

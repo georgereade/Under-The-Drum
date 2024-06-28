@@ -174,6 +174,7 @@ export default function Navigationbar() {
             width="64"
             height="64"
             className="flex flex-col items-center transition ease-in-out hover:scale-110 mb-12 draw-item place-content-center text-transparent"
+            alt="instagram"
             viewBox="0 0 50 50"
           >
             <motion.path
