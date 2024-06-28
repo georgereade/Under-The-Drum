@@ -107,10 +107,10 @@ export default function Artists() {
       </motion.div>
       <div className="flex flex-col items-center">
         <ScrollShadow
-          size={100}
+          size={50}
           orientation="horizontal"
-          offset={100}
-          visibility="right"
+          offset={50}
+          visibility="auto"
         >
           <div
             className={`flex flex-row w-screen sm:flex-wrap sm:justify-center sm:overflow-hidden overflow-x-scroll py-6`}
