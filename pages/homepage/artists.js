@@ -113,25 +113,25 @@ export default function Artists() {
           visibility="right"
         >
           <div
-            className={`flex flex-row w-screen lg:flex-wrap lg:justify-center lg:overflow-hidden overflow-x-scroll py-6`}
+            className={`flex flex-row snap-x w-screen lg:flex-wrap lg:justify-center lg:overflow-hidden overflow-x-scroll py-6`}
             id="artistsContainer"
           >
             {artistUrls.map(({ id, name, url, desc, profilepic }) => (
               <motion.div
                 key={id}
-                className="relative w-96 m-4 h-80 mb-36"
+                className="relative w-96 m-4 h-80 mb-36 snap-x"
                 animate={{ rotateY: flippedCards[id] ? 180 : 0 }}
                 transition={{ duration: 0.6 }}
                 style={{ transformStyle: "preserve-3d" }}
               >
                 <motion.div
-                  className="absolute backface-hidden"
+                  className="absolute backface-hidden snap-center"
                   style={{
                     backfaceVisibility: "hidden",
                   }}
                 >
                   <Card
-                    className="rounded-md bg-utd-navy h-fit md:mx-0 w-80 md:w-96 shadow-lg"
+                    className="rounded-md bg-utd-navy h-fit md:mx-0 w-80 md:w-96 shadow-lg snap-center"
                     isBlurred={false}
                     isFooterBlurred={false}
                   >
