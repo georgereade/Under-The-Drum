@@ -1,7 +1,7 @@
-import UtdBanner from "../homepage/components/utdBanner";
-import { Bitter } from "next/font/google";
+import { Bitter, Montserrat } from "next/font/google";
 
 const bitter = Bitter({ subsets: ["latin"] });
+const montserrat = Montserrat({ subsets: ["latin"] });
 
 const newsItems = [
   {
@@ -36,9 +36,8 @@ const newsItems = [
 export default function News() {
   return (
     <div
-      className={`flex dark flex-col items-center bg-utd-navy w-screen h-full px-3 text-left text-xl md:text-2xl leading-loose ${bitter.className} overflow-hidden`}
+      className={`flex dark flex-col items-center bg-utd-navy w-screen h-full px-3 text-left text-xl md:text-2xl leading-loose ${montserrat.className} overflow-hidden`}
     >
-      <UtdBanner />
       <div className="flex flex-col items-center pb-12 md:w-4/5">
         <div className="flex flex-col">
           {newsItems.map(({ title, date, content }, index) => (

@@ -1,11 +1,12 @@
 import { Montserrat, Bitter } from "next/font/google";
 
 const bitter = Bitter({ subsets: ["latin"] });
+const montserrat = Montserrat({ subsets: ["latin"] });
 
 export default function FAQs() {
   return (
     <div
-      className={`flex flex-col dark bg-utd-navy w-screen h-full px-6 md:px-12 py-12 text-left leading-loose ${bitter.className}`}
+      className={`flex flex-col dark bg-utd-navy w-screen h-full px-6 md:px-12 py-12 text-left leading-loose ${montserrat.className}`}
     >
       <h1>Privacy Policy</h1>
       <p>Last Updated: 23/06/2024</p>

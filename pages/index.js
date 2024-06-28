@@ -1,6 +1,5 @@
 import { Montserrat, Bitter } from "next/font/google";
 import React from "react";
-// import { loadStripe } from "@stripe/stripe-js";
 import Venue from "./homepage/venue";
 import Contact from "./homepage/contact";
 import Artists from "./homepage/artists";
@@ -11,14 +10,10 @@ import CookieConsentBanner from "./homepage/components/CookieConsent";
 const montserrat = Montserrat({ subsets: ["latin"] });
 const bitter = Bitter({ subsets: ["latin"] });
 
-// const stripePromise = loadStripe(
-//   process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY
-// );
-
 export default function Home() {
   return (
     <main
-      className={`flex flex-col items-center w-screen dark pb-6 font-nunito bg-utd-navy ${bitter.className} z-0 scroll-smooth`}
+      className={`flex flex-col items-center w-screen dark pb-6 font-nunito bg-utd-navy ${montserrat.className} z-0 scroll-smooth`}
     >
       <CookieConsentBanner />
       <Hero />

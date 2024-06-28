@@ -30,10 +30,9 @@ export default function Tickets() {
 
   return (
     <div
-      className={`flex flex-col dark items-center bg-utd-navy w-screen pb-12 min-h-full ${bitter.className} text-center`}
+      className={`flex flex-col dark items-center bg-utd-navy w-screen pb-12 min-h-full ${montserrat.className} text-center`}
       id="tickets"
     >
-      <UtdBanner />
       <p className="font-extrabold text-2xl py-6 text-center leading-loose uppercase text-white">
         Tickets on sale now
       </p>
