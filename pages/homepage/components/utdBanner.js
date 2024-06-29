@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function UtdBanner() {
   return (
-    <div className="w-screen h-auto z-10">
+    <div className="w-screen h-auto z-2">
       <div className="hidden md:flex flex-row">
         {" "}
         <div className="w-1/3 h-auto">

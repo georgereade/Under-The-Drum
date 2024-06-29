@@ -39,7 +39,7 @@ export default function Hero() {
           priority
         />
       </div>
-      <div className="-translate-y-44 sm:-translate-y-96 lg:-translate-y-52 h-0 z-10">
+      <div className="-translate-y-40 sm:-translate-y-96 lg:-translate-y-52 h-0 z-1">
         <motion.div
           className="rounded-xl md:w-full h-fit flex flex-col items-center bg-utd-navy md:bg-transparent md:backdrop-blur-xl px-4 md:px-12 shadow-lg shadow-utd-green border-2 border-utd-green"
           initial={{ opacity: 0 }}

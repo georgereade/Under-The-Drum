@@ -119,19 +119,19 @@ export default function Artists() {
             {artistUrls.map(({ id, name, url, desc, profilepic }) => (
               <motion.div
                 key={id}
-                className="relative w-96 m-4 h-80 mb-36 snap-x"
+                className="relative w-96 m-4 scroll-mx-0 h-80 mb-36 snap-x snap-mandatory snap-always"
                 animate={{ rotateY: flippedCards[id] ? 180 : 0 }}
                 transition={{ duration: 0.6 }}
                 style={{ transformStyle: "preserve-3d" }}
               >
                 <motion.div
-                  className="absolute backface-hidden snap-center"
+                  className="absolute backface-hidden snap-center snap-mandatory snap-always"
                   style={{
                     backfaceVisibility: "hidden",
                   }}
                 >
                   <Card
-                    className="rounded-md bg-utd-navy h-fit md:mx-0 w-80 md:w-96 shadow-lg snap-center"
+                    className="rounded-md bg-utd-navy h-fit md:mx-0 w-80 md:w-96 shadow-lg snap-center snap-mandatory"
                     isBlurred={false}
                     isFooterBlurred={false}
                   >
@@ -159,13 +159,13 @@ export default function Artists() {
                   </Card>
                 </motion.div>
                 <motion.div
-                  className="relative rounded-md backface-hidden"
+                  className="relative rounded-md backface-hidden snap-mandatory snap-always"
                   style={{
                     transform: "rotateY(180deg)",
                     backfaceVisibility: "hidden",
                   }}
                 >
-                  <Card className="rounded-md bg-utd-navy shadow-lg h-full w-80 sm:w-96">
+                  <Card className="rounded-md bg-utd-navy shadow-lg h-full w-80 sm:w-96 snap-mandatory snap-always">
                     {" "}
                     <CardBody className="h-fit py-8">
                       {" "}
