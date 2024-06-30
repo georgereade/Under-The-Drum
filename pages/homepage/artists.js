@@ -106,14 +106,9 @@ export default function Artists() {
         </h2>
       </motion.div>
       <div className="flex flex-col items-center">
-        <ScrollShadow
-          size={50}
-          orientation="horizontal"
-          offset={50}
-          visibility="right"
-        >
+        <ScrollShadow size={30} orientation="horizontal" visibility="right">
           <div
-            className={`flex flex-row snap-x w-screen lg:flex-wrap lg:justify-center lg:overflow-hidden overflow-x-scroll py-6`}
+            className={`flex flex-row snap-x w-screen lg:flex-wrap lg:justify-center lg:overflow-hidden overflow-x-scroll py-6 px-4`}
             id="artistsContainer"
           >
             {artistUrls.map(({ id, name, url, desc, profilepic }) => (
