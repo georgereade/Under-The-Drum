@@ -8,6 +8,7 @@ import {
   NavbarMenu,
   NavbarMenuToggle,
   NavbarMenuItem,
+  Divider,
 } from "@nextui-org/react";
 import Image from "next/image";
 import CountdownTimer from "./countdownTImer";
@@ -54,7 +55,7 @@ export default function Navigationbar() {
       position="sticky"
       id="navibar"
       className={`${montserrat.className} dark bg-black`}
-      maxWidth="xl"
+      maxWidth="2xl"
     >
       <NavbarContent>
         <NavbarMenuToggle
@@ -72,9 +73,6 @@ export default function Navigationbar() {
               priority
             />
           </Link>
-          {/* <p className="font-bold text-inherit uppercase hidden md:block">
-            Under The Drum
-          </p> */}
         </NavbarBrand>
       </NavbarContent>
 
@@ -84,38 +82,49 @@ export default function Navigationbar() {
             color="foreground"
             duration={500}
             href="/#artists"
-            className="cursor-pointer uppercase hover:text-utd-purple transition ease-in-out delay-10 hover:scale-110"
+            className="cursor-pointer uppercase hover:text-utd-red transition ease-in-out delay-10 hover:scale-110"
           >
             Line-up
           </Link>
         </NavbarItem>
-
+        <Divider
+          orientation="vertical"
+          className=" bg-utd-blue z-0 py-4 h-1/2 w-1 opacity-80"
+        />
         <NavbarItem>
           <Link
             color="foreground"
             duration={500}
             href="/#venue"
-            className="cursor-pointer uppercase hover:text-utd-purple transition ease-in-out delay-10 hover:scale-110"
+            className="cursor-pointer uppercase hover:text-utd-red transition ease-in-out delay-10 hover:scale-110"
           >
             Venue
           </Link>
         </NavbarItem>
+        <Divider
+          orientation="vertical"
+          className=" bg-utd-green z-0 py-4 h-1/2 w-1 opacity-80"
+        />
         <NavbarItem>
           <Link
             color="foreground"
             duration={500}
             href="/faqs"
-            className="cursor-pointer hover:text-utd-purple transition ease-in-out delay-10 hover:scale-110"
+            className="cursor-pointer hover:text-utd-red transition ease-in-out delay-10 hover:scale-110"
           >
             FAQs
           </Link>
         </NavbarItem>
+        <Divider
+          orientation="vertical"
+          className=" bg-utd-purple z-0 py-4 h-1/2 w-1 opacity-80"
+        />
         <NavbarItem>
           <Link
             color="foreground"
             duration={500}
             href="/news"
-            className="cursor-pointer uppercase hover:text-utd-purple transition ease-in-out delay-10 hover:scale-110"
+            className="cursor-pointer uppercase hover:text-utd-red transition ease-in-out delay-10 hover:scale-110"
           >
             News
           </Link>
@@ -126,14 +135,20 @@ export default function Navigationbar() {
           <Link
             href="/tickets"
             aria-current="page"
-            className="text-utd-red uppercase font-extrabold transition ease-in-out delay-10 hover:scale-110"
+            className="text-utd-red mx-2 uppercase font-extrabold transition ease-in-out delay-10 hover:scale-110"
           >
             Tickets
           </Link>
+        </NavbarItem>
+        <Divider
+          orientation="vertical"
+          className="border-2 border-utd-grey z-0 py-4 h-1/4 border-solid w-1 place-content-center"
+        />
+        <NavbarItem className="sm:hidden">
           <Link
             href="/faqs"
             aria-current="page"
-            className="sm:hidden mx-4 text-utd-blue uppercase font-extrabold transition ease-in-out delay-10 hover:scale-110"
+            className="text-utd-blue uppercase font-extrabold transition ease-in-out delay-10 hover:scale-110"
           >
             FAQs
           </Link>

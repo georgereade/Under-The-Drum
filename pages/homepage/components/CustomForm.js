@@ -63,7 +63,7 @@ export default function CustomForm({
             onChange={(e) => setFirstName(e.target.value)}
             type="text"
             value={firstName}
-            className="py-3"
+            className="py-3 caret-utd-red"
             placeholder="First name"
             required
           />
@@ -73,7 +73,7 @@ export default function CustomForm({
             onChange={(e) => setLastName(e.target.value)}
             type="text"
             value={lastName}
-            className="py-3"
+            className="py-3 caret-utd-blue "
             placeholder="Last name"
             required
           />
@@ -83,7 +83,7 @@ export default function CustomForm({
             onChange={(e) => setEmail(e.target.value)}
             type="email"
             value={email}
-            className="py-3"
+            className="py-3 caret-utd-green"
             placeholder="your@email.com"
             required
           />

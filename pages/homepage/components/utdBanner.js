@@ -5,7 +5,7 @@ export default function UtdBanner() {
     <div className="w-screen h-auto z-2">
       <div className="hidden md:flex flex-row">
         {" "}
-        <div className="w-1/3 h-auto">
+        <div className="w-1/4 h-auto">
           <Image
             src="/Banner.jpg"
             alt="Under The Drum"
@@ -15,7 +15,7 @@ export default function UtdBanner() {
             loading="eager"
           />
         </div>
-        <div className="w-1/3 h-auto">
+        <div className="w-1/4 h-auto">
           <Image
             src="/Banner.jpg"
             alt="Under The Drum"
@@ -25,7 +25,17 @@ export default function UtdBanner() {
             loading="eager"
           />
         </div>
-        <div className="w-1/3 h-auto">
+        <div className="w-1/4 h-auto">
+          <Image
+            src="/Banner.jpg"
+            alt="Under The Drum"
+            width={1000}
+            height={250}
+            style={{ layout: "responsive", objectFit: "cover" }}
+            loading="eager"
+          />
+        </div>
+        <div className="w-1/4 h-auto">
           <Image
             src="/Banner.jpg"
             alt="Under The Drum"
@@ -39,14 +49,27 @@ export default function UtdBanner() {
 
       <div className="flex flex-row md:hidden">
         {" "}
-        <Image
-          src="/Banner1.png"
-          className=""
-          alt="Under The Drum"
-          width="2500"
-          height="998"
-          loading="eager"
-        />
+        <div className="w-1/2 h-auto">
+          <Image
+            src="/Banner1.png"
+            className=""
+            alt="Under The Drum"
+            width="2500"
+            height="998"
+            loading="eager"
+          />
+        </div>
+        <div className="w-1/2 h-auto">
+          {" "}
+          <Image
+            src="/Banner1.png"
+            className=""
+            alt="Under The Drum"
+            width="2500"
+            height="998"
+            loading="eager"
+          />
+        </div>
       </div>
     </div>
   );

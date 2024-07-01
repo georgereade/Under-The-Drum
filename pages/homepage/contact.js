@@ -31,6 +31,7 @@ text-2xl leading-loose mt-12 uppercase"
         <a
           className="font-normal text-base "
           href="mailto:info@underthedrum.co.uk"
+          aria-label="email"
         >
           info@underthedrum.co.uk
         </a>
@@ -38,6 +39,7 @@ text-2xl leading-loose mt-12 uppercase"
       <a
         href="https://www.instagram.com/under.the.drum/"
         className="h-16 mb-12"
+        aria-label="instagram"
       >
         <motion.svg
           xmlns="http://www.w3.org/2000/svg"

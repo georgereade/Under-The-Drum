@@ -30,6 +30,20 @@ export default function App({ Component, pageProps }) {
           <meta property="og:image:alt" content="Under The Drum logo" />
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://www.underthedrum.co.uk" />
+          <meta property="og:site_name" content="Under The Drum" />
+          <meta
+            property="twitter:image"
+            content="public\Vector LOGO - MAIN.jpg"
+          />
+          <meta property="twitter:card" content="summary_large_image" />
+          <meta
+            property="twitter:title"
+            content="Under The Drum | Music Festival in the Antrim hills"
+          />
+          <meta
+            property="twitter:description"
+            content="A new music festival in the Antrim hills. Music | Art | Food"
+          />
           <meta name="robots" content="index, follow" />
           <meta name="googlebot" content="index, follow" />
           <meta
