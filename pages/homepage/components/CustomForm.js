@@ -46,24 +46,24 @@ export default function CustomForm({
       return "Sending...";
     }
     return (
-      <span className="text-xl text-utd-blue">
+      <p className="text-xl text-utd-blue bg-utd-navy px-4">
         Sign up for updates on tickets, artists and more!
-      </span>
+      </p>
     );
   };
 
   return (
-    <form className="mc__form p-12 bg-utd-navy" onSubmit={handleSubmit}>
+    <form className="mc__form p-4" onSubmit={handleSubmit}>
       <h3 className="mc__title">{getStatusMessage()}</h3>
 
       {status !== "success" ? (
-        <div className="mc__field-container">
+        <div className="mc__field-container bg-utd-navy">
           <Input
             label=""
             onChange={(e) => setFirstName(e.target.value)}
             type="text"
             value={firstName}
-            className="py-3 caret-utd-red"
+            className="p-3 caret-utd-red"
             placeholder="First name"
             required
           />

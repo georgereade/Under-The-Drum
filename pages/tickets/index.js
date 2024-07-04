@@ -42,7 +42,7 @@ export default function Tickets() {
             <button
               type="submit"
               role="link"
-              className="text-2xl checkout-button rounded-xl transition ease-in-out delay-10 hover:scale-110 uppercase border-2 text-utd-green border-utd-green hover:text-white hover:bg-utd-red hover:border-utd-red"
+              className="text-2xl checkout-button rounded-xl transition ease-in-out delay-10 hover:scale-110 uppercase border-2 text-utd-green border-utd-green bg-utd-navy hover:text-white hover:bg-utd-red hover:border-utd-red"
             >
               buy Day tickets
             </button>
@@ -53,7 +53,7 @@ export default function Tickets() {
             <button
               type="submit"
               role="link"
-              className="text-2xl checkout-button rounded-xl transition ease-in-out delay-10 hover:scale-110 uppercase border-2 text-utd-green border-utd-green hover:text-white hover:bg-utd-red hover:border-utd-red"
+              className="text-2xl checkout-button rounded-xl transition ease-in-out delay-10 hover:scale-110 uppercase border-2 text-utd-green border-utd-green bg-utd-navy hover:text-white hover:bg-utd-red hover:border-utd-red"
             >
               buy camping tickets
             </button>

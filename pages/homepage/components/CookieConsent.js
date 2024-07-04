@@ -36,15 +36,23 @@ const CookieConsentBanner = () => {
           className="floating-div w-fit rounded-xl p-6 ease-in-out transition-opacity text-center md:left-0"
         >
           <p>
-            This website uses only essential cookies to improve your browsing
+            This website uses essential cookies to improve your browsing
             experience.
           </p>
-          <p className="pt-4">Please click Accept if you are happy to do so.</p>
+          <p className="pt-4 pb-2">
+            Please click Accept if you are happy to do so.
+          </p>
           <div className="flex flex-row">
-            <Button onClick={handleAccept} className="hover:underline">
+            <Button
+              onClick={handleAccept}
+              className="hover:underline text-black bg-white border-2 rounded-xl mx-4"
+            >
               Accept
             </Button>
-            <Button onClick={handleReject} className="hover:underline">
+            <Button
+              onClick={handleReject}
+              className="hover:underline text-black bg-white border-2 rounded-xl mx-4"
+            >
               Reject
             </Button>
           </div>

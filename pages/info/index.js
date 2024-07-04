@@ -16,7 +16,7 @@ export default function Info() {
 
   return (
     <div
-      className={`flex flex-col items-center bg-utd-navy w-screen h-full px-3 text-left text-xl md:text-2xl leading-loose ${inconsolata.className} bg-[url('/Drawings.png')] bg-cover bg-center bg-repeat-y bg-local`}
+      className={`flex flex-col items-center bg-utd-navy w-screen h-full px-3 text-left text-xl md:text-2xl leading-loose ${inconsolata.className} bg-[url('/Drawings.png')] bg-cover bg-center bg-repeat-y bg-fixed`}
     >
       <div className="md:w-4/5 bg-utd-navy pb-8 md:px-16">
         {" "}
@@ -28,7 +28,7 @@ export default function Info() {
           <i class="fa-solid fa-angle-down pr-1"></i>What is Under The Drum?
         </h2>
         <p
-          className={`text-md transition-max-height duration-500 ease-in-out overflow-hidden ${
+          className={`text-md transition-max-height duration-200 ease-in-out overflow-hidden ${
             activeIndices.includes(0) ? "max-h-96" : "max-h-0"
           }`}
         >
@@ -44,7 +44,7 @@ export default function Info() {
           <i class="fa-solid fa-angle-down pr-1"></i>When is it taking place?
         </h2>
         <p
-          className={`text-md transition-max-height duration-500 ease-in-out overflow-hidden ${
+          className={`text-md transition-max-height duration-200 ease-in-out overflow-hidden ${
             activeIndices.includes(1) ? "max-h-96" : "max-h-0"
           }`}
         >
@@ -59,7 +59,7 @@ export default function Info() {
           <i class="fa-solid fa-angle-down pr-1"></i>How can I buy tickets?
         </h2>
         <p
-          className={`text-md transition-max-height duration-500 ease-in-out overflow-hidden ${
+          className={`text-md transition-max-height duration-200 ease-in-out overflow-hidden ${
             activeIndices.includes(2) ? "max-h-96" : "max-h-0"
           }`}
         >

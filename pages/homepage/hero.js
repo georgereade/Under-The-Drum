@@ -39,9 +39,9 @@ export default function Hero() {
           priority
         />
       </div>
-      <div className="sm:-translate-y-96 lg:-translate-y-64 md:h-0 -z-0">
+      <div className="-translate-y-36 w-screen h-0 sm:-translate-y-96 lg:-translate-y-64 md:h-0 -z-0">
         <motion.div
-          className="rounded-md border-1 w-screen md:w-full h-fit flex flex-col items-center bg-blur md:px-12 shadow-lg p-8"
+          className=" sm:rounded-md border-1 w-screen bg-utd-navy md:w-full h-fit flex flex-col items-center sm:bg-transparent md:px-12 p-8"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
@@ -50,7 +50,6 @@ export default function Hero() {
           <BuyTickets />
         </motion.div>
       </div>
-      <div className="w-screen"></div>
     </div>
   );
 }
