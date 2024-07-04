@@ -38,7 +38,7 @@ export default function News() {
       className={`flex dark flex-col items-center bg-utd-navy w-screen h-full px-3 text-left text-xl md:text-2xl leading-loose ${inconsolata.className} overflow-hidden sm:bg-[url('/Drawings.png')] bg-cover bg-center bg-repeat-y bg-local`}
     >
       <div className="flex flex-col items-center pb-12 md:w-4/5 md:px-16">
-        <div className="flex flex-col bg-utd-navy px-8">
+        <div className="flex flex-col bg-utd-navy sm:px-8">
           <h1 className="text-5xl py-6 text-left">News</h1>
           {newsItems.map(({ title, date, content }, index) => (
             <div key={index} className="news-update">

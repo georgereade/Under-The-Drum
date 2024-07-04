@@ -32,7 +32,8 @@ text-2xl leading-loose mt-12 uppercase"
         <a
           className="font-normal text-base "
           href="mailto:info@underthedrum.co.uk"
-          aria-label="email"
+          aria-label="info@underthedrum.co.uk"
+          alt="info@underthedrum.co.uk"
         >
           info@underthedrum.co.uk
         </a>

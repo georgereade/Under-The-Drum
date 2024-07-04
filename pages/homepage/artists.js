@@ -131,9 +131,9 @@ export default function Artists() {
                     isFooterBlurred={false}
                   >
                     <CardHeader>
-                      <h4 className="md:text-tiny text-xl uppercase font-bold text-utd-blue">
+                      <h3 className="md:text-tiny text-xl uppercase font-bold text-utd-blue">
                         {name}
-                      </h4>
+                      </h3>
                     </CardHeader>
                     <Divider className="bg-utd-grey h-0.5" />
                     <CardBody className="h-32 scroll-smooth overflow-x-hidden">
