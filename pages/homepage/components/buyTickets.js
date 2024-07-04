@@ -16,7 +16,7 @@ export default function BuyTickets() {
         variant="shadow"
         href="/tickets"
         as={Link}
-        className="font-extrabold uppercase text-3xl rounded-xl my-3 border-2 bg-utd-navy border-utd-green text-utd-green p-8 transition ease-in-out delay-10 hover:scale-110 hover:text-white hover:bg-utd-red hover:border-utd-red"
+        className="font-extrabold uppercase text-3xl rounded-xl my-3 border-2 bg-utd-red border-utd-red  p-8 transition ease-in-out delay-10 hover:scale-110 hover:text-white hover:bg-utd-blue hover:border-utd-blue"
       >
         <span>
           <i className="fas fa-ticket"></i>

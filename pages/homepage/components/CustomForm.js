@@ -46,14 +46,17 @@ export default function CustomForm({
       return "Sending...";
     }
     return (
-      <p className="text-xl text-utd-blue bg-utd-navy px-4">
+      <p className="text-xl font-bold text-utd-blue bg-utd-navy px-4">
         Sign up for updates on tickets, artists and more!
       </p>
     );
   };
 
   return (
-    <form className="mc__form p-4" onSubmit={handleSubmit}>
+    <form
+      className="mc__form bg-utd-navy sm:bg-transparent py-8"
+      onSubmit={handleSubmit}
+    >
       <h3 className="mc__title">{getStatusMessage()}</h3>
 
       {status !== "success" ? (
@@ -63,7 +66,7 @@ export default function CustomForm({
             onChange={(e) => setFirstName(e.target.value)}
             type="text"
             value={firstName}
-            className="p-3 caret-utd-red"
+            className="py-3 caret-utd-red"
             placeholder="First name"
             required
           />
@@ -96,7 +99,7 @@ export default function CustomForm({
         <Button
           type="submit"
           size="lg"
-          className="transition ease-in-out delay-10 hover:scale-110 py-3 text-utd-blue border-2 border-utd-blue rounded-md uppercase hover:border-utd-purple hover:bg-utd-purple hover:text-white"
+          className="transition ease-in-out delay-10 hover:scale-110 py-3 bg-utd-blue border-2 border-utd-blue rounded-md uppercase hover:border-utd-purple hover:bg-utd-purple hover:text-white"
         >
           Subscribe
         </Button>

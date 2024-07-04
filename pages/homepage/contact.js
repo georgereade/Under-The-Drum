@@ -39,7 +39,7 @@ text-2xl leading-loose mt-12 uppercase"
       </h3>
       <a
         href="https://www.instagram.com/under.the.drum/"
-        className="h-16 mb-12"
+        className="h-16 mb-12 text-center"
         aria-label="instagram"
       >
         <motion.svg

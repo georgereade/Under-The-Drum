@@ -42,7 +42,7 @@ export default function Tickets() {
             <button
               type="submit"
               role="link"
-              className="text-2xl checkout-button rounded-xl transition ease-in-out delay-10 hover:scale-110 uppercase border-2 text-utd-green border-utd-green bg-utd-navy hover:text-white hover:bg-utd-red hover:border-utd-red"
+              className="text-2xl checkout-button rounded-xl transition ease-in-out delay-10 hover:scale-110 uppercase border-2 bg-utd-red border-utd-red hover:text-white hover:bg-utd-blue hover:border-utd-blue"
             >
               buy Day tickets
             </button>
@@ -53,7 +53,7 @@ export default function Tickets() {
             <button
               type="submit"
               role="link"
-              className="text-2xl checkout-button rounded-xl transition ease-in-out delay-10 hover:scale-110 uppercase border-2 text-utd-green border-utd-green bg-utd-navy hover:text-white hover:bg-utd-red hover:border-utd-red"
+              className="text-2xl checkout-button rounded-xl transition ease-in-out delay-10 hover:scale-110 uppercase border-2 bg-utd-red border-utd-red  hover:text-white hover:bg-utd-blue hover:border-utd-blue"
             >
               buy camping tickets
             </button>
@@ -75,8 +75,10 @@ export default function Tickets() {
           </span>
         </p>
       </div>
-      <h3 className="text-xl pt-6 bg-utd-navy">First entry on Saturday: 2pm</h3>
-      <h3 className="text-xl pb-12 bg-utd-navy">
+      <h3 className="text-xl pt-6 bg-utd-navy text-utd-blue">
+        First entry on Saturday: 11am
+      </h3>
+      <h3 className="text-xl pb-12 bg-utd-navy text-utd-blue">
         Check out the FAQs for more information
       </h3>
       <div className="sm:hidden">

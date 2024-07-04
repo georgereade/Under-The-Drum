@@ -10,8 +10,7 @@ export default function Hero() {
       id="home"
     >
       {" "}
-      <UtdBanner />
-      <div className="hidden xl:block main-logo place-content-center w-screen h-4/5 sm:h-1/2 md:h-4/5 bg-[url('/utd-hero.jpg')] bg-cover bg-no-repeat bg-origin-padding">
+      <div className="hidden xl:block main-logo place-content-center w-screen bg-[url('/utd-hero.jpg')] bg-cover bg-no-repeat bg-origin-padding">
         <Image
           src="/169poster3.jpg"
           className="w-screen h-full opacity-0"
@@ -39,7 +38,7 @@ export default function Hero() {
           priority
         />
       </div>
-      <div className="-translate-y-36 w-screen h-0 sm:-translate-y-96 lg:-translate-y-64 md:h-0 -z-0">
+      <div className="w-screen sm:-translate-y-96 lg:-translate-y-48 md:h-0 -z-0">
         <motion.div
           className=" sm:rounded-md border-1 w-screen bg-utd-navy md:w-full h-fit flex flex-col items-center sm:bg-transparent md:px-12 p-8"
           initial={{ opacity: 0 }}
@@ -50,6 +49,7 @@ export default function Hero() {
           <BuyTickets />
         </motion.div>
       </div>
+      {/* <UtdBanner /> */}
     </div>
   );
 }
