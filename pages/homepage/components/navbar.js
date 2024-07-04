@@ -141,7 +141,7 @@ export default function Navigationbar() {
         </NavbarItem>
         <Divider
           orientation="vertical"
-          className="bg-utd-grey py-4 h-1/4 border-solid place-content-center"
+          className="bg-utd-grey py-4 z-0 h-1/4 border-solid place-content-center w-1"
         />
         <NavbarItem className="sm:hidden">
           <Link
