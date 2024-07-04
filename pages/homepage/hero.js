@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import Image from "next/image";
 import UtdBanner from "./components/utdBanner";
 import BuyTickets from "./components/buyTickets";
@@ -11,7 +10,8 @@ export default function Hero() {
       id="home"
     >
       {" "}
-      <div className="hidden xl:block main-logo place-content-center w-screen h-4/5 sm:h-1/2 md:h-4/5 bg-fixed bg-[url('/169poster6.jpg')] bg-cover bg-no-repeat bg-origin-padding">
+      <UtdBanner />
+      <div className="hidden xl:block main-logo place-content-center w-screen h-4/5 sm:h-1/2 md:h-4/5 bg-[url('/utd-hero.jpg')] bg-cover bg-no-repeat bg-origin-padding">
         <Image
           src="/169poster3.jpg"
           className="w-screen h-full opacity-0"
@@ -39,25 +39,18 @@ export default function Hero() {
           priority
         />
       </div>
-      <div className="-translate-y-44 sm:-translate-y-96 lg:-translate-y-56 h-0 z-1">
+      <div className="sm:-translate-y-96 lg:-translate-y-64 md:h-0 -z-0">
         <motion.div
-          className="rounded-xl md:w-full h-fit flex flex-col items-center bg-utd-navy md:bg-transparent md:backdrop-blur-xl px-4 md:px-12 shadow-lg shadow-utd-green border-2 border-utd-green"
+          className="rounded-md border-1 w-screen md:w-full h-fit flex flex-col items-center bg-blur md:px-12 shadow-lg p-8"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1 }}
         >
-          <p className="text-md md:text-2xl lg:text-xl font-extrabold leading-loose text-center py-1 md:pt-6 italic">
-            A music festival in the Antrim Hills
-          </p>
-          <p className="text-md md:text-2xl lg:text-2xl font-extrabold leading-loose text-center uppercase md:pb-3 line">
-            September 28th 2024
-          </p>
-
           <BuyTickets />
         </motion.div>
       </div>
-      <UtdBanner />
+      <div className="w-screen"></div>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 export default function TicketPrices() {
   return (
-    <table className="md:w-1/4 w-screen text-center my-12">
+    <table className="md:w-1/4 w-screen text-center my-12 bg-utd-navy">
       <thead>
         <tr>
           <th className="font-extrabold text-xl uppercase pt-3"></th>
@@ -14,25 +14,25 @@ export default function TicketPrices() {
       </thead>
       <tbody>
         <tr>
-          <td className="font-extrabold text-xl uppercase pt-3 text-white">
+          <td className="font-extrabold text-xl uppercase pt-6 text-white">
             Earlybirds
           </td>
-          <td className="font-extrabold text-xl uppercase pt-3">
-            <span className="text-utd-blue">£40</span>
+          <td className="font-extrabold text-xl uppercase pt-6">
+            <span className="text-utd-blue border-b">£45</span>
           </td>
-          <td className="font-extrabold text-xl uppercase pt-3">
-            <span className="text-utd-blue">£50</span>
+          <td className="font-extrabold text-xl uppercase pt-6">
+            <span className="text-utd-blue border-b">£60</span>
           </td>
         </tr>
         <tr>
-          <td className="font-extrabold text-xl uppercase pt-3 text-white">
+          <td className="font-extrabold text-xl uppercase pt-6 text-white">
             Standard
           </td>
-          <td className="font-extrabold text-xl uppercase pt-3">
-            <span className="text-utd-blue">£50</span>
+          <td className="font-extrabold text-xl uppercase pt-6">
+            <span className="text-utd-blue border-b">£50</span>
           </td>
-          <td className="font-extrabold text-xl uppercase pt-3">
-            <span className="text-utd-blue">£60</span>
+          <td className="font-extrabold text-xl uppercase pt-6">
+            <span className="text-utd-blue border-b">£65</span>
           </td>
         </tr>
       </tbody>

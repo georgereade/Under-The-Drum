@@ -12,10 +12,9 @@ import {
 } from "@nextui-org/react";
 import Image from "next/image";
 import CountdownTimer from "./countdownTImer";
-import { Montserrat } from "next/font/google";
+import { Inconsolata } from "next/font/google";
 import { motion } from "framer-motion";
-
-const montserrat = Montserrat({ subsets: ["latin"] });
+const inconsolata = Inconsolata({ subsets: ["latin"] });
 
 export default function Navigationbar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -23,10 +22,10 @@ export default function Navigationbar() {
     setIsMenuOpen(false);
   };
 
-  const menuItems = ["LINE-UP", "VENUE", "CONTACT", "NEWS"];
+  const menuItems = ["LINE-UP", "LOCATION", "CONTACT", "NEWS"];
   const menuLinks = [
     "https://underthedrum-git-spotify-georgereades-projects.vercel.app/#artists",
-    "https://underthedrum-git-spotify-georgereades-projects.vercel.app/#venue",
+    "https://underthedrum-git-spotify-georgereades-projects.vercel.app/location",
     "https://underthedrum-git-spotify-georgereades-projects.vercel.app/#contact",
     "https://underthedrum-git-spotify-georgereades-projects.vercel.app/news",
   ];
@@ -54,7 +53,7 @@ export default function Navigationbar() {
       isMenuOpen={isMenuOpen}
       position="sticky"
       id="navibar"
-      className={`${montserrat.className} dark bg-black`}
+      className={`${inconsolata.className} dark bg-black`}
       maxWidth="2xl"
     >
       <NavbarContent>
@@ -95,10 +94,10 @@ export default function Navigationbar() {
           <Link
             color="foreground"
             duration={500}
-            href="/#venue"
+            href="/location"
             className="cursor-pointer uppercase hover:text-utd-red transition ease-in-out delay-10 hover:scale-110"
           >
-            Venue
+            Location
           </Link>
         </NavbarItem>
         <Divider
@@ -109,10 +108,10 @@ export default function Navigationbar() {
           <Link
             color="foreground"
             duration={500}
-            href="/faqs"
-            className="cursor-pointer hover:text-utd-red transition ease-in-out delay-10 hover:scale-110"
+            href="/info"
+            className="cursor-pointer uppercase hover:text-utd-red transition ease-in-out delay-10 hover:scale-110"
           >
-            FAQs
+            Info
           </Link>
         </NavbarItem>
         <Divider
@@ -146,18 +145,18 @@ export default function Navigationbar() {
         />
         <NavbarItem className="sm:hidden">
           <Link
-            href="/faqs"
+            href="/info"
             aria-current="page"
             className="text-utd-blue uppercase font-extrabold transition ease-in-out delay-10 hover:scale-110"
           >
-            FAQs
+            info
           </Link>
         </NavbarItem>
         <div className="hidden sm:flex pb-1">
           <CountdownTimer />
         </div>
       </NavbarContent>
-      <NavbarMenu>
+      <NavbarMenu className="overflow-x-hidden">
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
             <Link
@@ -168,7 +167,7 @@ export default function Navigationbar() {
                   ? "danger"
                   : "foreground"
               }
-              className="w-full py-8 text-3xl border-b-2 border-utd-blue"
+              className={`${inconsolata.className} w-full py-6 text-3xl border-b-2 border-utd-blue`}
               onClick={handleMenuClose}
               href={menuLinks[index]}
               size="lg"
@@ -177,7 +176,7 @@ export default function Navigationbar() {
             </Link>
           </NavbarMenuItem>
         ))}
-        <span className="text-3xl pt-8">
+        <span className={`${inconsolata.className} text-2xl pt-5`}>
           <CountdownTimer />
         </span>
         <a
@@ -188,7 +187,7 @@ export default function Navigationbar() {
             xmlns="http://www.w3.org/2000/svg"
             width="64"
             height="64"
-            className="flex flex-col items-center transition ease-in-out hover:scale-110 mb-12 draw-item place-content-center text-transparent"
+            className="flex flex-col items-center transition ease-in-out hover:scale-110 mb-4 draw-item place-content-center text-transparent"
             alt="instagram"
             viewBox="0 0 50 50"
           >

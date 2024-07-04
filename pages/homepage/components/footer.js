@@ -1,14 +1,14 @@
 import React from "react";
 import Link from "next/link";
-import { Montserrat } from "next/font/google";
+import { Inconsolata } from "next/font/google";
 import UtdBanner from "./utdBanner";
-const montserrat = Montserrat({ subsets: ["latin"] });
+const inconsolata = Inconsolata({ subsets: ["latin"] });
 
 export default function Footer() {
   return (
     <div>
       <UtdBanner />{" "}
-      <footer className={`shadow dark m-4 ${montserrat.className}`}>
+      <footer className={`shadow dark m-4 ${inconsolata.className}`}>
         <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between bottom-0">
           <span className="text-sm text-utd-blue sm:text-center">
             © 2024 Website by George Reade

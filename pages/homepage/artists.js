@@ -90,7 +90,7 @@ export default function Artists() {
   };
 
   return (
-    <div className="w-screen p-4 bg-utd-grey py-12 z-10" id="artists">
+    <div className="w-screen p-4 bg-utd-grey py-12 z-1" id="artists">
       <motion.div
         className="header-container"
         initial={{ opacity: 0 }}

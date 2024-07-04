@@ -1,7 +1,6 @@
-import { Bitter, Montserrat } from "next/font/google";
+import { Inconsolata } from "next/font/google";
 
-const bitter = Bitter({ subsets: ["latin"] });
-const montserrat = Montserrat({ subsets: ["latin"] });
+const inconsolata = Inconsolata({ subsets: ["latin"] });
 
 const newsItems = [
   {
@@ -15,7 +14,7 @@ const newsItems = [
     date: "21st June",
     content: (
       <div className="flex flex-col items-center max-w-screen">
-        <p className="pb-4">
+        <p className="pb-4 w-full">
           We are on Instagram! Go give us a follow for more news and updates on
           artists
         </p>
@@ -36,10 +35,11 @@ const newsItems = [
 export default function News() {
   return (
     <div
-      className={`flex dark flex-col items-center bg-utd-navy w-screen h-full px-3 text-left text-xl md:text-2xl leading-loose ${montserrat.className} overflow-hidden`}
+      className={`flex dark flex-col items-center bg-utd-navy w-screen h-full px-3 text-left text-xl md:text-2xl leading-loose ${inconsolata.className} overflow-hidden bg-[url('/Drawings.png')] bg-cover bg-center bg-repeat-y bg-local`}
     >
-      <div className="flex flex-col items-center pb-12 md:w-4/5">
-        <div className="flex flex-col">
+      <div className="flex flex-col items-center pb-12 md:w-4/5 md:px-16">
+        <div className="flex flex-col bg-utd-navy px-4">
+          <h1 className="text-5xl py-6 text-left">News</h1>
           {newsItems.map(({ title, date, content }, index) => (
             <div key={index} className="news-update">
               <h3 className="pt-6">{title}</h3>

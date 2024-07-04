@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import MailchimpForm from "./components/mailchimpForm";
 
 export default function Contact() {
   const icon = {
@@ -18,7 +19,7 @@ export default function Contact() {
 
   return (
     <div
-      className="flex flex-col items-center w-screen bg-utd-navy"
+      className="flex flex-col items-center w-screen bg-utd-navy bg-[url('/Drawings.png')] bg-cover bg-center bg-repeat-y bg-local"
       id="contact"
     >
       <h3
@@ -62,6 +63,7 @@ text-2xl leading-loose mt-12 uppercase"
           />
         </motion.svg>
       </a>
+      <MailchimpForm />
     </div>
   );
 }

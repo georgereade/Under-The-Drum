@@ -1,12 +1,11 @@
 import React from "react";
 import { loadStripe } from "@stripe/stripe-js";
 import CountdownTimer from "../homepage/components/countdownTImer";
-import UtdBanner from "../homepage/components/utdBanner";
-import { Montserrat, Bitter } from "next/font/google";
+import { Inconsolata } from "next/font/google";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import TicketPrices from "./components/ticketprices";
-const montserrat = Montserrat({ subsets: ["latin"] });
-const bitter = Bitter({ subsets: ["latin"] });
+
+const inconsolata = Inconsolata({ subsets: ["latin"] });
 
 // Make sure to call `loadStripe` outside of a component’s render to avoid
 // recreating the `Stripe` object on every render.
@@ -30,7 +29,7 @@ export default function Tickets() {
 
   return (
     <div
-      className={`flex flex-col dark items-center bg-utd-navy w-screen pb-12 min-h-full ${montserrat.className} text-center`}
+      className={`flex flex-col overflow-x-hidden dark items-center bg-utd-navy w-screen pb-12 min-h-full ${inconsolata.className} text-center bg-[url('/Drawings.png')] bg-cover bg-top bg-repeat-y bg-local`}
       id="tickets"
     >
       <p className="font-extrabold text-2xl py-6 text-center leading-loose uppercase text-white">
@@ -61,7 +60,7 @@ export default function Tickets() {
           </section>
         </form>
       </div>
-      <div>
+      <div className="bg-utd-navy">
         <p className="text-sm pt-2 text-gray-200">
           Payment through{" "}
           <span>
@@ -76,8 +75,10 @@ export default function Tickets() {
           </span>
         </p>
       </div>
-      <h3 className="text-xl pt-6">First entry on Saturday: 2pm</h3>
-      <h3 className="text-xl pb-12">Check out the FAQs for more information</h3>
+      <h3 className="text-xl pt-6 bg-utd-navy">First entry on Saturday: 2pm</h3>
+      <h3 className="text-xl pb-12 bg-utd-navy">
+        Check out the FAQs for more information
+      </h3>
       <div className="sm:hidden">
         <CountdownTimer />
       </div>

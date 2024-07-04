@@ -1,20 +1,22 @@
 import Link from "next/link";
-import UtdBanner from "./components/utdBanner";
 
 const mapsAPIKey = process.env.GOOGLE_MAPS_KEY;
 
 export default function Venue() {
   return (
-    <div className="flex flex-col items-center w-screen bg-utd-navy" id="venue">
+    <div
+      className="flex flex-col items-center w-screen bg-utd-navy bg-[url('/Drawings.png')] bg-cover bg-center bg-repeat-y bg-local"
+      id="venue"
+    >
       <h3 className="font-extrabold leading-loose text-center pt-6 text-2xl uppercase">
-        Venue
+        Location
       </h3>
       <p className="pb-6 text-center">
         Breckenhill <br />
         45 Breckenhill Road <br />
         BT39 0TB
       </p>
-      <div className="iframe_container">
+      <div className="iframe_container py-8">
         {" "}
         <iframe
           className="r_iframe"
