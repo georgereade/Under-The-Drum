@@ -14,12 +14,12 @@ export default function AboutUTD() {
           Welcoming people to our barn, fields and woods in Country Antrim, for
           what we hope will become an annual event.
         </p>
-        <p className="text-center px-4 text-md md:text-lg lg:mx-24 text-black">
+        <p className="text-center px-4 pt-1 text-md md:text-lg lg:mx-24 text-black">
           Gathering musical talent from across Ireland and the UK, covering
           folk, rock, indie and trad genres. Besides music, there will also be
           food, art, poetry, yoga and more to explore.
         </p>
-        <p className="text-center px-4 pb-6 text-md md:text-lg lg:mx-24 text-black">
+        <p className="text-center px-4 pt-1 pb-6 text-md md:text-lg lg:mx-24 text-black">
           Breckenhill is a family home and events venue, just 30 minutes from
           Belfast and on the edge of the Antrim Hills, under Drumadarragh Hill
           which inspired the name of the festival.
