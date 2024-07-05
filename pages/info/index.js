@@ -119,15 +119,26 @@ export default function Info() {
         >
           <i class="fa-solid fa-angle-down pr-1"></i>Facilities
         </h2>
-        <p
+        <div
           className={`text-md md:text-lg transition-max-height duration-500 ease-in-out overflow-hidden ${
             activeIndices.includes(6) ? "max-h-96" : "max-h-0"
           }`}
         >
-          YES: - Toilets &nbsp;- Showers &nbsp;- Drinking Water &nbsp;- First
-          aid &nbsp;- 4G signal <br />
-          NO:&nbsp; - ATM &nbsp;- WiFI &nbsp;- Phone charging
-        </p>
+          YES:
+          <ul className="list-disc pl-8">
+            <li>Toilets</li>
+            <li>Drinking Water</li>
+            <li>First aid</li>
+            <li>Showers</li>
+            <li>4G signal</li>
+          </ul>
+          NO:
+          <ul className="list-disc pl-8">
+            <li>ATM</li>
+            <li>WiFI</li>
+            <li>Phone charging</li>
+          </ul>
+        </div>
       </div>
 
       <BuyTickets />

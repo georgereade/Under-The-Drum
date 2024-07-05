@@ -14,7 +14,7 @@ const newsItems = [
     date: "21st June",
     content: (
       <div className="flex flex-col items-center max-w-screen">
-        <p className="pb-4 w-full">
+        <p className="pb-4 text-md md:text-lg w-full">
           We are on Instagram! Go give us a follow for more news and updates on
           artists
         </p>
@@ -42,9 +42,9 @@ export default function News() {
         <h1 className="text-5xl py-6 text-left">News</h1>
         {newsItems.map(({ title, date, content }, index) => (
           <div key={index} className="news-update">
-            <h3 className="pt-6">{title}</h3>
-            <p className="pb-3 text-xs text-gray-400">{date}</p>
-            <div>{content}</div>
+            <h3 className="pt-6 text-2xl font-bold">{title}</h3>
+            <p className="pb-3 text-md md:text-lg text-gray-400">{date}</p>
+            <div className="text-md md:text-lg">{content}</div>
           </div>
         ))}
       </div>

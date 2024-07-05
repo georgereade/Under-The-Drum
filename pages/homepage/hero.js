@@ -1,5 +1,4 @@
 import Image from "next/image";
-import UtdBanner from "./components/utdBanner";
 import BuyTickets from "./components/buyTickets";
 import { motion } from "framer-motion";
 
@@ -10,10 +9,10 @@ export default function Hero() {
       id="home"
     >
       {" "}
-      <div className="hidden xl:block main-logo place-content-center w-screen bg-[url('/utd-hero.jpg')] bg-cover bg-no-repeat bg-origin-padding">
+      <div className="hidden xl:block main-logo place-content-center w-screen bg-[url('/Drawings.png')] bg-cover bg-no-repeat bg-origin-padding">
         <Image
-          src="/169poster3.jpg"
-          className="w-screen h-full opacity-0"
+          src="/V4Final.jpg"
+          className="w-1/3 mx-auto h-full"
           alt="Under The Drum"
           width="2048"
           height="950"
@@ -38,9 +37,9 @@ export default function Hero() {
           priority
         />
       </div>
-      <div className="w-screen sm:-translate-y-96 lg:-translate-y-48 md:h-0 -z-0">
+      <div className="w-screen -z-0">
         <motion.div
-          className=" sm:rounded-md border-1 w-screen bg-utd-navy md:w-full h-fit flex flex-col items-center sm:bg-transparent md:px-12 p-8"
+          className=" sm:rounded-md border-1 w-screen bg-utd-navy md:w-full h-fit flex flex-col items-center sm:bg-transparent md:px-12"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
@@ -49,7 +48,6 @@ export default function Hero() {
           <BuyTickets />
         </motion.div>
       </div>
-      {/* <UtdBanner /> */}
     </div>
   );
 }

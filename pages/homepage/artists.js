@@ -150,7 +150,7 @@ export default function Artists() {
         </h2>
       </motion.div>
       <div
-        className="flex flex-col items-center place-content-center md:w-1/3 mx-auto"
+        className="flex flex-col items-center place-content-center md:w-1/3 mx-auto lg:hidden"
         id="lineup-poster"
       >
         <Image
