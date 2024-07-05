@@ -16,66 +16,107 @@ const artistUrls = [
     id: 1,
     name: "Joshua Burnside",
     url: "https://open.spotify.com/embed/artist/244AFgFclA9c1IcjWOAqoV?utm_source=generator",
-    desc: "Joshua Burnside is a Northern Irish singer-songwriter renowned for his innovative blend of folk, electronic, and world music influences.",
+    desc: `Experimental folk songwriter and producer, blending Irish and world music influences. "Rumbling, brooding, powerful and magnetic".`,
     profilepic:
       "https://i.scdn.co/image/ab6761610000e5ebc12feb659a565ee3c54739d8",
   },
+
   {
     id: 2,
-    name: "Arliston",
-    url: "https://open.spotify.com/embed/artist/1zdjZcUSe5thcIAIU5NRYh?utm_source=generator",
-    desc: "Arliston is a London-based alternative band known for their atmospheric sound and emotive songwriting.",
-    profilepic:
-      "https://i.scdn.co/image/ab67616100005174a8078f6d93d0860f90642fda",
-  },
-  {
-    id: 3,
     name: "Arborist",
     url: "https://open.spotify.com/embed/artist/73NsXu8p63LKM2s24QwxAr?utm_source=generator",
-    desc: "Arborist is the moniker of Northern Irish singer-songwriter Mark McCambridge, known for his poignant and evocative folk music.",
+    desc: "The moniker of Northern Irish singer-songwriter Mark McCambridge, known for his poignant and evocative folk music.",
     profilepic:
       "https://i.scdn.co/image/ab6761610000e5eb2475d12d8b3a823b1e4cf8a2",
   },
   {
+    id: 3,
+    name: "Arliston",
+    url: "https://open.spotify.com/embed/artist/1zdjZcUSe5thcIAIU5NRYh?utm_source=generator",
+    desc: "London-based band known for their atmospheric sound, emotive lyrics, cerebral songwriting and soaring instrumentals.",
+    profilepic:
+      "https://i.scdn.co/image/ab67616100005174a8078f6d93d0860f90642fda",
+  },
+  {
     id: 4,
+    name: "Elaine Howley",
+    url: "https://open.spotify.com/embed/artist/3STzxp6cfWNNQVcAQWYZgh?utm_source=generator",
+    desc: "Vocalist, musician and producer, merging a tapestry of experimental processes, classic songwriting and emotive melodies.",
+    profilepic:
+      "https://i.scdn.co/image/ab67616d0000b273b7f8b60001a9ef56307c04d2",
+  },
+  {
+    id: 5,
     name: "Roe",
     url: "https://open.spotify.com/embed/artist/6ZgfyJzSGlummUBhUK1hxw?utm_source=generator",
-    desc: "Roe is a Northern Irish singer-songwriter known for her distinctive blend of indie-pop and electronic music.",
+    desc: "Alt-pop singer-songwriter from Derry, known for her distinctive blend of indie-pop and electronic music.",
     profilepic:
       "https://i.scdn.co/image/ab6761610000e5eb9f46765573bb835eec6d7fd2",
   },
   {
-    id: 5,
+    id: 6,
     name: "Junk Drawer",
     url: "https://open.spotify.com/embed/artist/5t4EvkMzfu9IJui3iiL2Rs?utm_source=generator",
-    desc: "Junk Drawer is a Belfast-based indie rock band acclaimed for their eclectic sound and introspective lyrics.",
+    desc: "Incorporating Krautrock, post-punk, and psychedelia, Belfast's Junk Drawer offer an intuitively loose and idiosyncratic brand of indie rock.",
     profilepic:
       "https://i.scdn.co/image/ab6761610000e5eb8379b43f58078bbab58d3df4",
   },
 
   {
-    id: 6,
+    id: 7,
     name: "Oh Boland",
     url: "https://open.spotify.com/embed/artist/2HmnALl2GrcNUuI9C5visw?utm_source=generator",
-    desc: "Oh Boland are a three-piece band from Tuam Co. Galway. “Poppy but sloppy” rock‘n’roll defined by their buzzsaw guitar tone.",
+    desc: "Three-piece band from Tuam Co. Galway. Self-described “poppy but sloppy” rock‘n’roll defined by their buzzsaw guitar tone.",
     profilepic:
       "https://i.scdn.co/image/ab67616d0000b27372c3bb31f19b72b9e855f3cd",
   },
   {
-    id: 7,
+    id: 8,
+    name: "Brand New Friend",
+    url: "https://open.spotify.com/embed/artist/7iWAQPQTaX1BV0IYFbxKoU?utm_source=generator",
+    desc: "North Coast indie pop powerhouses. Haunting and heavy production complementing sweet melodies and soaring choruses.",
+    profilepic:
+      "https://i.scdn.co/image/ab6761610000e5eb9f6ce86296b108c89af964a7",
+  },
+  {
+    id: 9,
     name: "Ben Traill",
     url: "https://open.spotify.com/embed/artist/2md5CaM27EV4MySPaSUkgT?utm_source=generator",
-    desc: "Ben Traill is a Northern Irish musician and songwriter renowned for his dynamic guitar work and compelling compositions.",
+    desc: "Singer-songwriter blending catchy hooks and choruses with expressive and confessional storytelling.",
     profilepic:
       "https://i.scdn.co/image/ab6761610000e5ebb9e738960880fe748a5a9546",
   },
   {
-    id: 8,
-    name: "Lisa Gorry",
-    url: "https://open.spotify.com/embed/artist/049UBlja7brPQkfnuStRth?utm_source=generator",
-    desc: "Lisa Gorry is an emerging Irish singer-songwriter known for her soulful voice and heartfelt lyrics.",
+    id: 10,
+    name: "Susie Blue",
+    url: "https://open.spotify.com/embed/artist/0CixME0zpIWI1vHtsqXzuP?utm_source=generator",
+    desc: "Irish queer indie pop artist with Glastonbury and Electric Picnic performances.",
     profilepic:
-      "https://i.scdn.co/image/ab6761610000e5eb1822eb280938fc4de544dd74",
+      "https://i.scdn.co/image/ab6761610000e5eb37206bf6a97f43bb00ec051d",
+  },
+  {
+    id: 11,
+    name: "Blue Whale",
+    url: "https://open.spotify.com/embed/artist/6rUPywdqRWwwFTayo3qS9b?utm_source=generator",
+    desc: "Fierce and playful four-piece band with math-rock and jazz influences.",
+    profilepic:
+      "https://i.scdn.co/image/ab6761610000e5eb86519a66d27aeebc4a5f0b67",
+  },
+  {
+    id: 12,
+    name: "Neil Brogan",
+    url: "https://open.spotify.com/embed/artist/1y6WMOklpc7zkhPiXZHIhY?utm_source=generator",
+    desc: "Indie-pop with self-deprecating efficacy and contrasting jangly exuberance. Known for his previous project Sea Pinks.",
+    profilepic:
+      "https://i.scdn.co/image/ab6761610000e5ebfe9c0dbb1b510e2e5f7dfee7",
+  },
+  {
+    id: 13,
+    name: "Demi O'Hara",
+    url: "https://www.youtube.com/embed/x_OL9RXiN_w",
+    desc: "27-year old Irish acoustic artist.",
+    profilepic:
+      "https://scontent-man2-1.xx.fbcdn.net/v/t39.30808-6/331542003_998377671141506_1769407920087073257_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=wCfoQ3eH4KoQ7kNvgHpcZdN&_nc_ht=scontent-man2-1.xx&oh=00_AYAEXzPfTPaFL_Zx53eBioVoMVhMLfha1abuZ4fYzV3Z4Q&oe=668DDC2E",
   },
 ];
 
@@ -90,7 +131,10 @@ export default function Artists() {
   };
 
   return (
-    <div className="w-screen p-4 bg-utd-grey py-12 z-1" id="artists">
+    <div
+      className="w-screen p-4 md:px-0 bg-utd-grey py-12 z-1 bg-[url('/Drawings.png')] bg-cover bg-top bg-repeat-y bg-local"
+      id="artists"
+    >
       <motion.div
         className="header-container"
         initial={{ opacity: 0 }}
@@ -105,28 +149,42 @@ export default function Artists() {
           Line-up
         </h2>
       </motion.div>
-      <div className="flex flex-col items-center">
+      <div
+        className="flex flex-col items-center place-content-center md:w-1/3 mx-auto"
+        id="lineup-poster"
+      >
+        <Image
+          src="/V4Final.jpg"
+          className="w-screen h-full md:h-1/4 md:w-auto rounded-none"
+          alt="Under The Drum"
+          width=""
+          height=""
+          priority
+        />
+      </div>
+
+      <div className="flex flex-col items-center z-50">
         <ScrollShadow size={30} orientation="horizontal" visibility="right">
           <div
-            className={`flex flex-row snap-x w-screen lg:flex-wrap lg:justify-center lg:overflow-hidden overflow-x-scroll py-6 px-4`}
+            className={`flex flex-row snap-x w-screen lg:flex-wrap lg:justify-center lg:overflow-hidden overflow-x-scroll snap-mandatory snap-always py-6 px-4`}
             id="artistsContainer"
           >
             {artistUrls.map(({ id, name, url, desc, profilepic }) => (
               <motion.div
                 key={id}
-                className="relative w-96 m-4 scroll-mx-0 h-80 mb-36 snap-x snap-mandatory snap-always"
+                className="relative w-96 my-4 mx-2 md:mx-4 scroll-mx-0 h-80 mb-36 "
                 animate={{ rotateY: flippedCards[id] ? 180 : 0 }}
-                transition={{ duration: 0.6 }}
+                transition={{ duration: 0.4 }}
                 style={{ transformStyle: "preserve-3d" }}
               >
                 <motion.div
-                  className="absolute backface-hidden snap-center snap-mandatory snap-always"
+                  className="absolute backface-hidden snap-center "
                   style={{
                     backfaceVisibility: "hidden",
                   }}
                 >
                   <Card
-                    className="rounded-md bg-utd-navy h-fit md:mx-0 w-80 md:w-96 shadow-lg snap-center snap-mandatory"
+                    className="rounded-md bg-utd-navy h-fit md:mx-0 w-80 md:w-96 shadow-lg"
                     isBlurred={false}
                     isFooterBlurred={false}
                   >

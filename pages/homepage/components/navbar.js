@@ -9,6 +9,11 @@ import {
   NavbarMenuToggle,
   NavbarMenuItem,
   Divider,
+  Dropdown,
+  DropdownTrigger,
+  DropdownMenu,
+  DropdownSection,
+  DropdownItem,
 } from "@nextui-org/react";
 import Image from "next/image";
 import CountdownTimer from "./countdownTImer";
@@ -53,7 +58,7 @@ export default function Navigationbar() {
       isMenuOpen={isMenuOpen}
       position="sticky"
       id="navibar"
-      className={`${inconsolata.className} dark bg-black`}
+      className={`${inconsolata.className} dark bg-black text-xl`}
       maxWidth="2xl"
     >
       <NavbarContent>
