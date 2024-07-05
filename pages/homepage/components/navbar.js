@@ -167,7 +167,7 @@ export default function Navigationbar() {
                   ? "danger"
                   : "foreground"
               }
-              className={`${inconsolata.className} w-full py-6 text-3xl border-b-2 border-utd-blue`}
+              className={`${inconsolata.className} w-full font-extrabold py-6 text-3xl border-b-2 border-utd-blue`}
               onClick={handleMenuClose}
               href={menuLinks[index]}
               size="lg"
@@ -176,7 +176,7 @@ export default function Navigationbar() {
             </Link>
           </NavbarMenuItem>
         ))}
-        <span className={`${inconsolata.className} text-2xl pt-5`}>
+        <span className={`${inconsolata.className} text-2xl font-bold pt-5`}>
           <CountdownTimer />
         </span>
         <a
