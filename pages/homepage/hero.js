@@ -21,7 +21,7 @@ export default function Hero() {
       </div>
       <div className="main-logo place-content-center w-screen h-4/5 sm:h-1/2 md:h-4/5">
         <Image
-          src="/169poster.jpg"
+          src="/V4Final.jpg"
           className="hidden sm:block md:hidden h-full"
           alt="Under The Drum"
           width="2048"
@@ -29,7 +29,7 @@ export default function Hero() {
           priority
         />
         <Image
-          src="/PosterA3.jpg"
+          src="/V4Final.jpg"
           className="block w-screen sm:hidden md:block xl:hidden"
           alt="Under The Drum"
           width="500"
