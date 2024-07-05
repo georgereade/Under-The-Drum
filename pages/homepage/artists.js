@@ -149,8 +149,8 @@ export default function Artists() {
           Line-up
         </h2>
       </motion.div>
-      {/* <div
-        className="flex flex-col items-center place-content-center md:w-1/3 mx-auto lg:hidden"
+      <div
+        className="flex-col items-center place-content-center md:w-1/3 mx-auto hidden sm:flex"
         id="lineup-poster"
       >
         <Image
@@ -161,7 +161,7 @@ export default function Artists() {
           height=""
           priority
         />
-      </div> */}
+      </div>
 
       <div className="flex flex-col items-center z-50">
         <ScrollShadow size={30} orientation="horizontal" visibility="right">

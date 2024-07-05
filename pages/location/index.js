@@ -1,6 +1,7 @@
 import { Inconsolata } from "next/font/google";
 
 import Link from "next/link";
+import Contact from "../homepage/contact";
 
 const mapsAPIKey = process.env.GOOGLE_MAPS_KEY;
 
@@ -39,6 +40,7 @@ export default function FAQs() {
           </button>
         </Link>
       </section>
+      <Contact />
     </div>
   );
 }

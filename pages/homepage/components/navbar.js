@@ -9,11 +9,6 @@ import {
   NavbarMenuToggle,
   NavbarMenuItem,
   Divider,
-  Dropdown,
-  DropdownTrigger,
-  DropdownMenu,
-  DropdownSection,
-  DropdownItem,
 } from "@nextui-org/react";
 import Image from "next/image";
 import CountdownTimer from "./countdownTImer";
@@ -27,12 +22,12 @@ export default function Navigationbar() {
     setIsMenuOpen(false);
   };
 
-  const menuItems = ["LINE-UP", "LOCATION", "CONTACT", "NEWS"];
+  const menuItems = ["LINE-UP", "LOCATION"];
   const menuLinks = [
     "https://underthedrum-git-spotify-georgereades-projects.vercel.app/#artists",
     "https://underthedrum-git-spotify-georgereades-projects.vercel.app/location",
-    "https://underthedrum-git-spotify-georgereades-projects.vercel.app/#contact",
-    "https://underthedrum-git-spotify-georgereades-projects.vercel.app/news",
+    // "https://underthedrum-git-spotify-georgereades-projects.vercel.app/#contact",
+    // "https://underthedrum-git-spotify-georgereades-projects.vercel.app/news",
   ];
 
   const icon = {
@@ -58,7 +53,7 @@ export default function Navigationbar() {
       isMenuOpen={isMenuOpen}
       position="sticky"
       id="navibar"
-      className={`${inconsolata.className} dark bg-black text-xl`}
+      className={`${inconsolata.className} dark bg-utd-navy text-xl`}
       maxWidth="2xl"
     >
       <NavbarContent>
@@ -67,7 +62,7 @@ export default function Navigationbar() {
           className="sm:hidden"
         />
         <NavbarBrand>
-          <Link color="foreground" href="/#home">
+          <Link color="foreground" href="/">
             <Image
               src="/UTDLogoWhite.png"
               alt="Under The Drum"
@@ -105,7 +100,7 @@ export default function Navigationbar() {
             Location
           </Link>
         </NavbarItem>
-        <Divider
+        {/* <Divider
           orientation="vertical"
           className=" bg-utd-green z-0 py-4 h-1/2 w-1 opacity-80"
         />
@@ -128,18 +123,18 @@ export default function Navigationbar() {
             color="foreground"
             duration={500}
             href="/news"
-            className="cursor-pointer uppercase hover:text-utd-red transition ease-in-out delay-10 hover:scale-110"
+            className="cursor-pointer uppercase hover:text-utd-red ease-in-out delay-10 hover:scale-110"
           >
             News
           </Link>
-        </NavbarItem>
+        </NavbarItem> */}
       </NavbarContent>
       <NavbarContent justify="end">
-        <NavbarItem isActive>
+        {/* <NavbarItem isActive>
           <Link
             href="/tickets"
             aria-current="page"
-            className="text-utd-red mx-2 uppercase font-extrabold transition ease-in-out delay-10 hover:scale-110"
+            className="text-white bg-utd-red p-1 rounded-sm mx-2 uppercase font-extrabold ease-in-out delay-10 hover:scale-110"
           >
             Tickets
           </Link>
@@ -152,11 +147,11 @@ export default function Navigationbar() {
           <Link
             href="/info"
             aria-current="page"
-            className="text-utd-blue uppercase font-extrabold transition ease-in-out delay-10 hover:scale-110"
+            className="text-utd-blue uppercase font-extrabold ease-in-out delay-10 hover:scale-110"
           >
             info
           </Link>
-        </NavbarItem>
+        </NavbarItem> */}
         <div className="hidden sm:flex pb-1">
           <CountdownTimer />
         </div>

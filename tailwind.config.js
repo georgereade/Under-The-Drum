@@ -25,11 +25,6 @@ module.exports = {
         medium: "0.5rem",
         small: "0.2rem",
       },
-      // backgroundImage: {
-      //   "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-      //   "gradient-conic":
-      //     "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      // },
     },
     fontFamily: {
       nunito: ["Nunito", "sans-serif"],

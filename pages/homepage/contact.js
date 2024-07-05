@@ -19,7 +19,7 @@ export default function Contact() {
 
   return (
     <div
-      className="flex flex-col items-center w-screen bg-utd-navy sm:bg-[url('/Drawings.png')] bg-cover bg-center bg-repeat-y bg-local"
+      className="flex flex-col items-center w-screen bg-utd-navy"
       id="contact"
     >
       <h3
