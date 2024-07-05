@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function Hero() {
   return (
     <div
-      className="flex flex-col items-center px-0 mx-0 pb-0 my-0 bg-utd-navy relative"
+      className="flex flex-col items-center px-0 mx-0 pb-0 my-0 bg-utd-grey relative"
       id="home"
     >
       {" "}
@@ -37,7 +37,7 @@ export default function Hero() {
           priority
         />
       </div>
-      <div className="w-screen -z-0">
+      <div className="w-screen bg-utd-navy -z-0">
         <motion.div
           className=" sm:rounded-md border-1 w-screen bg-utd-navy md:w-full h-fit flex flex-col items-center sm:bg-transparent md:px-12"
           initial={{ opacity: 0.5 }}

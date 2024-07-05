@@ -10,7 +10,7 @@ const inconsolata = Inconsolata({ subsets: ["latin"] });
 export default function Home() {
   return (
     <main
-      className={`flex flex-col items-center w-screen dark pb-6 font-nunito bg-utd-navy ${inconsolata.className} z-0 scroll-smooth `}
+      className={`flex flex-col items-center w-screen font-nunito bg-utd-navy ${inconsolata.className} z-0 scroll-smooth `}
     >
       <CookieConsentBanner />
       <Hero />
