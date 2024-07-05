@@ -11,8 +11,8 @@ export default function AboutUTD() {
         </h2>
         <p className="text-center px-4 pt-8 text-md md:text-lg lg:mx-24 text-black">
           {" "}
-          Welcoming 300 people to our barn, fields and woods in Country Antrim,
-          for what we hope will become an annual event.
+          Welcoming people to our barn, fields and woods in Country Antrim, for
+          what we hope will become an annual event.
         </p>
         <p className="text-center px-4 pt-8 text-md md:text-lg lg:mx-24 text-black">
           Gathering musical talent from across Ireland and the UK, covering
