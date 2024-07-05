@@ -9,8 +9,8 @@ const CountdownTimer = () => {
       timeLeft = {
         d: Math.floor(difference / (1000 * 60 * 60 * 24)),
         h: Math.floor((difference / (1000 * 60 * 60)) % 24),
-        m: Math.floor((difference / 1000 / 60) % 60),
-        s: Math.floor((difference / 1000) % 60),
+        // m: Math.floor((difference / 1000 / 60) % 60),
+        // s: Math.floor((difference / 1000) % 60),
       };
     }
 

@@ -156,7 +156,7 @@ export default function Navigationbar() {
           <CountdownTimer />
         </div>
       </NavbarContent>
-      <NavbarMenu className="overflow-x-hidden">
+      <NavbarMenu className="overflow-x-hidden bg-utd-navy">
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
             <Link
