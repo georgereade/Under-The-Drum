@@ -24,8 +24,8 @@ export default function Navigationbar() {
 
   const menuItems = ["LINE-UP", "LOCATION"];
   const menuLinks = [
-    "https://underthedrum-git-spotify-georgereades-projects.vercel.app/#artists",
-    "https://underthedrum-git-spotify-georgereades-projects.vercel.app/location",
+    "https://underthedrum.co.uk/#artists",
+    "https://underthedrum.co.uk/location",
     // "https://underthedrum-git-spotify-georgereades-projects.vercel.app/#contact",
     // "https://underthedrum-git-spotify-georgereades-projects.vercel.app/news",
   ];
