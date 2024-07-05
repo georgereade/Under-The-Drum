@@ -8,7 +8,7 @@ export default async function handler(req, res) {
         line_items: [
           {
             // Provide the exact Price ID (for example, pr_1234) of the product you want to sell
-            price: "price_1PG1lNP2rqQbA2GkyPSUPq48",
+            price: "price_1PTTTzP2rqQbA2Gkh4FT7XVq",
             quantity: 1,
             adjustable_quantity: {
               enabled: true,
@@ -19,8 +19,8 @@ export default async function handler(req, res) {
         ],
         mode: "payment",
         // success_url: `${req.headers.origin}/?success=true`,
-        success_url: `${req.headers.origin}/success`,
-        cancel_url: `${req.headers.origin}/cancel`,
+        success_url: `${req.headers.origin}/tickets/success`,
+        cancel_url: `${req.headers.origin}/tickets/cancel`,
         automatic_tax: { enabled: true },
       });
       res.redirect(303, session.url);
