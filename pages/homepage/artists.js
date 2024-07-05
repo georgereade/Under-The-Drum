@@ -159,7 +159,6 @@ export default function Artists() {
           alt="Under The Drum"
           width=""
           height=""
-          priority
         />
       </div>
 
@@ -227,7 +226,7 @@ export default function Artists() {
                         src={url}
                         width="100%"
                         height="352"
-                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture;"
+                        allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture;"
                         loading="lazy"
                         alt={name}
                         title={name}

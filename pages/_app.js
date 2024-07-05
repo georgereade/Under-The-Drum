@@ -5,6 +5,8 @@ import Head from "next/head";
 import { GoogleTagManager } from "@next/third-parties/google";
 import Navigationbar from "./homepage/components/navbar";
 import Footer from "./homepage/components/footer";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export default function App({ Component, pageProps }) {
   return (
@@ -53,11 +55,13 @@ export default function App({ Component, pageProps }) {
         </Head>
         <Navigationbar />
         <Component {...pageProps} /> <Footer />
-        <GoogleTagManager
-          gtmId="G-L3XTL8FY14
-"
-        />{" "}
+        <Analytics />
       </NextUIProvider>
+      <SpeedInsights />{" "}
+      <GoogleTagManager
+        gtmId="G-L3XTL8FY14
+"
+      />{" "}
     </>
   );
 }
