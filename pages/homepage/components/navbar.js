@@ -152,6 +152,28 @@ export default function Navigationbar() {
             info
           </Link>
         </NavbarItem> */}
+        <NavbarItem className="sm:hidden">
+          <Link
+            href="/#artists"
+            aria-current="page"
+            className="uppercase font-extrabold ease-in-out delay-10 hover:scale-110"
+          >
+            line-up
+          </Link>
+        </NavbarItem>
+        <Divider
+          orientation="vertical"
+          className="bg-utd-grey py-4 z-0 h-1/4 border-solid place-content-center w-1 sm:hidden"
+        />
+        <NavbarItem className="sm:hidden">
+          <Link
+            href="/location"
+            aria-current="page"
+            className="uppercase font-extrabold ease-in-out delay-10 hover:scale-110"
+          >
+            location
+          </Link>
+        </NavbarItem>
         <div className="hidden sm:flex pb-1">
           <CountdownTimer />
         </div>

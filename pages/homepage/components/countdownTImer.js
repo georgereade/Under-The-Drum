@@ -49,7 +49,7 @@ const CountdownTimer = () => {
 
   return (
     <div className="mt-0.5 align-middle md:text-justify md:w-64 w-96 ">
-      <span className="text-white">Tickets on sale in </span>
+      <span className="text-white uppercase">Tickets on sale in </span>
       {timerComponents.length ? (
         timerComponents
       ) : (

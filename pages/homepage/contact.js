@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import MailchimpForm from "./components/mailchimpForm";
+import CountdownTimer from "./components/countdownTImer";
 
 export default function Contact() {
   const icon = {
@@ -64,6 +65,10 @@ text-2xl leading-loose mt-12 uppercase"
           />
         </motion.svg>
       </a>
+      <div className="flex flex-col items-center text-center">
+        <CountdownTimer />
+      </div>
+
       <MailchimpForm />
     </div>
   );
