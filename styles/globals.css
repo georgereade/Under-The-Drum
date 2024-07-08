@@ -209,6 +209,11 @@ iframe.preloaded {
   transition: max-height 0.4s ease-in-out;
 }
 
+#__next {
+  height: 100%;
+  position: relative;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

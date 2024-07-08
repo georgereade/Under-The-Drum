@@ -24,6 +24,21 @@ const CountdownTimer = () => {
     return timeLeft;
   };
 
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+    setIsScrolled(position > 10);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   const [timeLeft, setTimeLeft] = useState(null);
 
   useEffect(() => {
@@ -44,8 +59,14 @@ const CountdownTimer = () => {
       }
 
       timerComponents.push(
-        <span className="text-white" key={interval}>
-          <span className="text-4xl md:text-xl text-utd-green md:text-utd-blue font-extrabold">
+        <span className="text-utd-navy font-bold" key={interval}>
+          <span
+            className="text-4xl md:text-2xl text-white font-extrabold"
+            // style={{
+            //   color: isScrolled ? "#a9de7c" : "#012741",
+            //   transition: "color 0.5s ease",
+            // }}
+          >
             {timeLeft[interval]}
           </span>
           {interval}{" "}
@@ -55,8 +76,10 @@ const CountdownTimer = () => {
   }
 
   return (
-    <div className="mt-0.5 align-middle md:text-justify md:w-64 w-96 ">
-      <span className="text-white uppercase">Tickets on sale: </span>
+    <div className="align-middle md:text-justify bg-utd-red rounded-md p-2">
+      <span className="text-utd-grey uppercase font-bold ">
+        Tickets on sale:{" "}
+      </span>
       {timerComponents.length ? (
         timerComponents
       ) : (

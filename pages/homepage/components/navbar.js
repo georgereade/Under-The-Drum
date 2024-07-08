@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import React from "react";
 import {
   Navbar,
@@ -22,6 +23,21 @@ export default function Navigationbar() {
     setIsMenuOpen(false);
   };
 
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+    setIsScrolled(position > 10);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   const menuItems = ["LINE-UP", "LOCATION"];
   const menuLinks = [
     "https://underthedrum.co.uk/#artists",
@@ -35,13 +51,13 @@ export default function Navigationbar() {
       opacity: 0,
       pathLength: 0,
       pathOffset: 1,
-      fill: "#db4c44",
+      fill: "#012741",
     },
     visible: {
       opacity: 1,
       pathLength: 1,
       pathOffset: 0,
-      fill: "#db4c44",
+      fill: "#012741",
     },
   };
 
@@ -49,6 +65,10 @@ export default function Navigationbar() {
     <Navbar
       shouldHideOnScroll={false}
       isBordered
+      style={{
+        backgroundColor: isScrolled ? "#012741" : "#359bdf",
+        transition: "background-color 0.5s ease",
+      }}
       onMenuOpenChange={setIsMenuOpen}
       isMenuOpen={isMenuOpen}
       position="sticky"
@@ -66,7 +86,11 @@ export default function Navigationbar() {
             <Image
               src="/UTDLogoWhite.png"
               alt="Under The Drum"
-              className="mx-2 transition ease-in-out delay-10 hover:scale-110 "
+              className="mx-2 transition ease-in-out delay-10 hover:scale-110"
+              style={{
+                filter: isScrolled ? "invert(0)" : "invert(1)",
+                transition: "filter 0.5s ease",
+              }}
               width="50"
               height="50"
               priority
@@ -81,21 +105,33 @@ export default function Navigationbar() {
             color="foreground"
             duration={500}
             href="/#artists"
-            className="cursor-pointer uppercase hover:text-utd-red transition ease-in-out delay-10 hover:scale-110"
+            className="cursor-pointer uppercase font-bold hover:text-utd-red transition ease-in-out delay-10 hover:scale-110"
+            style={{
+              color: isScrolled ? "#ffffff" : "#012741",
+              transition: "color 0.5s ease",
+            }}
           >
             Line-up
           </Link>
         </NavbarItem>
         <Divider
           orientation="vertical"
-          className=" bg-utd-blue z-0 py-4 h-1/2 w-1 opacity-80"
+          className="z-0 py-4 h-1/2 w-1 opacity-80"
+          style={{
+            backgroundColor: isScrolled ? "#359bdf" : "#ffffff",
+            transition: "background-color 0.5s ease",
+          }}
         />
         <NavbarItem>
           <Link
             color="foreground"
             duration={500}
             href="/location"
-            className="cursor-pointer uppercase hover:text-utd-red transition ease-in-out delay-10 hover:scale-110"
+            className="cursor-pointer uppercase font-bold hover:text-utd-red transition ease-in-out delay-10 hover:scale-110"
+            style={{
+              color: isScrolled ? "#ffffff" : "#012741",
+              transition: "color 0.5s ease",
+            }}
           >
             Location
           </Link>
@@ -157,6 +193,10 @@ export default function Navigationbar() {
             href="/#artists"
             aria-current="page"
             className="uppercase font-extrabold ease-in-out delay-10 hover:scale-110"
+            style={{
+              color: isScrolled ? "#ffffff" : "#012741",
+              transition: "color 0.5s ease",
+            }}
           >
             line-up
           </Link>
@@ -164,12 +204,20 @@ export default function Navigationbar() {
         <Divider
           orientation="vertical"
           className="bg-utd-grey py-4 z-0 h-1/4 border-solid place-content-center w-1 sm:hidden"
+          style={{
+            backgroundColor: isScrolled ? "#359bdf" : "#ffffff",
+            transition: "background-color 0.5s ease",
+          }}
         />
         <NavbarItem className="sm:hidden">
           <Link
             href="/location"
             aria-current="page"
             className="uppercase font-extrabold ease-in-out delay-10 hover:scale-110"
+            style={{
+              color: isScrolled ? "#ffffff" : "#012741",
+              transition: "color 0.5s ease",
+            }}
           >
             location
           </Link>
@@ -189,7 +237,7 @@ export default function Navigationbar() {
                   ? "danger"
                   : "foreground"
               }
-              className={`${inconsolata.className} w-full font-extrabold py-6 text-3xl border-b-2 border-utd-blue`}
+              className={`${inconsolata.className} w-full font-extrabold py-6 text-3xl border-b-2 border-utd-purple`}
               onClick={handleMenuClose}
               href={menuLinks[index]}
               size="lg"
@@ -198,7 +246,9 @@ export default function Navigationbar() {
             </Link>
           </NavbarMenuItem>
         ))}
-        <span className={`${inconsolata.className} text-2xl font-bold pt-5`}>
+        <span
+          className={`${inconsolata.className} text-2xl font-bold pt-5 w-fit`}
+        >
           <CountdownTimer />
         </span>
         <a

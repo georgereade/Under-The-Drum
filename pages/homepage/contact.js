@@ -65,7 +65,7 @@ text-2xl leading-loose mt-12 uppercase"
           />
         </motion.svg>
       </a>
-      <div className="flex flex-col items-center text-center">
+      <div className="flex flex-col text-2xl">
         <CountdownTimer />
       </div>
 
