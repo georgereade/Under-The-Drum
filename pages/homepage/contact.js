@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import MailchimpForm from "./components/mailchimpForm";
-import CountdownTimer from "./components/countdownTImer";
+import CountdownTimer from "./components/countdownTimer";
 
 export default function Contact() {
   const icon = {

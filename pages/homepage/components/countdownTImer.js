@@ -2,14 +2,20 @@ import { useEffect, useState } from "react";
 
 const CountdownTimer = () => {
   const calculateTimeLeft = () => {
-    const difference = +new Date("2024-07-13T00:00:00") - +new Date();
+    const difference = +new Date("2024-07-13T12:00:00") - +new Date();
     let timeLeft = {};
 
     if (difference > 0) {
       timeLeft = {
-        d: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        h: Math.floor((difference / (1000 * 60 * 60)) % 24),
-        // m: Math.floor((difference / 1000 / 60) % 60),
+        d:
+          Math.floor(difference / (1000 * 60 * 60 * 24)) != 0
+            ? Math.floor(difference / (1000 * 60 * 60 * 24))
+            : "0",
+        h:
+          Math.floor((difference / (1000 * 60 * 60)) % 24) != 0
+            ? Math.floor((difference / (1000 * 60 * 60)) % 24)
+            : "0",
+        m: Math.floor((difference / 1000 / 60) % 60),
         // s: Math.floor((difference / 1000) % 60),
       };
     }
@@ -49,7 +55,7 @@ const CountdownTimer = () => {
 
   return (
     <div className="mt-0.5 align-middle md:text-justify md:w-64 w-96 ">
-      <span className="text-white uppercase">Tickets on sale in </span>
+      <span className="text-white uppercase">Tickets on sale: </span>
       {timerComponents.length ? (
         timerComponents
       ) : (

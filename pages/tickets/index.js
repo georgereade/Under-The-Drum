@@ -1,6 +1,6 @@
 import React from "react";
 import { loadStripe } from "@stripe/stripe-js";
-import CountdownTimer from "../homepage/components/countdownTImer";
+import CountdownTimer from "../homepage/components/countdownTimer";
 import { Inconsolata } from "next/font/google";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import TicketPrices from "./components/ticketprices";

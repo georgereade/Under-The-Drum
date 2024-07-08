@@ -232,6 +232,7 @@ export default function Artists() {
                         title={name}
                         allowtransparency="true"
                         style={{ borderRadius: "16px" }}
+                        sandbox="allow-scripts allow-same-origin"
                       ></iframe>
                     </CardBody>
                     <CardFooter>

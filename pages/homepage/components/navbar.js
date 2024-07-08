@@ -11,7 +11,7 @@ import {
   Divider,
 } from "@nextui-org/react";
 import Image from "next/image";
-import CountdownTimer from "./countdownTImer";
+import CountdownTimer from "./countdownTimer";
 import { Inconsolata } from "next/font/google";
 import { motion } from "framer-motion";
 const inconsolata = Inconsolata({ subsets: ["latin"] });

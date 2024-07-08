@@ -1,7 +1,7 @@
 import Image from "next/image";
 import BuyTickets from "./components/buyTickets";
 import { motion } from "framer-motion";
-import CountdownTimer from "./components/countdownTImer";
+import CountdownTimer from "./components/countdownTimer";
 
 export default function Hero() {
   return (
