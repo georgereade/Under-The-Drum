@@ -10,7 +10,11 @@ export default function Hero() {
       id="home"
     >
       {" "}
-      <div className="hidden xl:block main-logo place-content-center w-screen bg-[url('/utd-hero.jpg')] bg-cover bg-no-repeat bg-origin-padding">
+      <div
+        className="hidden xl:block main-logo place-content-center w-screen bg-[url('/utd-hero.jpg')] bg-cover bg-no-repeat bg-origin-padding"
+        role="img"
+        aria-label="background splash image"
+      >
         <Image
           src="/V4Final.jpg"
           className="w-1/3 mx-auto h-full opacity-0"

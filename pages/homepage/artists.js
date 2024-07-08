@@ -205,6 +205,8 @@ export default function Artists() {
                     <CardFooter className="overflow-visible">
                       <i
                         className="fa-brands fa-spotify text-3xl cursor-pointer transition ease-in-out hover:scale-110"
+                        role="button"
+                        aria-label="view spotify embed"
                         onClick={() => handleCardClick(id)}
                       ></i>
                     </CardFooter>
@@ -239,6 +241,8 @@ export default function Artists() {
                       {" "}
                       <i
                         className="fa-solid fa-arrow-rotate-left cursor-pointer text-3xl transition ease-in-out hover:scale-110"
+                        role="button"
+                        aria-label="back arrow"
                         onClick={() => handleCardClick(id)}
                       ></i>
                     </CardFooter>
