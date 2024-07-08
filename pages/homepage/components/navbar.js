@@ -11,9 +11,9 @@ import {
   Divider,
 } from "@nextui-org/react";
 import Image from "next/image";
-import CountdownTimer from "./countdownTimer";
 import { Inconsolata } from "next/font/google";
 import { motion } from "framer-motion";
+import CountdownTimer from "./countdownTimer";
 const inconsolata = Inconsolata({ subsets: ["latin"] });
 
 export default function Navigationbar() {

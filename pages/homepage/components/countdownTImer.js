@@ -16,6 +16,7 @@ const CountdownTimer = () => {
             ? Math.floor((difference / (1000 * 60 * 60)) % 24)
             : "0",
         m: Math.floor((difference / 1000 / 60) % 60),
+
         // s: Math.floor((difference / 1000) % 60),
       };
     }
