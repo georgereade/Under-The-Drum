@@ -13,20 +13,17 @@ export default function App({ Component, pageProps }) {
     <>
       <NextUIProvider>
         <Head>
-          <title>Under The Drum | Music Festival | 28th September 2024</title>
+          <title>Under The Drum | Music Festival</title>
           <meta charSet="utf-8" />
           <meta
             name="description"
-            content="A new music festival in the Antrim hills. Music | Art | Food"
+            content="A new music festival in the Antrim hills | 28th September 2024"
             key="desc"
           />
-          <meta
-            property="og:title"
-            content="Under The Drum | Music Festival in the Antrim hills"
-          />
+          <meta property="og:title" content="Under The Drum" />
           <meta
             property="og:description"
-            content="A new music festival in the Antrim hills. Music | Art | Food"
+            content="A new music festival in the Antrim hills | 28th September 2024"
           />
           <meta property="og:image" content="public\Vector LOGO - MAIN.jpg" />
           <meta property="og:image:alt" content="Under The Drum logo" />
@@ -38,13 +35,10 @@ export default function App({ Component, pageProps }) {
             content="public\Vector LOGO - MAIN.jpg"
           />
           <meta property="twitter:card" content="summary_large_image" />
-          <meta
-            property="twitter:title"
-            content="Under The Drum | Music Festival in the Antrim hills"
-          />
+          <meta property="twitter:title" content="Under The Drum" />
           <meta
             property="twitter:description"
-            content="A new music festival in the Antrim hills. Music | Art | Food"
+            content="A new music festival in the Antrim hills | 28th September 2024"
           />
           <meta name="robots" content="index, follow" />
           <meta name="googlebot" content="index, follow" />
