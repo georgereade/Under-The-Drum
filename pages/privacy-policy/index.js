@@ -15,7 +15,7 @@ export default function FAQs() {
         Welcome to Under The Drum. We value your privacy and are committed to
         protecting your personal data. This Privacy Policy explains how we
         collect, use, disclose, and safeguard your information when you visit
-        our website [yourwebsite.com].
+        our website www.underthedrum.co.uk.
       </p>
 
       <h2>2. Information We Collect</h2>
@@ -83,7 +83,6 @@ export default function FAQs() {
         following cases:
       </p>
       <ul>
-        <li>With your consent</li>
         <li>To comply with legal obligations</li>
         <li>To protect and defend our rights and property</li>
         <li>
@@ -122,8 +121,8 @@ export default function FAQs() {
         <li>The right to data portability</li>
       </ul>
       <p>
-        To exercise any of these rights, please contact us at [your contact
-        email].
+        To exercise any of these rights, please contact us at
+        info@underthedrum.co.uk.
       </p>
 
       <h2>9. Changes to This Privacy Policy</h2>
