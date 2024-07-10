@@ -2,6 +2,7 @@ import BuyTickets from "../homepage/components/buyTickets";
 import MailchimpForm from "../homepage/components/mailchimpForm";
 import { Inconsolata } from "next/font/google";
 import { useState } from "react";
+import Head from "next/head";
 
 const inconsolata = Inconsolata({ subsets: ["latin"] });
 
@@ -18,6 +19,9 @@ export default function Info() {
     <div
       className={`flex flex-col items-center bg-utd-navy w-screen h-full px-3 text-left leading-loose ${inconsolata.className} sm:bg-[url('/Drawings.png')] bg-cover bg-center bg-repeat-y bg-fixed`}
     >
+      <Head>
+        <title>Info | Under The Drum</title>
+      </Head>
       <div className="md:w-4/5 bg-utd-navy pb-8 md:px-16">
         {" "}
         <h1 className="text-5xl py-6">Info</h1>

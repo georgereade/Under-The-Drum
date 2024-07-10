@@ -4,6 +4,7 @@ import CountdownTimer from "../homepage/components/countdownTimer";
 import { Inconsolata } from "next/font/google";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import TicketPrices from "./components/ticketprices";
+import Head from "next/head";
 
 const inconsolata = Inconsolata({ subsets: ["latin"] });
 
@@ -32,9 +33,12 @@ export default function Tickets() {
       className={`flex flex-col overflow-x-hidden dark items-center bg-utd-navy w-screen pb-12 min-h-full ${inconsolata.className} text-center bg-[url('/Drawings.png')] bg-cover bg-top bg-repeat-y bg-local`}
       id="tickets"
     >
-      <p className="font-extrabold text-2xl py-6 text-center leading-loose uppercase text-white">
+      <Head>
+        <title>Tickets | Under The Drum</title>
+      </Head>
+      <h1 className="font-extrabold text-2xl py-6 text-center leading-loose uppercase text-white">
         Tickets on sale now
-      </p>
+      </h1>
       <TicketPrices />
       <div className="md:flex flex-row">
         <form action="/api/checkout_sessions" method="POST">

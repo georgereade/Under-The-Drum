@@ -1,4 +1,5 @@
 import { Inconsolata } from "next/font/google";
+import Head from "next/head";
 
 import Link from "next/link";
 import Contact from "../homepage/contact";
@@ -12,6 +13,9 @@ export default function FAQs() {
     <div
       className={`flex flex-col items-center bg-utd-navy w-screen h-full px-3 text-left text-xl md:text-2xl leading-loose ${inconsolata.className} bg-[url('/Drawings.png')] bg-cover bg-center bg-repeat-y bg-local`}
     >
+      <Head>
+        <title>Location | Under The Drum</title>
+      </Head>
       <h3 className="font-extrabold leading-loose text-center pt-6 text-2xl uppercase">
         Location
       </h3>

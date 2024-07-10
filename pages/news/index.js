@@ -1,4 +1,5 @@
 import { Inconsolata } from "next/font/google";
+import Head from "next/head";
 
 const inconsolata = Inconsolata({ subsets: ["latin"] });
 
@@ -37,6 +38,9 @@ export default function News() {
     <div
       className={`flex flex-col items-center bg-utd-navy w-screen h-full px-3 text-left text-xl md:text-2xl leading-loose ${inconsolata.className} overflow-hidden sm:bg-[url('/Drawings.png')] bg-cover bg-center bg-repeat-y bg-local`}
     >
+      <Head>
+        <title>News | Under The Drum</title>
+      </Head>
       {/* <div className="flex flex-col items-center pb-12 md:w-4/5 md:px-16"> */}
       <div className="md:w-4/5 pb-8 md:px-16 bg-utd-navy sm:px-8">
         <h1 className="text-5xl py-6 text-left">News</h1>

@@ -2,9 +2,8 @@ import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
-    <Html lang="en" className="dark select-none">
+    <Html lang="en" className="select-none">
       <Head>
-        <meta charSet="utf-8" />
         <meta
           name="description"
           content="A new music festival in the Antrim hills with art, food and more | 28th September 2024"
