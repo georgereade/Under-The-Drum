@@ -34,7 +34,7 @@ export default function Hero() {
           priority
         />
         <Image
-          src="/V4Final.jpg"
+          src="/V4Final2.jpg"
           className="block w-screen sm:hidden md:block xl:hidden"
           alt="Under The Drum"
           width="500"
@@ -44,7 +44,7 @@ export default function Hero() {
       </div>
       <div className="w-screen bg-utd-navy py-8 lg:py-0 -z-0">
         <motion.div
-          className="lg:-translate-y-44 lg:h-0 sm:rounded-md border-1 w-screen bg-utd-navy md:w-full h-fit flex flex-col items-center sm:bg-transparent md:px-12"
+          className="xl:-translate-y-44 xl:h-0 sm:rounded-md border-1 w-screen bg-utd-navy md:w-full h-fit flex flex-col items-center sm:bg-transparent md:px-12"
           initial={{ opacity: 0.5 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
