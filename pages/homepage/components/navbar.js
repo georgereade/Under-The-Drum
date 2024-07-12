@@ -192,7 +192,7 @@ export default function Navigationbar() {
           <Link
             href="/tickets"
             aria-current="page"
-            className="text-white bg-utd-red px-2 py-2.5 rounded-md uppercase font-extrabold ease-in-out hover:scale-110"
+            className="text-white bg-utd-red px-2 py-2.5 rounded-md uppercase font-extrabold transition ease-in-out hover:scale-125 hover:opacity-100 hover:text-black hover:bg-utd-green"
           >
             tickets
           </Link>

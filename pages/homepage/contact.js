@@ -25,7 +25,7 @@ export default function Contact() {
     >
       <h3
         className="font-extrabold
-text-2xl leading-loose mt-12 uppercase"
+text-3xl leading-loose mt-12 uppercase"
       >
         Contact
       </h3>

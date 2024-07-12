@@ -1,6 +1,7 @@
 import { Inconsolata } from "next/font/google";
 import { useState } from "react";
 import Head from "next/head";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const inconsolata = Inconsolata({ subsets: ["latin"] });
 

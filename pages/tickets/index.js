@@ -29,7 +29,7 @@ export default function Tickets() {
     }
   }, []);
 
-  const [checked, setChecked] = useState(false);
+  // const [checked, setChecked] = useState(false);
 
   return (
     <div
@@ -44,12 +44,11 @@ export default function Tickets() {
       </h1>
       <TicketPrices />
       <div className="md:flex flex-col items-center">
-        <div className="flex flex-row">
+        {/* <div className="text-md flex flex-row place-content-center bg-utd-navy bg-opacity-75">
           {" "}
           <Checkbox
             defaultChecked={false}
-            onChange={(e) => setChecked(e.target.checked)}
-            onch
+            // onChange={(e) => setChecked(e.target.checked)}
             className="my-12 p-0"
           >
             <span className="z-50 cursor-default select-none">
@@ -62,32 +61,29 @@ export default function Tickets() {
               Terms and Conditions.
             </a>
           </Checkbox>
-        </div>
+        </div> */}
 
-        <div className="md:flex flex-row">
+        <div className="md:flex flex-row w-screen sm:w-auto sm:p-0 sm:m-0 bg-utd-navy">
           <form action="/api/checkout_sessions" method="POST">
-            <section className="checkout-button-section mx-8 pb-4">
+            <section className="checkout-button-section mx-8 pb-4 sm:p-0 sm:ml-0">
               <button
                 type="submit"
                 role="link"
-                disabled={!checked}
-                className={`text-2xl checkout-button rounded-xl transition ease-in-out delay-10 hover:scale-110 uppercase border-2 bg-utd-red border-utd-red hover:text-white hover:bg-utd-blue hover:border-utd-blue ${
-                  !checked ? "opacity-50 cursor-not-allowed" : ""
-                }`}
+                // disabled={!checked}
+                className={`text-2xl checkout-button rounded-md transition ease-in-out delay-10 hover:scale-110 hover:opacity-100 uppercase border-2 bg-utd-red border-utd-red hover:text-black hover:bg-utd-green hover:border-utd-green`}
               >
                 buy Day tickets
               </button>
             </section>
           </form>
           <form action="/api/checkout_sessions_camping" method="POST">
-            <section className="checkout-button-section mx-8 pb-4">
+            <section className="checkout-button-section mx-8 pb-4 sm:p-0 sm:mr-0">
               <button
                 type="submit"
                 role="link"
-                disabled={!checked}
-                className={`text-2xl checkout-button rounded-xl transition ease-in-out delay-10 hover:scale-110 uppercase border-2 bg-utd-red border-utd-red hover:text-white hover:bg-utd-blue hover:border-utd-blue ${
-                  !checked ? "opacity-50 cursor-not-allowed" : ""
-                }`}
+                // disabled={!checked}
+                className={`text-2xl checkout-button rounded-md transition ease-in-out delay-10 hover:scale-110 hover:opacity-100 uppercase border-2 bg-utd-red border-utd-red hover:text-black hover:bg-utd-green hover:border-utd-green
+`}
               >
                 buy camping tickets
               </button>
@@ -96,17 +92,26 @@ export default function Tickets() {
         </div>
       </div>
       <div className="bg-utd-navy">
-        <p className="text-sm pt-2 text-gray-200">
-          Payment through{" "}
+        <p className="text-xl pt-16 text-gray-200">
+          Payment processed through{" "}
           <span>
-            <i className="fa-brands fa-cc-stripe text-green-600 text-2xl px-1 align-middle"></i>
+            <i
+              className="fa-brands fa-cc-stripe text-green-600 text-2xl px-1 align-middle"
+              alt="stripe"
+            ></i>
           </span>
         </p>{" "}
-        <p className="text-sm text-gray-200 py-2">
+        <p className="text-xl text-gray-200 py-2">
           Accepts all major cards and
           <span>
-            <i className="fa-brands fa-google-pay text-2xl px-2 align-middle text-white"></i>
-            <i className="fa-brands fa-cc-apple-pay text-2xl px-1 align-middle text-white"></i>
+            <i
+              className="fa-brands fa-google-pay px-2 align-middle text-white"
+              alt="google pay"
+            ></i>
+            <i
+              className="fa-brands fa-cc-apple-pay  px-1 align-middle text-white"
+              alt="apple pay"
+            ></i>
           </span>
         </p>
       </div>

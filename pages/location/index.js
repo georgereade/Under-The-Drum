@@ -16,7 +16,7 @@ export default function FAQs() {
       <Head>
         <title>Location | Under The Drum</title>
       </Head>
-      <h3 className="font-extrabold leading-loose text-center pt-6 text-2xl uppercase">
+      <h3 className="font-extrabold leading-loose text-center pt-6 text-3xl uppercase">
         Location
       </h3>
       <p className="pb-6 text-center">
