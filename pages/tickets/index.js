@@ -93,24 +93,24 @@ export default function Tickets() {
         </div>
       </div>
       <div className="bg-utd-navy">
-        <p className="text-xl pt-16 text-gray-200">
+        <p className="text-lg pt-16 text-gray-200">
           Payment processed through{" "}
           <span>
             <i
-              className="fa-brands fa-cc-stripe text-green-600 text-2xl px-1 align-middle"
+              className="fa-brands fa-cc-stripe text-green-600 text-3xl px-1 align-middle"
               alt="stripe"
             ></i>
           </span>
         </p>{" "}
-        <p className="text-xl text-gray-200 py-2">
+        <p className="text-lg text-gray-200 py-2">
           Accepts all major cards and
           <span>
             <i
-              className="fa-brands fa-google-pay px-2 align-middle text-white"
+              className="fa-brands fa-google-pay text-3xl px-2 align-middle text-white"
               alt="google pay"
             ></i>
             <i
-              className="fa-brands fa-cc-apple-pay  px-1 align-middle text-white"
+              className="fa-brands fa-cc-apple-pay text-3xl px-1 align-middle text-white"
               alt="apple pay"
             ></i>
           </span>
