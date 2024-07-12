@@ -37,14 +37,14 @@ const artistUrls = [
     profilepic:
       "https://i.scdn.co/image/ab67616100005174a8078f6d93d0860f90642fda",
   },
-  {
-    id: 4,
-    name: "Elaine Howley",
-    url: "https://open.spotify.com/embed/artist/3STzxp6cfWNNQVcAQWYZgh?utm_source=generator",
-    desc: "Vocalist, musician and producer, merging a tapestry of experimental processes, classic songwriting and emotive melodies.",
-    profilepic:
-      "https://i.scdn.co/image/ab67616d0000b273b7f8b60001a9ef56307c04d2",
-  },
+  // {
+  //   id: 4,
+  //   name: "Elaine Howley",
+  //   url: "https://open.spotify.com/embed/artist/3STzxp6cfWNNQVcAQWYZgh?utm_source=generator",
+  //   desc: "Vocalist, musician and producer, merging a tapestry of experimental processes, classic songwriting and emotive melodies.",
+  //   profilepic:
+  //     "https://i.scdn.co/image/ab67616d0000b273b7f8b60001a9ef56307c04d2",
+  // },
   {
     id: 5,
     name: "Roe",
@@ -83,8 +83,7 @@ const artistUrls = [
     name: "Ben Traill",
     url: "https://open.spotify.com/embed/artist/2md5CaM27EV4MySPaSUkgT?utm_source=generator",
     desc: "Singer-songwriter blending catchy hooks and choruses with expressive and confessional storytelling.",
-    profilepic:
-      "https://i.scdn.co/image/ab6761610000e5ebb9e738960880fe748a5a9546",
+    profilepic: "/bent.jpeg",
   },
   {
     id: 10,

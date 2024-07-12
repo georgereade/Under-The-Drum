@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { loadStripe } from "@stripe/stripe-js";
 import CountdownTimer from "../homepage/components/countdownTimer";
 import { Inconsolata } from "next/font/google";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import TicketPrices from "./components/ticketprices";
 import Head from "next/head";
+import { Checkbox } from "@nextui-org/react";
 
 const inconsolata = Inconsolata({ subsets: ["latin"] });
 
@@ -28,6 +29,8 @@ export default function Tickets() {
     }
   }, []);
 
+  const [checked, setChecked] = useState(false);
+
   return (
     <div
       className={`flex flex-col overflow-x-hidden dark items-center bg-utd-navy w-screen pb-12 min-h-full ${inconsolata.className} text-center bg-[url('/Drawings.png')] bg-cover bg-top bg-repeat-y bg-local`}
@@ -40,31 +43,57 @@ export default function Tickets() {
         Tickets on sale now
       </h1>
       <TicketPrices />
-      <div className="md:flex flex-row">
-        <form action="/api/checkout_sessions" method="POST">
-          <section className="checkout-button-section mx-8 pb-4">
-            <button
-              type="submit"
-              role="link"
-              className="cursor-not-allowed text-2xl checkout-button rounded-xl transition ease-in-out delay-10 hover:scale-110 uppercase border-2 bg-utd-red border-utd-red hover:text-white hover:bg-utd-blue hover:border-utd-blue"
-              disabled
+      <div className="md:flex flex-col items-center">
+        <div className="flex flex-row">
+          {" "}
+          <Checkbox
+            defaultChecked={false}
+            onChange={(e) => setChecked(e.target.checked)}
+            onch
+            className="my-12 p-0"
+          >
+            <span className="z-50 cursor-default select-none">
+              I agree to the{" "}
+            </span>
+            <a
+              href="/ts&cs"
+              className="text-utd-red font-bold border-b border-utd-red"
             >
-              buy Day tickets
-            </button>
-          </section>
-        </form>
-        <form action="/api/checkout_sessions_camping" method="POST">
-          <section className="checkout-button-section mx-8 pb-4">
-            <button
-              type="submit"
-              role="link"
-              className="cursor-not-allowed text-2xl checkout-button rounded-xl transition ease-in-out delay-10 hover:scale-110 uppercase border-2 bg-utd-red border-utd-red  hover:text-white hover:bg-utd-blue hover:border-utd-blue"
-              disabled
-            >
-              buy camping tickets
-            </button>
-          </section>
-        </form>
+              Terms and Conditions.
+            </a>
+          </Checkbox>
+        </div>
+
+        <div className="md:flex flex-row">
+          <form action="/api/checkout_sessions" method="POST">
+            <section className="checkout-button-section mx-8 pb-4">
+              <button
+                type="submit"
+                role="link"
+                disabled={!checked}
+                className={`text-2xl checkout-button rounded-xl transition ease-in-out delay-10 hover:scale-110 uppercase border-2 bg-utd-red border-utd-red hover:text-white hover:bg-utd-blue hover:border-utd-blue ${
+                  !checked ? "opacity-50 cursor-not-allowed" : ""
+                }`}
+              >
+                buy Day tickets
+              </button>
+            </section>
+          </form>
+          <form action="/api/checkout_sessions_camping" method="POST">
+            <section className="checkout-button-section mx-8 pb-4">
+              <button
+                type="submit"
+                role="link"
+                disabled={!checked}
+                className={`text-2xl checkout-button rounded-xl transition ease-in-out delay-10 hover:scale-110 uppercase border-2 bg-utd-red border-utd-red hover:text-white hover:bg-utd-blue hover:border-utd-blue ${
+                  !checked ? "opacity-50 cursor-not-allowed" : ""
+                }`}
+              >
+                buy camping tickets
+              </button>
+            </section>
+          </form>
+        </div>
       </div>
       <div className="bg-utd-navy">
         <p className="text-sm pt-2 text-gray-200">
@@ -85,7 +114,11 @@ export default function Tickets() {
         First entry on Saturday: 11am
       </h3>
       <h3 className="text-xl pb-12 bg-utd-navy text-utd-blue">
-        Check out the FAQs for more information
+        Check out the{" "}
+        <a href="/info" className="text-utd-green border-b border-utd-green">
+          Info page
+        </a>{" "}
+        for more information
       </h3>
       <div className="sm:hidden">
         <CountdownTimer />

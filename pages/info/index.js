@@ -29,119 +29,256 @@ export default function Info() {
           onClick={() => toggleVisibility(0)}
           className="cursor-pointer border-b text-2xl font-bold text-utd-green"
         >
-          <i class="fa-solid fa-angle-down pr-1"></i>What is Under The Drum?
+          <i class="fa-solid fa-angle-down pr-1"></i>WELCOME TO UNDER THE DRUM!
         </h2>
-        <p
-          className={`text-md md:text-lg transition-max-height duration-500 ease-in-out overflow-hidden ${
-            activeIndices.includes(0) ? "max-h-96" : "max-h-0"
+        <div
+          className={`text-md md:text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
+            activeIndices.includes(0) ? "max-h-[700px]" : "max-h-0"
           }`}
         >
-          A new music festival for 2024, taking place at Breckenhill in the
-          Antrim Hills, featuring folk, rock, pop and trad artists from across
-          Ireland. The festival takes its name from the surrounding Drumadarragh
-          hills which overlook the countryside towards Belfast.
-        </p>
+          <p>
+            A new music festival in the County Antrim Hills. Why ‘Under the
+            Drum’? Well, one of the hills overlooking the site is named
+            Drumadarragh, but we also liked the associations of the name, the
+            idea of ‘peering under the lid’ of the drum. The festival has been a
+            dream for us for a long time. 2024 is the inaugural year, and so we
+            are keeping things intimate and low key this year. For that reason,
+            things may be a little unsophisticated, but the music will be great,
+            and the beer will be cold! We want this to be a welcoming, friendly
+            and fun event, with intimate performances and a chance to enjoy the
+            beautiful surroundings.
+          </p>
+          <p>
+            We are excited to welcome some incredible bands and musicians from
+            across Ireland and the UK, as well as poetry, art, falconry
+            displays, and delicious food and drink. It’s important to note here
+            that this year Under the Drum is an 18+ event. (More information
+            below). Please don’t hesitate to get in touch if you have any
+            questions, or if you want to find out how to get involved in the
+            future. Email us at info@underthedrum.co.uk or send us a message on
+            Instagram. This page and the website will be updated with
+            information as it becomes available. If there’s anything you’re not
+            sure of, just give us a shout!
+          </p>
+          <p>Cheers! Under the Drum</p>
+        </div>
         <h2
           onClick={() => toggleVisibility(1)}
           className="cursor-pointer pt-4 border-b text-2xl font-bold text-utd-green"
         >
-          <i class="fa-solid fa-angle-down pr-1"></i>When is it?
+          <i class="fa-solid fa-angle-down pr-1"></i>Where?
         </h2>
-        <p
-          className={`text-md md:text-lg transition-max-height duration-500 ease-in-out overflow-hidden ${
+        <div
+          className={`text-md md:text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
             activeIndices.includes(1) ? "max-h-96" : "max-h-0"
           }`}
         >
-          Saturday 28th of September, with optional camping. Gates will open
-          from 11am on Saturday, with last departures by 1pm on Sunday 29th.
-        </p>
+          Breckenhill, near Ballyclare (BT39 0TB). Roughly 30 mins from Belfast.
+          Directions can be found on the Location page.
+        </div>
         <h2
           onClick={() => toggleVisibility(2)}
           className="cursor-pointer pt-4 border-b text-2xl font-bold text-utd-green"
         >
-          <i class="fa-solid fa-angle-down pr-1"></i>Where is it?
+          <i class="fa-solid fa-angle-down pr-1"></i>When?
         </h2>
-        <p
-          className={`text-md md:text-lg transition-max-height duration-500 ease-in-out overflow-hidden ${
+        <div
+          className={`text-md md:text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
             activeIndices.includes(2) ? "max-h-96" : "max-h-0"
           }`}
         >
-          The festival is taking place at Breckenhill, at 45 Breckenhill Road,
-          Doagh, Ballyclare, Co.Antrim, BT39 0TB. Directions can be found on the
-          Location page. We are located around 30 mins drive from Belfast and 7
-          mins from Ballyclare.
-        </p>
+          Saturday 28th September. The site opens 11am - 12.30am (for day
+          tickets) and closes 1pm Sunday 29th (for campers). Music on the main
+          stage will finish at 11.30pm.
+        </div>
         <h2
           onClick={() => toggleVisibility(3)}
-          className="cursor-pointer pt-4 border-b text-2xl font-bold text-utd-green"
-        >
-          <i class="fa-solid fa-angle-down pr-1"></i>How can I buy tickets?
-        </h2>
-        <p
-          className={`text-md md:text-lg transition-max-height duration-500 ease-in-out overflow-hidden ${
-            activeIndices.includes(3) ? "max-h-96" : "max-h-0"
-          }`}
-        >
-          Tickets are available to purchase securely through Stripe on this
-          website only (see TICKETS). You may use debit or credit cards, bank
-          transfer or Google Pay and Apple Pay. Earlybird tickets are available
-          for the first two weeks starting from £45. Standard tickets will then
-          go on sale starting from £50.
-        </p>
-        <h2
-          onClick={() => toggleVisibility(4)}
-          className="cursor-pointer pt-4 border-b text-2xl font-bold text-utd-green"
-        >
-          <i class="fa-solid fa-angle-down pr-1"></i>Parking
-        </h2>
-        <p
-          className={`text-md md:text-lg transition-max-height duration-500 ease-in-out overflow-hidden ${
-            activeIndices.includes(4) ? "max-h-96" : "max-h-0"
-          }`}
-        >
-          Parking is available on site, and cars may be left overnight for those
-          camping.
-        </p>
-        <h2
-          onClick={() => toggleVisibility(5)}
-          className="cursor-pointer pt-4 border-b text-2xl font-bold text-utd-green"
-        >
-          <i class="fa-solid fa-angle-down pr-1"></i>Food and Drink
-        </h2>
-        <p
-          className={`text-md md:text-lg transition-max-height duration-500 ease-in-out overflow-hidden ${
-            activeIndices.includes(5) ? "max-h-96" : "max-h-0"
-          }`}
-        >
-          Food will be available for purchase throughout the weekend, with a
-          variety of lunch and dinner options. Breakfast will also be available
-          on the Sunday morning. Vegan and vegetarian options will be on offer.
-        </p>
-        <h2
-          onClick={() => toggleVisibility(6)}
           className="cursor-pointer pt-4 border-b text-2xl font-bold text-utd-green"
         >
           <i class="fa-solid fa-angle-down pr-1"></i>Facilities
         </h2>
         <div
-          className={`text-md md:text-lg transition-max-height duration-500 ease-in-out overflow-hidden ${
+          className={`text-md md:text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
+            activeIndices.includes(3) ? "max-h-96" : "max-h-0"
+          }`}
+        >
+          There will be toilets (with disabled access), fresh water (please
+          bring your own refillable bottle), first aid on hand. Showers are also
+          available to campers if required.
+        </div>
+        <h2
+          onClick={() => toggleVisibility(4)}
+          className="cursor-pointer pt-4 border-b text-2xl font-bold text-utd-green"
+        >
+          <i class="fa-solid fa-angle-down pr-1"></i>Camping
+        </h2>
+        <div
+          className={`text-md md:text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
+            activeIndices.includes(4) ? "max-h-96" : "max-h-0"
+          }`}
+        >
+          Camping will be available on Saturday night. We have one site for
+          campervans and one for tents. More information about this will be sent
+          out closer to the time, and we will ask you to confirm what type of
+          pitch you need. Breakfast will be available on the Sunday morning for
+          campers. We ask all campers to be off the site by 1pm on Sunday.
+          Please leave the campsite as you found it, and take rubbish home with
+          you! Note that no glass bottles or open flames are allowed on the camp
+          site or festival site.
+        </div>
+        <h2
+          onClick={() => toggleVisibility(5)}
+          className="cursor-pointer pt-4 border-b text-2xl font-bold text-utd-green"
+        >
+          <i class="fa-solid fa-angle-down pr-1"></i>Travel
+        </h2>
+        <div
+          className={`text-md md:text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
+            activeIndices.includes(5) ? "max-h-96" : "max-h-0"
+          }`}
+        >
+          We are looking into organising coaches from Belfast and back, and will
+          update on that closer to the time! We strongly advise booking taxis
+          well in advance if travelling by taxi, as we are a rural location and
+          they are not readily available. There will be parking available, but
+          we do ask that you car share where possible, to save on space!
+        </div>
+        <h2
+          onClick={() => toggleVisibility(6)}
+          className="cursor-pointer pt-4 border-b text-2xl font-bold text-utd-green"
+        >
+          <i class="fa-solid fa-angle-down pr-1"></i>Food & Drink
+        </h2>
+        <div
+          className={`text-md md:text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
             activeIndices.includes(6) ? "max-h-96" : "max-h-0"
           }`}
         >
-          YES:
-          <ul className="list-disc pl-8">
-            <li>Toilets</li>
-            <li>Drinking Water</li>
-            <li>First aid</li>
-            <li>Showers</li>
-            <li>4G signal</li>
-          </ul>
-          NO:
-          <ul className="list-disc pl-8">
-            <li>ATM</li>
-            <li>WiFI</li>
-            <li>Phone charging</li>
-          </ul>
+          There will be a number of food trucks available all day and the
+          following morning, along with a coffee truck and a bar. We have done
+          our best to cover all dietary requirements, but if you have specific
+          requirements it might be best to bring a few snacks.
+        </div>
+        <h2
+          onClick={() => toggleVisibility(7)}
+          className="cursor-pointer pt-4 border-b text-2xl font-bold text-utd-green"
+        >
+          <i class="fa-solid fa-angle-down pr-1"></i>Children & Pets
+        </h2>
+        <div
+          className={`text-md md:text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
+            activeIndices.includes(7) ? "max-h-96" : "max-h-0"
+          }`}
+        >
+          This is an 18+ event. Children under 12 are welcome if supervised by
+          an adult and if advised of before hand, but please note that we don't
+          have any entertainment or food especially for young ones. Please get
+          in touch if you have any questions about this. We hope to be able to
+          welcome younger festival goers in the future. Sorry, no dogs (or other
+          pets!) allowed!
+        </div>
+        <h2
+          onClick={() => toggleVisibility(8)}
+          className="cursor-pointer pt-4 border-b text-2xl font-bold text-utd-green"
+        >
+          <i class="fa-solid fa-angle-down pr-1"></i>Weather
+        </h2>
+        <div
+          className={`text-md md:text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
+            activeIndices.includes(8) ? "max-h-96" : "max-h-0"
+          }`}
+        >
+          Obviously this event is in Northern Ireland in the Autumn. We will be
+          hoping for an Indian Summer, but please come prepared for wet/muddy
+          weather. The main stage is indoors.
+        </div>
+        <h2
+          onClick={() => toggleVisibility(9)}
+          className="cursor-pointer pt-4 border-b text-2xl font-bold text-utd-green"
+        >
+          <i class="fa-solid fa-angle-down pr-1"></i>Tickets and pricing
+        </h2>
+        <div
+          className={`text-md md:text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
+            activeIndices.includes(9) ? "max-h-96" : "max-h-0"
+          }`}
+        >
+          <p>Early bird: £45 for a day pass £60 for camping</p>{" "}
+          {/* <p>Standard Tickets: 50 for day pass £65 for camping</p>{" "} */}
+          <p>
+            Ticket payments are processed securely through Stripe. On purchase
+            you will receive an automatic receipt from Stripe, confirmation and
+            details will be sent out a few days later.
+          </p>
+        </div>
+        <h2
+          onClick={() => toggleVisibility(10)}
+          className="cursor-pointer pt-4 border-b text-2xl font-bold text-utd-green"
+        >
+          <i class="fa-solid fa-angle-down pr-1"></i>Access and disabilities
+        </h2>
+        <div
+          className={`text-md md:text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
+            activeIndices.includes(10) ? "max-h-96" : "max-h-0"
+          }`}
+        >
+          Much of the site is accessible, but please contact us if you have any
+          specific questions about accessibility of the site.
+        </div>
+        <h2
+          onClick={() => toggleVisibility(11)}
+          className="cursor-pointer pt-4 border-b text-2xl font-bold text-utd-green"
+        >
+          <i class="fa-solid fa-angle-down pr-1"></i>Sustainability & Respect
+        </h2>
+        <div
+          className={`text-md md:text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
+            activeIndices.includes(11) ? "max-h-[700px]" : "max-h-0"
+          }`}
+        >
+          We are very keen to make Under the Drum as sustainable as possible. We
+          will be offering a reusable cup system, and we ask you to please bring
+          reusable water bottles with you. Breckenhill is a natural and special
+          spot, with a wealth of wildlife and flora around. We ask that you
+          treat the venue and spaces and their creatures with respect, and to
+          please dispose of rubbish considerately. Anyone found to be
+          mistreating the site or its spaces will be asked to leave without
+          warning. Breckenhill is also surrounded by private farmland, and so we
+          ask that you do not wander to any unallocated ‘festival’ spaces. The
+          good treatment of the venue and our surroundings is essential to allow
+          the festival to continue into the future, thank you for your
+          consideration!
+        </div>
+        <h2
+          onClick={() => toggleVisibility(12)}
+          className="cursor-pointer pt-4 border-b text-2xl font-bold text-utd-green"
+        >
+          <i class="fa-solid fa-angle-down pr-1"></i>Discrimination
+        </h2>
+        <div
+          className={`text-md md:text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
+            activeIndices.includes(12) ? "max-h-96" : "max-h-0"
+          }`}
+        >
+          We welcome festival attendees from all walks of life, gender, sexual
+          orientation, race, religion and ethnicity. Anyone found to be
+          infringing or disrespecting this will be asked to leave the premises
+          without prior warning.
+        </div>
+        <h2
+          onClick={() => toggleVisibility(13)}
+          className="cursor-pointer pt-4 border-b text-2xl font-bold text-utd-green"
+        >
+          <i class="fa-solid fa-angle-down pr-1"></i>Who are we?
+        </h2>
+        <div
+          className={`text-md md:text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
+            activeIndices.includes(13) ? "max-h-96" : "max-h-0"
+          }`}
+        >
+          We are the Reade family, who have been at Breckenhill for over 30
+          years. David, Hen, Rosanna, William and George are hosting and
+          organising the event, along with many talented friends and supporters.
         </div>
       </div>
 

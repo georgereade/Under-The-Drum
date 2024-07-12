@@ -16,13 +16,12 @@ export default function BuyTickets() {
         variant="shadow"
         href="/tickets"
         as={Link}
-        isDisabled
-        className="cursor-not-allowed font-extrabold uppercase text-3xl rounded-xl my-3 border-2 bg-utd-red border-utd-red p-8 transition ease-in-out delay-10 hover:scale-110 hover:text-white hover:bg-utd-blue hover:border-utd-blue"
+        className="font-extrabold uppercase text-3xl rounded-xl my-3 border-2 bg-utd-red border-utd-red p-8 transition ease-in-out delay-10 hover:scale-110 hover:text-white hover:bg-utd-blue hover:border-utd-blue"
       >
         <span>
           <i className="fas fa-ticket"></i>
         </span>
-        on sale soon
+        buy tickets
       </Button>
     </motion.div>
   );

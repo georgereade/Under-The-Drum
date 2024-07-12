@@ -15,7 +15,7 @@ export default function TicketPrices() {
       <tbody>
         <tr>
           <td className="font-extrabold text-xl uppercase pt-6 text-white">
-            Earlybirds
+            Earlybird prices:
           </td>
           <td className="font-extrabold text-3xl uppercase pt-6">
             <span className="text-utd-green border-b">£45</span>
@@ -24,7 +24,7 @@ export default function TicketPrices() {
             <span className="text-utd-green border-b">£60</span>
           </td>
         </tr>
-        <tr>
+        {/* <tr>
           <td className="font-extrabold text-xl uppercase pt-6 text-white">
             Standard
           </td>
@@ -34,7 +34,7 @@ export default function TicketPrices() {
           <td className="font-extrabold text-3xl uppercase pt-6">
             <span className="text-utd-green border-b">£65</span>
           </td>
-        </tr>
+        </tr> */}
       </tbody>
     </table>
   );

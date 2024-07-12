@@ -38,12 +38,17 @@ export default function Navigationbar() {
     };
   }, []);
 
-  const menuItems = ["LINE-UP", "LOCATION"];
+  const menuItems = [
+    "LINE-UP",
+    "LOCATION / CONTACT",
+    "NEWS",
+    "TERMS & CONDITIONS",
+  ];
   const menuLinks = [
     "https://underthedrum.co.uk/#artists",
     "https://underthedrum.co.uk/location",
-    // "https://underthedrum-git-spotify-georgereades-projects.vercel.app/#contact",
-    // "https://underthedrum-git-spotify-georgereades-projects.vercel.app/news",
+    "https://underthedrum.co.uk/news",
+    "https://underthedrum.co.uk/ts&cs",
   ];
 
   const icon = {
@@ -122,6 +127,29 @@ export default function Navigationbar() {
             transition: "background-color 0.5s ease",
           }}
         />
+
+        <NavbarItem>
+          <Link
+            color="foreground"
+            duration={500}
+            href="/info"
+            className="cursor-pointer uppercase font-bold hover:text-utd-red transition ease-in-out delay-10 hover:scale-110"
+            style={{
+              color: isScrolled ? "#ffffff" : "#012741",
+              transition: "color 0.5s ease",
+            }}
+          >
+            Info
+          </Link>
+        </NavbarItem>
+        <Divider
+          orientation="vertical"
+          className="z-0 py-4 h-1/2 w-1 opacity-80"
+          style={{
+            backgroundColor: isScrolled ? "#a9de7c" : "#ffffff",
+            transition: "background-color 0.5s ease",
+          }}
+        />
         <NavbarItem>
           <Link
             color="foreground"
@@ -133,62 +161,60 @@ export default function Navigationbar() {
               transition: "color 0.5s ease",
             }}
           >
-            Location
-          </Link>
-        </NavbarItem>
-        {/* <Divider
-          orientation="vertical"
-          className=" bg-utd-green z-0 py-4 h-1/2 w-1 opacity-80"
-        />
-        <NavbarItem>
-          <Link
-            color="foreground"
-            duration={500}
-            href="/info"
-            className="cursor-pointer uppercase hover:text-utd-red transition ease-in-out delay-10 hover:scale-110"
-          >
-            Info
+            Location & Contact
           </Link>
         </NavbarItem>
         <Divider
           orientation="vertical"
-          className=" bg-utd-purple z-0 py-4 h-1/2 w-1 opacity-80"
+          className="z-0 py-4 h-1/2 w-1 opacity-80"
+          style={{
+            backgroundColor: isScrolled ? "#db4c44 " : "#ffffff",
+            transition: "background-color 0.5s ease",
+          }}
         />
         <NavbarItem>
           <Link
             color="foreground"
             duration={500}
             href="/news"
-            className="cursor-pointer uppercase hover:text-utd-red ease-in-out delay-10 hover:scale-110"
+            className="cursor-pointer uppercase font-bold hover:text-utd-red transition ease-in-out delay-10 hover:scale-110"
+            style={{
+              color: isScrolled ? "#ffffff" : "#012741",
+              transition: "color 0.5s ease",
+            }}
           >
             News
           </Link>
-        </NavbarItem> */}
+        </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
-        {/* <NavbarItem isActive>
+        <NavbarItem isActive>
           <Link
             href="/tickets"
             aria-current="page"
-            className="text-white bg-utd-red p-1 rounded-sm mx-2 uppercase font-extrabold ease-in-out delay-10 hover:scale-110"
+            className="text-white bg-utd-red px-2 py-2.5 rounded-md uppercase font-extrabold ease-in-out hover:scale-110"
           >
-            Tickets
+            tickets
           </Link>
         </NavbarItem>
         <Divider
           orientation="vertical"
           className="bg-utd-grey py-4 z-0 h-1/4 border-solid place-content-center w-1"
+          style={{
+            backgroundColor: isScrolled ? "#a9de7c" : "#ffffff",
+            transition: "background-color 0.5s ease",
+          }}
         />
         <NavbarItem className="sm:hidden">
           <Link
             href="/info"
             aria-current="page"
-            className="text-utd-blue uppercase font-extrabold ease-in-out delay-10 hover:scale-110"
+            className="text-white uppercase font-extrabold ease-in-out delay-10 hover:scale-110"
           >
             info
           </Link>
-        </NavbarItem> */}
-        <NavbarItem className="sm:hidden">
+        </NavbarItem>
+        {/* <NavbarItem className="sm:hidden">
           <Link
             href="/#artists"
             aria-current="page"
@@ -221,7 +247,7 @@ export default function Navigationbar() {
           >
             location
           </Link>
-        </NavbarItem>
+        </NavbarItem> */}
         <div className="hidden sm:flex pb-1">
           <CountdownTimer />
         </div>
@@ -237,7 +263,7 @@ export default function Navigationbar() {
                   ? "danger"
                   : "foreground"
               }
-              className={`${inconsolata.className} w-full font-extrabold py-6 text-3xl border-b-2 border-utd-purple`}
+              className={`${inconsolata.className} w-full font-extrabold py-5 text-3xl border-b-2 border-utd-purple`}
               onClick={handleMenuClose}
               href={menuLinks[index]}
               size="lg"

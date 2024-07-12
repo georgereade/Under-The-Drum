@@ -60,7 +60,7 @@ export default function CustomForm({
       <h3 className="mc__title">{getStatusMessage()}</h3>
 
       {status !== "success" ? (
-        <div className="mc__field-container bg-utd-navy">
+        <div className="mc__field-container bg-utd-navy px-4">
           <Input
             label=""
             onChange={(e) => setFirstName(e.target.value)}

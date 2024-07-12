@@ -6,13 +6,13 @@ const inconsolata = Inconsolata({ subsets: ["latin"] });
 const newsItems = [
   {
     title: "Earlybird tickets now on sale!",
-    date: "22nd June",
+    date: "13th July",
     content:
       "Under The Drum is now live! Buy your tickets before the end of July to save £10",
   },
   {
     title: "Follow us on Instagram",
-    date: "21st June",
+    date: "13th July",
     content: (
       <div className="flex flex-col items-center max-w-screen">
         <p className="pb-4 text-md md:text-lg w-full">
