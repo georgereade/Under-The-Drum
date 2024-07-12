@@ -146,7 +146,7 @@ export default function Navigationbar() {
           orientation="vertical"
           className="z-0 py-4 h-1/2 w-1 opacity-80"
           style={{
-            backgroundColor: isScrolled ? "#a9de7c" : "#ffffff",
+            backgroundColor: isScrolled ? "#736de0" : "#ffffff",
             transition: "background-color 0.5s ease",
           }}
         />
