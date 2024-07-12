@@ -16,7 +16,7 @@ const artistUrls = [
     id: 1,
     name: "Joshua Burnside",
     url: "https://open.spotify.com/embed/artist/244AFgFclA9c1IcjWOAqoV?utm_source=generator",
-    desc: `Experimental folk songwriter and producer, blending Irish and world music influences. "Rumbling, brooding, powerful and magnetic".`,
+    desc: `Experimental folk songwriter and producer, blending Irish and world music influences. Rumbling, brooding, powerful and magnetic.`,
     profilepic:
       "https://i.scdn.co/image/ab6761610000e5ebc12feb659a565ee3c54739d8",
   },
@@ -153,7 +153,7 @@ export default function Artists() {
         id="lineup-poster"
       >
         <Image
-          src="/V4Final.jpg"
+          src="/UTDPOSTER-trim.jpg"
           className="w-screen h-full md:h-1/4 md:w-auto rounded-none"
           alt="Under The Drum"
           width=""

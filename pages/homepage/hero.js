@@ -9,24 +9,18 @@ export default function Hero() {
       className="flex flex-col items-center px-0 mx-0 pb-0 my-0 bg-utd-grey relative"
       id="home"
     >
-      {" "}
       <div
-        className="hidden xl:block main-logo place-content-center w-screen bg-[url('/utd-hero.jpg')] bg-cover bg-no-repeat bg-origin-padding"
+        className="hidden xl:flex main-logo justify-center items-center w-full h-auto bg-[url('/utd-hero.jpg')] bg-contain bg-no-repeat bg-center"
         role="img"
         aria-label="background splash image"
+        style={{ paddingBottom: "36.92%" }} // (1513 / 4099) * 100 = 36.92%
       >
-        <Image
-          src="/V4Final.jpg"
-          className="w-1/3 mx-auto h-full opacity-0"
-          alt="Under The Drum"
-          width="2048"
-          height="950"
-          priority
-        />
+        {/* Empty div to maintain aspect ratio */}
+        <div className="w-full h-full"></div>
       </div>
       <div className="main-logo place-content-center w-screen h-4/5 sm:h-1/2 md:h-4/5">
         <Image
-          src="/V4Final.jpg"
+          src="/UTDPOSTER.jpg"
           className="hidden sm:block md:hidden h-full"
           alt="Under The Drum"
           width="2048"
@@ -34,7 +28,7 @@ export default function Hero() {
           priority
         />
         <Image
-          src="/V4Final2.jpg"
+          src="/UTDPOSTER.jpg"
           className="block w-screen sm:hidden md:block xl:hidden"
           alt="Under The Drum"
           width="500"

@@ -45,10 +45,10 @@ export default function Navigationbar() {
     "TERMS & CONDITIONS",
   ];
   const menuLinks = [
-    "https://underthedrum.co.uk/#artists",
-    "https://underthedrum.co.uk/location",
-    "https://underthedrum.co.uk/news",
-    "https://underthedrum.co.uk/ts&cs",
+    "https://underthedrum-git-daybeforelaunch-georgereades-projects.vercel.app/#artists",
+    "https://underthedrum-git-daybeforelaunch-georgereades-projects.vercel.app/location",
+    "https://underthedrum-git-daybeforelaunch-georgereades-projects.vercel.app/news",
+    "https://underthedrum-git-daybeforelaunch-georgereades-projects.vercel.app/ts&cs",
   ];
 
   const icon = {
