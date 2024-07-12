@@ -171,11 +171,11 @@ export default function Info() {
           }`}
         >
           This is an 18+ event. Children under 12 are welcome if supervised by
-          an adult and if advised of before hand, but please note that we don't
-          have any entertainment or food especially for young ones. Please get
-          in touch if you have any questions about this. We hope to be able to
-          welcome younger festival goers in the future. Sorry, no dogs (or other
-          pets!) allowed!
+          an adult and if advised of before hand, but please note that we
+          don&apos;t have any entertainment or food especially for young ones.
+          Please get in touch if you have any questions about this. We hope to
+          be able to welcome younger festival goers in the future. Sorry, no
+          dogs (or other pets!) allowed!
         </div>
         <h2
           onClick={() => toggleVisibility(8)}

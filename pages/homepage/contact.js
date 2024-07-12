@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import MailchimpForm from "./components/mailchimpForm";
 import CountdownTimer from "./components/countdownTimer";
+import Link from "next/link";
 
 export default function Contact() {
   const icon = {
@@ -30,16 +31,16 @@ text-3xl leading-loose mt-12 uppercase"
         Contact
       </h3>
       <h3 className="mb-6 transition ease-in-out delay-10 hover:scale-110">
-        <a
+        <Link
           className="font-normal text-base "
           href="mailto:info@underthedrum.co.uk"
           aria-label="info@underthedrum.co.uk"
           alt="info@underthedrum.co.uk"
         >
           info@underthedrum.co.uk
-        </a>
+        </Link>
       </h3>
-      <a
+      <Link
         href="https://www.instagram.com/under.the.drum/"
         className="h-16 mb-12 text-center"
         aria-label="instagram"
@@ -64,7 +65,7 @@ text-3xl leading-loose mt-12 uppercase"
             }}
           />
         </motion.svg>
-      </a>
+      </Link>
       <div className="flex flex-col text-2xl">
         <CountdownTimer />
       </div>

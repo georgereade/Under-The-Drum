@@ -277,7 +277,7 @@ export default function Navigationbar() {
         >
           <CountdownTimer />
         </span>
-        <a
+        <Link
           href="https://www.instagram.com/under.the.drum/"
           className="absolute bottom-16"
         >
@@ -301,7 +301,7 @@ export default function Navigationbar() {
               }}
             />
           </motion.svg>
-        </a>
+        </Link>
       </NavbarMenu>
     </Navbar>
   );

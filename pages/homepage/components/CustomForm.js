@@ -46,7 +46,7 @@ export default function CustomForm({
       return "Sending...";
     }
     return (
-      <p className="text-xl font-bold text-utd-blue bg-utd-navy px-4">
+      <p className="text-xl font-bold text-white bg-utd-navy px-4">
         Sign up for updates on tickets, artists and more!
       </p>
     );

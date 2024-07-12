@@ -5,7 +5,8 @@ import { Inconsolata } from "next/font/google";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import TicketPrices from "./components/ticketprices";
 import Head from "next/head";
-import { Checkbox } from "@nextui-org/react";
+// import { Checkbox } from "@nextui-org/react";
+import Link from "next/link";
 
 const inconsolata = Inconsolata({ subsets: ["latin"] });
 
@@ -115,14 +116,14 @@ export default function Tickets() {
           </span>
         </p>
       </div>
-      <h3 className="text-xl pt-6 bg-utd-navy text-utd-blue">
+      <h3 className="text-xl pt-6 bg-utd-navy text-white">
         First entry on Saturday: 11am
       </h3>
-      <h3 className="text-xl pb-12 bg-utd-navy text-utd-blue">
+      <h3 className="text-xl pb-12 bg-utd-navy text-white">
         Check out the{" "}
-        <a href="/info" className="text-utd-green border-b border-utd-green">
+        <Link href="/info" className="text-utd-green border-b border-utd-green">
           Info page
-        </a>{" "}
+        </Link>{" "}
         for more information
       </h3>
       <div className="sm:hidden">
