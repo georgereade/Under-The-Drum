@@ -114,7 +114,7 @@ export default function Info() {
         </h2>
         <div
           className={`text-md md:text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
-            activeIndices.includes(4) ? "max-h-96" : "max-h-0"
+            activeIndices.includes(4) ? "max-h-[700px]" : "max-h-0"
           }`}
         >
           Camping will be available on Saturday night. We have one site for
@@ -134,7 +134,7 @@ export default function Info() {
         </h2>
         <div
           className={`text-md md:text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
-            activeIndices.includes(5) ? "max-h-96" : "max-h-0"
+            activeIndices.includes(5) ? "max-h-[700px]" : "max-h-0"
           }`}
         >
           We are looking into organising coaches from Belfast and back, and will
@@ -151,7 +151,7 @@ export default function Info() {
         </h2>
         <div
           className={`text-md md:text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
-            activeIndices.includes(6) ? "max-h-96" : "max-h-0"
+            activeIndices.includes(6) ? "max-h-[700px]" : "max-h-0"
           }`}
         >
           There will be a number of food trucks available all day and the
@@ -167,7 +167,7 @@ export default function Info() {
         </h2>
         <div
           className={`text-md md:text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
-            activeIndices.includes(7) ? "max-h-96" : "max-h-0"
+            activeIndices.includes(7) ? "max-h-[700px]" : "max-h-0"
           }`}
         >
           This is an 18+ event. Children under 12 are welcome if supervised by
@@ -200,7 +200,7 @@ export default function Info() {
         </h2>
         <div
           className={`text-md md:text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
-            activeIndices.includes(9) ? "max-h-96" : "max-h-0"
+            activeIndices.includes(9) ? "max-h-[700px]" : "max-h-0"
           }`}
         >
           <p>Early bird: £45 for a day pass £60 for camping</p>{" "}
@@ -208,7 +208,9 @@ export default function Info() {
           <p>
             Ticket payments are processed securely through Stripe. On purchase
             you will receive an automatic receipt from Stripe, confirmation and
-            details will be sent out a few days later.
+            details will be sent out a few days later. Please add the names of
+            any guests when buying the tickets. Up to four can be purchased per
+            person.
           </p>
         </div>
         <h2
