@@ -114,8 +114,7 @@ const artistUrls = [
     name: "Demi O'Hara",
     url: "https://www.youtube.com/embed/x_OL9RXiN_w",
     desc: "27-year old Irish acoustic artist.",
-    profilepic:
-      "https://scontent-man2-1.xx.fbcdn.net/v/t39.30808-6/331542003_998377671141506_1769407920087073257_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=wCfoQ3eH4KoQ7kNvgHpcZdN&_nc_ht=scontent-man2-1.xx&oh=00_AYAEXzPfTPaFL_Zx53eBioVoMVhMLfha1abuZ4fYzV3Z4Q&oe=668DDC2E",
+    profilepic: "/demiohara.jpg",
   },
 ];
 

@@ -8,7 +8,7 @@ const newsItems = [
     title: "Earlybird tickets now on sale!",
     date: "13th July",
     content:
-      "Under The Drum is now live! Buy your tickets before the end of July to save £10",
+      "Under The Drum is now live! Buy before the end of July to save on tickets",
   },
   {
     title: "Follow us on Instagram",

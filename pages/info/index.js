@@ -36,7 +36,7 @@ export default function Info() {
             activeIndices.includes(0) ? "max-h-[700px]" : "max-h-0"
           }`}
         >
-          <p>
+          <p className="pb-4">
             A new music festival in the County Antrim Hills. Why ‘Under the
             Drum’? Well, one of the hills overlooking the site is named
             Drumadarragh, but we also liked the associations of the name, the
@@ -48,7 +48,7 @@ export default function Info() {
             and fun event, with intimate performances and a chance to enjoy the
             beautiful surroundings.
           </p>
-          <p>
+          <p className="pb-4">
             We are excited to welcome some incredible bands and musicians from
             across Ireland and the UK, as well as poetry, art, falconry
             displays, and delicious food and drink. It’s important to note here

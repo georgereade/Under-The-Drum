@@ -10,7 +10,10 @@ export default function Success() {
       <div className="text-center leading-loose">
         <p>Payment successful, thanks!</p>
         <p>Your ticket will be emailed to you shortly.</p>
-
+        <p>
+          If you need to change the names on tickets, or have any other issues,
+          please do get in touch.
+        </p>
         <ReturnButton />
       </div>
     </main>
