@@ -14,8 +14,8 @@ export default function Success() {
           If you need to change the names on tickets, or have any other issues,
           please do get in touch.
         </p>
-        <ReturnButton />
       </div>
+      <ReturnButton />
     </main>
   );
 }

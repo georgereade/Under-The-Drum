@@ -33,7 +33,7 @@ export default function Info() {
         </h2>
         <div
           className={`text-md md:text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
-            activeIndices.includes(0) ? "max-h-[700px]" : "max-h-0"
+            activeIndices.includes(0) ? "max-h-[2000px]" : "max-h-0"
           }`}
         >
           <p className="pb-4">
