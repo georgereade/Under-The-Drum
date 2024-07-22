@@ -54,6 +54,26 @@ export default function Home() {
                 "@type": "Person",
                 name: "Joshua Burnside",
               },
+              performer: {
+                "@type": "Person",
+                name: "Roe",
+              },
+              performer: {
+                "@type": "Person",
+                name: "Junk Drawer",
+              },
+              performer: {
+                "@type": "Person",
+                name: "Arliston",
+              },
+              performer: {
+                "@type": "Person",
+                name: "Arborist",
+              },
+              performer: {
+                "@type": "Person",
+                name: "Oh Boland",
+              },
             }),
           }}
         />
