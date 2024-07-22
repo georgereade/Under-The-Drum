@@ -30,8 +30,6 @@ export default function Tickets() {
     }
   }, []);
 
-  // const [checked, setChecked] = useState(false);
-
   return (
     <div
       className={`flex flex-col overflow-x-hidden dark items-center bg-utd-navy w-screen pb-12 min-h-full ${inconsolata.className} text-center bg-[url('/Drawings.png')] bg-cover bg-top bg-repeat-y bg-local`}
@@ -45,32 +43,12 @@ export default function Tickets() {
       </h1>
       <TicketPrices />
       <div className="md:flex flex-col items-center">
-        {/* <div className="text-md flex flex-row place-content-center bg-utd-navy bg-opacity-75">
-          {" "}
-          <Checkbox
-            defaultChecked={false}
-            // onChange={(e) => setChecked(e.target.checked)}
-            className="my-12 p-0"
-          >
-            <span className="z-50 cursor-default select-none">
-              I agree to the{" "}
-            </span>
-            <a
-              href="/ts&cs"
-              className="text-utd-red font-bold border-b border-utd-red"
-            >
-              Terms and Conditions.
-            </a>
-          </Checkbox>
-        </div> */}
-
         <div className="md:flex flex-row w-screen sm:w-auto sm:p-0 sm:m-0 bg-utd-navy">
           <form action="/api/checkout_sessions" method="POST">
             <section className="checkout-button-section mx-8 pb-4 sm:p-0 sm:ml-0">
               <button
                 type="submit"
                 role="link"
-                // disabled={!checked}
                 className={`text-2xl checkout-button rounded-md transition ease-in-out delay-10 hover:scale-110 hover:opacity-100 uppercase border-2 bg-utd-red border-utd-red hover:text-black hover:bg-utd-green hover:border-utd-green`}
               >
                 buy Day tickets
@@ -82,7 +60,6 @@ export default function Tickets() {
               <button
                 type="submit"
                 role="link"
-                // disabled={!checked}
                 className={`text-2xl checkout-button rounded-md transition ease-in-out delay-10 hover:scale-110 hover:opacity-100 uppercase border-2 bg-utd-red border-utd-red hover:text-black hover:bg-utd-green hover:border-utd-green
 `}
               >
@@ -125,6 +102,14 @@ export default function Tickets() {
           Info page
         </Link>{" "}
         for more information
+      </h3>
+      <h3>
+        <Link
+          href="/ts&cs"
+          className="text-utd-green border-b border-utd-green"
+        >
+          Terms & Conditions
+        </Link>{" "}
       </h3>
       <div className="sm:hidden">
         <CountdownTimer />

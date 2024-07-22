@@ -32,7 +32,7 @@ export default function Info() {
           <i class="fa-solid fa-angle-down pr-1"></i>WELCOME TO UNDER THE DRUM!
         </h2>
         <div
-          className={`text-md md:text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
+          className={`text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
             activeIndices.includes(0) ? "max-h-[2000px]" : "max-h-0"
           }`}
         >
@@ -69,7 +69,7 @@ export default function Info() {
           <i class="fa-solid fa-angle-down pr-1"></i>Where?
         </h2>
         <div
-          className={`text-md md:text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
+          className={`text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
             activeIndices.includes(1) ? "max-h-96" : "max-h-0"
           }`}
         >
@@ -83,7 +83,7 @@ export default function Info() {
           <i class="fa-solid fa-angle-down pr-1"></i>When?
         </h2>
         <div
-          className={`text-md md:text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
+          className={`text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
             activeIndices.includes(2) ? "max-h-96" : "max-h-0"
           }`}
         >
@@ -98,7 +98,7 @@ export default function Info() {
           <i class="fa-solid fa-angle-down pr-1"></i>Facilities
         </h2>
         <div
-          className={`text-md md:text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
+          className={`text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
             activeIndices.includes(3) ? "max-h-96" : "max-h-0"
           }`}
         >
@@ -113,7 +113,7 @@ export default function Info() {
           <i class="fa-solid fa-angle-down pr-1"></i>Camping
         </h2>
         <div
-          className={`text-md md:text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
+          className={`text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
             activeIndices.includes(4) ? "max-h-[700px]" : "max-h-0"
           }`}
         >
@@ -133,7 +133,7 @@ export default function Info() {
           <i class="fa-solid fa-angle-down pr-1"></i>Travel
         </h2>
         <div
-          className={`text-md md:text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
+          className={`text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
             activeIndices.includes(5) ? "max-h-[700px]" : "max-h-0"
           }`}
         >
@@ -150,7 +150,7 @@ export default function Info() {
           <i class="fa-solid fa-angle-down pr-1"></i>Food & Drink
         </h2>
         <div
-          className={`text-md md:text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
+          className={`text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
             activeIndices.includes(6) ? "max-h-[700px]" : "max-h-0"
           }`}
         >
@@ -166,7 +166,7 @@ export default function Info() {
           <i class="fa-solid fa-angle-down pr-1"></i>Children & Pets
         </h2>
         <div
-          className={`text-md md:text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
+          className={`text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
             activeIndices.includes(7) ? "max-h-[700px]" : "max-h-0"
           }`}
         >
@@ -184,7 +184,7 @@ export default function Info() {
           <i class="fa-solid fa-angle-down pr-1"></i>Weather
         </h2>
         <div
-          className={`text-md md:text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
+          className={`text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
             activeIndices.includes(8) ? "max-h-96" : "max-h-0"
           }`}
         >
@@ -199,7 +199,7 @@ export default function Info() {
           <i class="fa-solid fa-angle-down pr-1"></i>Tickets and pricing
         </h2>
         <div
-          className={`text-md md:text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
+          className={`text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
             activeIndices.includes(9) ? "max-h-[700px]" : "max-h-0"
           }`}
         >
@@ -220,7 +220,7 @@ export default function Info() {
           <i class="fa-solid fa-angle-down pr-1"></i>Access and disabilities
         </h2>
         <div
-          className={`text-md md:text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
+          className={`text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
             activeIndices.includes(10) ? "max-h-96" : "max-h-0"
           }`}
         >
@@ -234,7 +234,7 @@ export default function Info() {
           <i class="fa-solid fa-angle-down pr-1"></i>Sustainability & Respect
         </h2>
         <div
-          className={`text-md md:text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
+          className={`text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
             activeIndices.includes(11) ? "max-h-[700px]" : "max-h-0"
           }`}
         >
@@ -258,7 +258,7 @@ export default function Info() {
           <i class="fa-solid fa-angle-down pr-1"></i>Discrimination
         </h2>
         <div
-          className={`text-md md:text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
+          className={`text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
             activeIndices.includes(12) ? "max-h-96" : "max-h-0"
           }`}
         >
@@ -274,7 +274,7 @@ export default function Info() {
           <i class="fa-solid fa-angle-down pr-1"></i>Who are we?
         </h2>
         <div
-          className={`text-md md:text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
+          className={`text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
             activeIndices.includes(13) ? "max-h-96" : "max-h-0"
           }`}
         >

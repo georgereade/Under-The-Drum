@@ -174,11 +174,16 @@ iframe.preloaded {
   opacity: 1;
 }
 
-.draw-item {
+.draw-item-ig {
   stroke: #db4c44;
   stroke-width: 2;
-  /* stroke-linejoin: bevel;
-  stroke-linecap: butt; */
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.draw-item-fb {
+  stroke: #359bdf;
+  stroke-width: 2;
   stroke-linejoin: round;
   stroke-linecap: round;
 }
