@@ -11,7 +11,7 @@ const inconsolata = Inconsolata({ subsets: ["latin"] });
 export default function FAQs() {
   return (
     <div
-      className={`flex flex-col items-center bg-utd-navy w-screen h-full px-3 text-left text-xl md:text-2xl leading-loose ${inconsolata.className} bg-[url('/Drawings.png')] bg-cover bg-center bg-repeat-y bg-local`}
+      className={`flex flex-col items-center bg-utd-navy w-screen overflow-x-hidden h-full px-3 text-left text-xl md:text-2xl leading-loose ${inconsolata.className} bg-[url('/Drawings.png')] bg-cover bg-center bg-repeat-y bg-local`}
     >
       <Head>
         <title>Location | Under The Drum</title>
@@ -36,6 +36,17 @@ export default function FAQs() {
           allowFullScreen
         ></iframe>
       </div>
+      <video
+        width="848"
+        height="480"
+        controls
+        className="rounded-xl contrast-125 py-8 hue-rotate-30 saturate-150"
+        poster="/house.jpg"
+        preload="auto"
+      >
+        <source src="/drone-overview.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
       <section className="checkout-button-section flex flex-col items-center">
         <Link href="https://breckenhill.co.uk/contact/">
           {" "}

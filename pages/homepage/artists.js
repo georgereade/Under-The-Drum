@@ -111,9 +111,18 @@ const artistUrls = [
   },
   {
     id: 13,
+    name: "Cian Nugent",
+    url: "https://open.spotify.com/embed/artist/5h6tKZX6V9AYYRbvsxZakW?utm_source=generator",
+    desc: "Unique guitarist and songwriter from Dublin, influenced by blues, traditional folk and rolk.",
+    profilepic:
+      "https://i.scdn.co/image/ab6761610000e5ebac421b139759b06522042bca",
+  },
+  {
+    id: 14,
     name: "Demi O'Hara",
-    url: "https://www.youtube.com/embed/x_OL9RXiN_w",
-    desc: "27-year old Irish acoustic artist.",
+    // url: "https://www.youtube.com/embed/x_OL9RXiN_w",
+    url: "",
+    desc: "Irish acoustic artist.",
     profilepic: "/demiohara.jpg",
   },
 ];

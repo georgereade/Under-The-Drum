@@ -35,7 +35,7 @@ export default function Contact() {
 
   return (
     <div
-      className="flex flex-col items-center w-screen bg-utd-navy"
+      className="flex flex-col w-screen md:w-2/3 items-center mx-auto bg-utd-navy"
       id="contact"
     >
       <h3
