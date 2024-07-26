@@ -103,8 +103,8 @@ export default function Tickets() {
                       camper van
                     </button>
                     Please let us know if you are planning to camp in a tent or
-                    camper van. This doesn't affect the price but helps us a lot
-                    with planning, thanks!
+                    camper van. This doesn&apos;t affect the price but helps us
+                    a lot with planning, thanks!
                   </section>
                 </form>
               </div>
