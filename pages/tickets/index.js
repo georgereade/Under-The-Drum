@@ -30,6 +30,12 @@ export default function Tickets() {
     }
   }, []);
 
+  const [campingVisible, setCampingVisible] = useState(false);
+
+  function handleCampingClick() {
+    setCampingVisible(true);
+  }
+
   return (
     <div
       className={`flex flex-col overflow-x-hidden dark items-center bg-utd-navy w-screen pb-12 min-h-full ${inconsolata.className} text-center bg-[url('/Drawings.png')] bg-cover bg-top bg-repeat-y bg-local`}
@@ -42,31 +48,68 @@ export default function Tickets() {
         Tickets on sale now
       </h1>
       <TicketPrices />
-      <div className="md:flex flex-col items-center">
-        <div className="md:flex flex-row w-screen sm:w-auto sm:p-0 sm:m-0 bg-utd-navy">
+      <div className="md:flex flex-col items-center min-h-[292px] sm:min-h-[176px]">
+        <div className="md:flex flex-row sm:w-auto sm:p-0 sm:m-0 bg-utd-navy">
           <form action="/api/checkout_sessions" method="POST">
             <section className="checkout-button-section mx-8 pb-4 sm:p-0 sm:ml-0">
               <button
                 type="submit"
                 role="link"
-                className={`text-2xl checkout-button rounded-md transition ease-in-out delay-10 hover:scale-110 hover:opacity-100 uppercase border-2 bg-utd-red border-utd-red hover:text-black hover:bg-utd-green hover:border-utd-green`}
+                className="text-2xl checkout-button rounded-md transition ease-in-out delay-10 hover:scale-110 hover:opacity-100 uppercase border-2 bg-utd-red border-utd-red hover:text-black hover:bg-utd-green hover:border-utd-green"
               >
                 buy Day tickets
               </button>
             </section>
           </form>
-          <form action="/api/checkout_sessions_camping" method="POST">
-            <section className="checkout-button-section mx-8 pb-4 sm:p-0 sm:mr-0">
-              <button
-                type="submit"
-                role="link"
-                className={`text-2xl checkout-button rounded-md transition ease-in-out delay-10 hover:scale-110 hover:opacity-100 uppercase border-2 bg-utd-red border-utd-red hover:text-black hover:bg-utd-green hover:border-utd-green
-`}
-              >
-                buy camping tickets
-              </button>
-            </section>
-          </form>
+          <div
+            className={campingVisible ? "hidden-section" : "visible-section"}
+          >
+            {!campingVisible && (
+              <section className="checkout-button-section mx-8 py-8 sm:p-0 sm:ml-0 ease-in-out transition-opacity duration-500">
+                <button
+                  type="button"
+                  onClick={handleCampingClick}
+                  role="button"
+                  className="text-2xl checkout-button rounded-md transition ease-in-out delay-10 hover:scale-110 hover:opacity-100 uppercase border-2 bg-utd-red border-utd-red hover:text-black hover:bg-utd-green hover:border-utd-green"
+                >
+                  buy camping tickets
+                </button>
+              </section>
+            )}
+          </div>
+          <div
+            className={campingVisible ? "visible-section" : "hidden-section"}
+          >
+            {campingVisible && (
+              <div className="flex flex-col py-0 ease-in-out transition-opacity duration-500">
+                <form action="/api/checkout_sessions_camping" method="POST">
+                  <section className="checkout-button-section mx-8 pt-8 pb-2 sm:p-0 sm:pb-2 sm:ml-0">
+                    <button
+                      type="submit"
+                      role="link"
+                      className="text-2xl checkout-button rounded-md transition ease-in-out delay-10 hover:scale-110 hover:opacity-100 uppercase border-2 bg-utd-red border-utd-red hover:text-black hover:bg-utd-green hover:border-utd-green"
+                    >
+                      tent
+                    </button>
+                  </section>
+                </form>
+                <form action="/api/checkout_sessions_camping-van" method="POST">
+                  <section className="checkout-button-section mx-8 py-2 sm:p-0 sm:ml-0">
+                    <button
+                      type="submit"
+                      role="link"
+                      className="text-2xl checkout-button rounded-md transition ease-in-out delay-10 hover:scale-110 hover:opacity-100 uppercase border-2 bg-utd-red border-utd-red hover:text-black hover:bg-utd-green hover:border-utd-green"
+                    >
+                      camper van
+                    </button>
+                    Please let us know if you are planning to camp in a tent or
+                    camper van. This doesn't affect the price but helps us a lot
+                    with planning, thanks!
+                  </section>
+                </form>
+              </div>
+            )}
+          </div>
         </div>
       </div>
       <div className="bg-utd-navy">

@@ -36,6 +36,12 @@ body {
   width: 350px;
   justify-content: justify;
 }
+.sub-checkout-button-section {
+  display: flex;
+  flex-direction: column;
+  width: 175px;
+  justify-content: justify;
+}
 .checkout-button {
   height: 36px;
   transition: all 0.2s ease;
@@ -55,6 +61,16 @@ body {
   background-color: #ffffff;
   color: #db4c44;
   opacity: 0.8;
+}
+
+.hidden-section {
+  transform: rotateX(90deg);
+  transition: transform 0.5s ease;
+}
+
+.visible-section {
+  transform: rotateX(0deg);
+  transition: transform 0.5s ease;
 }
 
 .r_iframe {
