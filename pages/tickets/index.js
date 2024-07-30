@@ -81,7 +81,7 @@ export default function Tickets() {
             className={campingVisible ? "visible-section" : "hidden-section"}
           >
             {campingVisible && (
-              <div className="flex flex-col py-0 ease-in-out transition-opacity duration-500">
+              <div className="flex flex-col py-0">
                 <form action="/api/checkout_sessions_camping" method="POST">
                   <section className="checkout-button-section mx-8 pt-8 pb-2 sm:p-0 sm:pb-2 sm:ml-0">
                     <button

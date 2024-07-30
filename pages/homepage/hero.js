@@ -1,7 +1,6 @@
 import Image from "next/image";
 import BuyTickets from "./components/buyTickets";
 import { motion } from "framer-motion";
-import CountdownTimer from "./components/countdownTimer";
 
 export default function Hero() {
   return (
@@ -25,7 +24,6 @@ export default function Hero() {
           alt="Under The Drum"
           width="2048"
           height="950"
-          priority
         />
         <Image
           src="/UTDPOSTER.jpg"
@@ -33,7 +31,6 @@ export default function Hero() {
           alt="Under The Drum"
           width="500"
           height="500"
-          priority
         />
       </div>
       <div className="w-screen bg-utd-navy py-8 lg:py-0 -z-0">

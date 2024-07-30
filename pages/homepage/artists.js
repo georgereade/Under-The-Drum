@@ -15,7 +15,7 @@ const artistUrls = [
   {
     id: 1,
     name: "Joshua Burnside",
-    url: "https://open.spotify.com/embed/artist/244AFgFclA9c1IcjWOAqoV?utm_source=generator",
+    url: "https://open.spotify.com/embed/artist/244AFgFclA9c1IcjWOAqoV?utm_source=oembed",
     desc: `Experimental folk songwriter and producer, blending Irish and world music influences. Rumbling, brooding, powerful and magnetic.`,
     profilepic:
       "https://i.scdn.co/image/ab6761610000e5ebc12feb659a565ee3c54739d8",
@@ -24,7 +24,7 @@ const artistUrls = [
   {
     id: 2,
     name: "Arborist",
-    url: "https://open.spotify.com/embed/artist/73NsXu8p63LKM2s24QwxAr?utm_source=generator",
+    url: "https://open.spotify.com/embed/artist/73NsXu8p63LKM2s24QwxAr?utm_source=oembed",
     desc: "The moniker of Northern Irish singer-songwriter Mark McCambridge, known for his poignant and evocative folk music.",
     profilepic:
       "https://i.scdn.co/image/ab6761610000e5eb2475d12d8b3a823b1e4cf8a2",
@@ -32,7 +32,7 @@ const artistUrls = [
   {
     id: 3,
     name: "Arliston",
-    url: "https://open.spotify.com/embed/artist/1zdjZcUSe5thcIAIU5NRYh?utm_source=generator",
+    url: "https://open.spotify.com/embed/artist/1zdjZcUSe5thcIAIU5NRYh?utm_source=oembed",
     desc: "London-based band known for their atmospheric sound, emotive lyrics, cerebral songwriting and soaring instrumentals.",
     profilepic:
       "https://i.scdn.co/image/ab67616100005174a8078f6d93d0860f90642fda",
@@ -48,7 +48,7 @@ const artistUrls = [
   {
     id: 5,
     name: "Roe",
-    url: "https://open.spotify.com/embed/artist/6ZgfyJzSGlummUBhUK1hxw?utm_source=generator",
+    url: "https://open.spotify.com/embed/artist/6ZgfyJzSGlummUBhUK1hxw?utm_source=oembed",
     desc: "Alt-pop singer-songwriter from Derry, known for her distinctive blend of indie-pop and electronic music.",
     profilepic:
       "https://i.scdn.co/image/ab6761610000e5eb9f46765573bb835eec6d7fd2",
@@ -56,7 +56,7 @@ const artistUrls = [
   {
     id: 6,
     name: "Junk Drawer",
-    url: "https://open.spotify.com/embed/artist/5t4EvkMzfu9IJui3iiL2Rs?utm_source=generator",
+    url: "https://open.spotify.com/embed/artist/5t4EvkMzfu9IJui3iiL2Rs?utm_source=oembed",
     desc: "Incorporating Krautrock, post-punk, and psychedelia, Belfast's Junk Drawer offer an intuitively loose and idiosyncratic brand of indie rock.",
     profilepic:
       "https://i.scdn.co/image/ab6761610000e5eb8379b43f58078bbab58d3df4",
@@ -65,7 +65,7 @@ const artistUrls = [
   {
     id: 7,
     name: "Oh Boland",
-    url: "https://open.spotify.com/embed/artist/2HmnALl2GrcNUuI9C5visw?utm_source=generator",
+    url: "https://open.spotify.com/embed/artist/2HmnALl2GrcNUuI9C5visw?utm_source=oembed",
     desc: "Three-piece band from Tuam Co. Galway. Self-described “poppy but sloppy” rock‘n’roll defined by their buzzsaw guitar tone.",
     profilepic:
       "https://i.scdn.co/image/ab67616d0000b27372c3bb31f19b72b9e855f3cd",
@@ -73,7 +73,7 @@ const artistUrls = [
   {
     id: 8,
     name: "Brand New Friend",
-    url: "https://open.spotify.com/embed/artist/7iWAQPQTaX1BV0IYFbxKoU?utm_source=generator",
+    url: "https://open.spotify.com/embed/artist/7iWAQPQTaX1BV0IYFbxKoU?utm_source=oembed",
     desc: "North Coast indie pop powerhouses. Haunting and heavy production complementing sweet melodies and soaring choruses.",
     profilepic:
       "https://i.scdn.co/image/ab6761610000e5eb9f6ce86296b108c89af964a7",
@@ -81,14 +81,14 @@ const artistUrls = [
   {
     id: 9,
     name: "Ben Traill",
-    url: "https://open.spotify.com/embed/artist/2md5CaM27EV4MySPaSUkgT?utm_source=generator",
+    url: "https://open.spotify.com/embed/artist/2md5CaM27EV4MySPaSUkgT?utm_source=oembed",
     desc: "Singer-songwriter blending catchy hooks and choruses with expressive and confessional storytelling.",
     profilepic: "/bent.jpeg",
   },
   {
     id: 10,
     name: "Susie Blue",
-    url: "https://open.spotify.com/embed/artist/0CixME0zpIWI1vHtsqXzuP?utm_source=generator",
+    url: "https://open.spotify.com/embed/artist/0CixME0zpIWI1vHtsqXzuP?utm_source=oembed",
     desc: "Irish queer indie pop artist with Glastonbury and Electric Picnic performances.",
     profilepic:
       "https://i.scdn.co/image/ab6761610000e5eb37206bf6a97f43bb00ec051d",
@@ -96,7 +96,7 @@ const artistUrls = [
   {
     id: 11,
     name: "Blue Whale",
-    url: "https://open.spotify.com/embed/artist/6rUPywdqRWwwFTayo3qS9b?utm_source=generator",
+    url: "https://open.spotify.com/embed/artist/6rUPywdqRWwwFTayo3qS9b?utm_source=oembed",
     desc: "Fierce and playful four-piece band with math-rock and jazz influences.",
     profilepic:
       "https://i.scdn.co/image/ab6761610000e5eb86519a66d27aeebc4a5f0b67",
@@ -104,7 +104,7 @@ const artistUrls = [
   {
     id: 12,
     name: "Neil Brogan",
-    url: "https://open.spotify.com/embed/artist/1y6WMOklpc7zkhPiXZHIhY?utm_source=generator",
+    url: "https://open.spotify.com/embed/artist/1y6WMOklpc7zkhPiXZHIhY?utm_source=oembed",
     desc: "Indie-pop with self-deprecating efficacy and contrasting jangly exuberance. Known for his previous project Sea Pinks.",
     profilepic:
       "https://i.scdn.co/image/ab6761610000e5ebfe9c0dbb1b510e2e5f7dfee7",
@@ -112,7 +112,7 @@ const artistUrls = [
   {
     id: 13,
     name: "Cian Nugent",
-    url: "https://open.spotify.com/embed/artist/5h6tKZX6V9AYYRbvsxZakW?utm_source=generator",
+    url: "https://open.spotify.com/embed/artist/5h6tKZX6V9AYYRbvsxZakW?utm_source=oembed",
     desc: "Unique guitarist and songwriter from Dublin, influenced by blues, traditional folk and rolk.",
     profilepic:
       "https://i.scdn.co/image/ab6761610000e5ebac421b139759b06522042bca",
@@ -235,13 +235,12 @@ export default function Artists() {
                         src={url}
                         width="100%"
                         height="352"
-                        allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture;"
+                        allow="encrypted-media;"
+                        allowFullScreen
                         loading="lazy"
                         alt={name}
                         title={name}
-                        allowtransparency="true"
                         style={{ borderRadius: "16px" }}
-                        sandbox="allow-scripts allow-same-origin"
                       ></iframe>
                     </CardBody>
                     <CardFooter>
