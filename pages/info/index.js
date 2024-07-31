@@ -207,10 +207,10 @@ export default function Info() {
           {/* <p>Standard Tickets: 50 for day pass £65 for camping</p>{" "} */}
           <p>
             Ticket payments are processed securely through Stripe. On purchase
-            you will receive an automatic receipt from Stripe, confirmation and
-            details will be sent out a few days later. Please add the names of
-            any guests when buying the tickets. Up to four can be purchased per
-            person.
+            you will receive an automatic receipt from Stripe. Tickets and
+            details will be sent out closer to the event. Please add the names
+            of any guests when buying the tickets. Up to four can be purchased
+            per person.
           </p>
         </div>
         <h2
