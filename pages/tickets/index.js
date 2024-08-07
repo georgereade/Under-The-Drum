@@ -43,9 +43,14 @@ export default function Tickets() {
     >
       <Head>
         <title>Tickets | Under The Drum</title>
+        <meta
+          name="description"
+          content="Tickets on sale now: £50 day tickets, £65 camping | A new music festival in the Antrim hills, featuring Joshua Burnside | 28th September 2024"
+          key="desc"
+        />
       </Head>
       <h1 className="font-extrabold text-2xl py-6 text-center leading-loose uppercase text-white">
-        Tickets on sale now
+        Under The Drum Tickets on sale
       </h1>
       <TicketPrices />
       <div className="md:flex flex-col items-center min-h-[292px] sm:min-h-[176px]">

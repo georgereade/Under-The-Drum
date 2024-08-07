@@ -41,7 +41,8 @@ export default function Home() {
               image: [
                 "https://www.underthedrum.co.uk/_next/image?url=%2FUTDLogoWhite.png&w=64&q=75",
               ],
-              description: "A new annual music festival in the Antrim hills.",
+              description:
+                "A new annual music festival in the Antrim hills featuring Joshua Burnside | Art, food, drinks and more",
               offers: {
                 "@type": "Offer",
                 url: "https://www.underthedrum.co.uk/tickets",

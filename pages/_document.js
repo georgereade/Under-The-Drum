@@ -1,4 +1,5 @@
 import { Html, Head, Main, NextScript } from "next/document";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 export default function Document() {
   return (
@@ -6,13 +7,13 @@ export default function Document() {
       <Head>
         <meta
           name="description"
-          content="A new music festival in the Antrim hills with art, food and more | 28th September 2024"
+          content="A new music festival in the Antrim hills, featuring Joshua Burnside | Art, food and more | Tickets on Sale Now | 28th September 2024"
           key="desc"
         />
         <meta property="og:title" content="Under The Drum" />
         <meta
           property="og:description"
-          content="A new music festival in the Antrim hills with art, food and more | 28th September 2024"
+          content="A new music festival in the Antrim hills featuring Joshua Burnside | Art, food and more | 28th September 2024"
         />
         <meta property="og:image" content="public\Vector LOGO - MAIN.jpg" />
         <meta property="og:image:alt" content="Under The Drum logo" />
@@ -36,6 +37,10 @@ export default function Document() {
           content="https://gr-next-portfolio.vercel.app/"
         />
       </Head>
+      <GoogleTagManager
+        gtmId="G-L3XTL8FY14
+"
+      />{" "}
       <body>
         <Main />
         <NextScript />

@@ -13,17 +13,17 @@ export default function App({ Component, pageProps }) {
     <>
       <NextUIProvider>
         <Head>
-          <title>Under The Drum | Music Festival</title>
+          <title>Under The Drum</title>
         </Head>
+        <GoogleTagManager
+          gtmId="G-L3XTL8FY14
+"
+        />{" "}
         <Navigationbar />
         <Component {...pageProps} /> <Footer />
         <Analytics />
       </NextUIProvider>
       <SpeedInsights />{" "}
-      <GoogleTagManager
-        gtmId="G-L3XTL8FY14
-"
-      />{" "}
     </>
   );
 }
