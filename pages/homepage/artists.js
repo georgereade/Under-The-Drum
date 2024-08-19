@@ -117,6 +117,38 @@ const artistUrls = [
     desc: "Irish acoustic artist.",
     profilepic: "/demiohara.jpg",
   },
+  {
+    id: 14,
+    name: "RUÁ",
+    url: "https://open.spotify.com/embed/artist/6uoAnlpghz95IDY0fS6ZKZ?utm_source=oembed",
+    desc: "Derry-born RUÁ's honest, stripped-back songs take you to a homely, firelit backroom of some other place and time.",
+    profilepic:
+      "https://i.scdn.co/image/ab676161000051747203a2399920c08b6798a6f6",
+  },
+  {
+    id: 15,
+    name: "Ciara O'neill",
+    url: "https://open.spotify.com/embed/artist/1zdL1XmVZSfVkPRHYnCcM9?utm_source=oembed",
+    desc: "Belfast based indie folk singer songwriter and RTÉ Radio 1 folk award nominee. Beautiful vocals and raw, poetic songwriting.",
+    profilepic:
+      "https://i.scdn.co/image/ab6761610000e5eb1b8643997b90139ef33df102",
+  },
+  {
+    id: 16,
+    name: "Garrett Laurie",
+    url: "https://open.spotify.com/embed/artist/3jD6O6BSzy6BZOCbALVt3Y?utm_source=oembed",
+    desc: "A unique brand of mesmerising, vocally driven alt-folk, showcasing an impressive vocal range with masterful precision.",
+    profilepic:
+      "https://i.scdn.co/image/ab6761610000e5ebea9130f7b5044bb3577c5cf2",
+  },
+  {
+    id: 17,
+    name: "4MN x D4N",
+    url: "https://open.spotify.com/embed/artist/5FQzNWtS11lpF0WIDiQ5HO?utm_source=oembed",
+    desc: "Late night DJ set with 4MN and D4N.",
+    profilepic:
+      "https://i.scdn.co/image/ab6761610000e5eb02e0533797da4cfe18c9e94a",
+  },
 ];
 
 export default function Artists() {
