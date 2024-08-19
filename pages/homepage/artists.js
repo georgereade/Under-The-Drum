@@ -153,7 +153,7 @@ export default function Artists() {
         id="lineup-poster"
       >
         <Image
-          src="/UTDPOSTER-trim.jpg"
+          src="/UTDPOSTER-FINAL2.jpg"
           className="w-screen h-full md:h-1/4 md:w-auto rounded-none"
           alt="Under The Drum"
           width=""
