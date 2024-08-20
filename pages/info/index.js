@@ -137,11 +137,10 @@ export default function Info() {
             activeIndices.includes(5) ? "max-h-[700px]" : "max-h-0"
           }`}
         >
-          We are looking into organising coaches from Belfast and back, and will
-          update on that closer to the time! We strongly advise booking taxis
-          well in advance if travelling by taxi, as we are a rural location and
-          they are not readily available. There will be parking available, but
-          we do ask that you car share where possible, to save on space!
+          We strongly advise booking in advance if travelling by taxi, as we are
+          a rural location and they are not readily available. There will be
+          parking available, but we do ask that you car share where possible, to
+          save on space!
         </div>
         <h2
           onClick={() => toggleVisibility(6)}
