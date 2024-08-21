@@ -107,10 +107,10 @@ export default function Tickets() {
                     >
                       camper van
                     </button>
-                    Each person spending the night must have a camping ticket.
-                    Please let us know if you are planning to camp in a tent or
-                    camper van. This doesn&apos;t affect the price but helps us
-                    a lot with planning, thank you!
+                    Each person staying at the venue overnight must have a
+                    camping ticket. Please let us know if you are planning to
+                    camp in a tent or camper van. This doesn&apos;t affect the
+                    price but helps us a lot with planning, thank you!
                   </section>
                 </form>
               </div>
