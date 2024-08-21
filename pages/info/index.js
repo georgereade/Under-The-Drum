@@ -202,14 +202,14 @@ export default function Info() {
             activeIndices.includes(9) ? "max-h-[700px]" : "max-h-0"
           }`}
         >
-          <p>Early bird: £45 for a day pass £60 for camping</p>{" "}
-          {/* <p>Standard Tickets: 50 for day pass £65 for camping</p>{" "} */}
+          <p>Day Tickets: £50 Camping: £65</p>{" "}
           <p>
             Ticket payments are processed securely through Stripe. On purchase
             you will receive an automatic receipt from Stripe. Tickets and
             details will be sent out closer to the event. Please add the names
             of any guests when buying the tickets. Up to four can be purchased
-            per person.
+            per person. Each person staying the night will need to have a
+            camping ticket.
           </p>
         </div>
         <h2
