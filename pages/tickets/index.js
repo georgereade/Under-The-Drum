@@ -53,7 +53,7 @@ export default function Tickets() {
         Under The Drum Tickets on sale
       </h1>
       <TicketPrices />
-      <div className="md:flex flex-col items-center min-h-[292px] sm:min-h-[176px]">
+      <div className="md:flex flex-col items-center min-h-[330px] sm:min-h-[230px]">
         <div className="md:flex flex-row sm:w-auto sm:p-0 sm:m-0 bg-utd-navy">
           <form action="/api/checkout_sessions" method="POST">
             <section className="checkout-button-section mx-8 pb-4 sm:p-0 sm:ml-0">
@@ -160,7 +160,7 @@ export default function Tickets() {
           Terms & Conditions
         </Link>{" "}
       </h3>
-      <div className="sm:hidden">
+      <div className="sm:hidden py-8">
         <CountdownTimer />
       </div>
     </div>
