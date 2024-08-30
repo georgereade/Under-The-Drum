@@ -32,7 +32,7 @@ export default function Info() {
         </h2>
         <div
           className={`text-md md:text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
-            activeIndices.includes(0) ? "max-h-[700px]" : "max-h-0"
+            activeIndices.includes(0) ? "max-h-[3000px]" : "max-h-0"
           }`}
         >
           <ul className="list-disc pl-8">
@@ -87,7 +87,7 @@ export default function Info() {
         </h2>
         <div
           className={`text-md md:text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
-            activeIndices.includes(1) ? "max-h-96" : "max-h-0"
+            activeIndices.includes(1) ? "max-h-[3000px]" : "max-h-0"
           }`}
         >
           <ul className="list-disc pl-8">
@@ -132,7 +132,7 @@ export default function Info() {
         </h2>
         <div
           className={`text-md md:text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
-            activeIndices.includes(2) ? "max-h-96" : "max-h-0"
+            activeIndices.includes(2) ? "max-h-[3000px]" : "max-h-0"
           }`}
         >
           <ul className="list-disc pl-8">
@@ -159,7 +159,7 @@ export default function Info() {
         </h2>
         <div
           className={`text-md md:text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
-            activeIndices.includes(3) ? "max-h-96" : "max-h-0"
+            activeIndices.includes(3) ? "max-h-[3000px]" : "max-h-0"
           }`}
         >
           <ul className="list-disc pl-8">
@@ -217,7 +217,7 @@ export default function Info() {
         </h2>
         <div
           className={`text-md md:text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
-            activeIndices.includes(4) ? "max-h-96" : "max-h-0"
+            activeIndices.includes(4) ? "max-h-[3000px]" : "max-h-0"
           }`}
         >
           <ul className="list-disc pl-8">
@@ -228,7 +228,7 @@ export default function Info() {
             </li>
             <li className="ml-8">
               To keep up to date with any changes please view the website at
-              www.UnderTheDrum.co.uk or contact info@underthedrum.co.uk.
+              www.underthedrum.co.uk or contact info@underthedrum.co.uk.
             </li>
           </ul>
         </div>
@@ -240,7 +240,7 @@ export default function Info() {
         </h2>
         <div
           className={`text-md md:text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
-            activeIndices.includes(5) ? "max-h-96" : "max-h-0"
+            activeIndices.includes(5) ? "max-h-[3000px]" : "max-h-0"
           }`}
         >
           <ul className="list-disc pl-8">
@@ -277,7 +277,7 @@ export default function Info() {
         </h2>
         <div
           className={`text-md md:text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
-            activeIndices.includes(6) ? "max-h-96" : "max-h-0"
+            activeIndices.includes(6) ? "max-h-[3000px]" : "max-h-0"
           }`}
         >
           <ul className="list-disc pl-8">
@@ -346,7 +346,7 @@ export default function Info() {
         </h2>
         <div
           className={`text-md md:text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
-            activeIndices.includes(7) ? "max-h-96" : "max-h-0"
+            activeIndices.includes(7) ? "max-h-[3000px]" : "max-h-0"
           }`}
         >
           <ul className="list-disc pl-8">
