@@ -44,6 +44,11 @@ export default function Tickets() {
       <Head>
         <title>Tickets | Under The Drum</title>
         <meta
+          property="og:title"
+          content="Tickets | Under The Drum"
+          key="title"
+        />
+        <meta
           name="description"
           content="Tickets on sale now: £50 day tickets, £65 camping | A new music festival in the Antrim hills, featuring Joshua Burnside | 28th September 2024"
           key="desc"

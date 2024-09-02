@@ -20,6 +20,18 @@ export default function Home() {
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "Under The Drum",
+              alternateName: ["UnderTheDrum", "UTD", "Under The Drum Festival"],
+              url: "https://www.underthedrum.co.uk/",
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
               "@type": "Event",
               name: "Under The Drum",
               startDate: "2024-09-28T11:00:00Z",
@@ -46,7 +58,7 @@ export default function Home() {
               offers: {
                 "@type": "Offer",
                 url: "https://www.underthedrum.co.uk/tickets",
-                price: "45",
+                price: "50",
                 priceCurrency: "GBP",
                 availability: "https://schema.org/InStock",
                 validFrom: "2024-07-21T12:00:00Z",
@@ -54,26 +66,6 @@ export default function Home() {
               performer: {
                 "@type": "Person",
                 name: "Joshua Burnside",
-              },
-              performer: {
-                "@type": "Person",
-                name: "Roe",
-              },
-              performer: {
-                "@type": "Person",
-                name: "Junk Drawer",
-              },
-              performer: {
-                "@type": "Person",
-                name: "Arliston",
-              },
-              performer: {
-                "@type": "Person",
-                name: "Arborist",
-              },
-              performer: {
-                "@type": "Person",
-                name: "Oh Boland",
               },
             }),
           }}
