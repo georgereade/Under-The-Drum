@@ -21,14 +21,14 @@ export default function Hero() {
         <Image
           src="/UTDPOSTER-FINAL2.jpg"
           className="hidden sm:block md:hidden h-full"
-          alt="Under The Drum"
+          alt="Under The Drum music festival Northern Ireland"
           width="2048"
           height="950"
         />
         <Image
           src="/UTDPOSTER-FINAL2.jpg"
           className="block w-screen sm:hidden md:block xl:hidden"
-          alt="Under The Drum"
+          alt="Under The Drum music festival Northern Ireland"
           width="500"
           height="500"
         />

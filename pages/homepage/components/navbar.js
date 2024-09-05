@@ -90,7 +90,7 @@ export default function Navigationbar() {
           <Link color="foreground" href="/">
             <Image
               src="/UTDLogoWhite.png"
-              alt="Under The Drum"
+              alt="Under The Drum music festival Northern Ireland"
               className="mx-2 transition ease-in-out delay-10 hover:scale-110"
               style={{
                 filter: isScrolled ? "invert(0)" : "invert(1)",

@@ -13,7 +13,7 @@ export default function Document() {
         <meta property="og:title" content="Under The Drum" />
         <meta
           property="og:description"
-          content="A new music festival in the Antrim hills featuring Joshua Burnside | Art, food and more | 28th September 2024"
+          content="A new music festival in the Antrim hills, featuring Joshua Burnside | Art, food and more | Tickets on Sale Now | 28th September 2024"
         />
         <meta property="og:image" content="public\Vector LOGO - MAIN.jpg" />
         <meta property="og:image:alt" content="Under The Drum logo" />
