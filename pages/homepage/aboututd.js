@@ -6,7 +6,7 @@ export default function AboutUTD() {
     >
       <div className="bg-white text-black m-8 sm:m-16 rounded-xl">
         {" "}
-        <h1 className="text-center uppercase font-extrabold px-4 py-8 text-2xl md:text-2xl lg:mx-80">
+        <h1 className="text-center text-utd-purple uppercase font-extrabold px-4 py-8 text-2xl md:text-2xl lg:mx-80">
           2024 - the inaugural year of Under the Drum Festival{" "}
         </h1>
         <p className="text-center px-4 text-md md:text-lg lg:mx-24 text-black">
