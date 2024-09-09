@@ -34,15 +34,9 @@ export default function Hero() {
         />
       </div>
       <div className="w-screen bg-utd-navy py-8 lg:py-0 -z-0">
-        <motion.div
-          className="xl:-translate-y-44 xl:h-0 sm:rounded-md border-1 w-screen bg-utd-navy md:w-full h-fit flex flex-col items-center sm:bg-transparent md:px-12"
-          initial={{ opacity: 0.5 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1 }}
-        >
+        <div className="xl:-translate-y-44 xl:h-0 sm:rounded-md border-1 w-screen bg-utd-navy md:w-full h-fit flex flex-col items-center sm:bg-transparent md:px-12">
           <BuyTickets />
-        </motion.div>
+        </div>
       </div>
     </div>
   );

@@ -5,11 +5,11 @@ import { motion } from "framer-motion";
 
 export default function BuyTickets() {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ once: true }}
-      transition={{ duration: 1, delay: 0.5 }}
+    <div
+    // initial={{ opacity: 0 }}
+    // whileInView={{ opacity: 1 }}
+    // viewport={{ once: true }}
+    // transition={{ duration: 1, delay: 0.5 }}
     >
       <Button
         size="lg"
@@ -23,6 +23,6 @@ export default function BuyTickets() {
         </span>
         buy tickets
       </Button>
-    </motion.div>
+    </div>
   );
 }

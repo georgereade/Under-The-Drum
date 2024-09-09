@@ -89,11 +89,11 @@ export default function Navigationbar() {
         <NavbarBrand>
           <Link color="foreground" href="/">
             <Image
-              src="/UTDLogoWhite.png"
+              src="/utd-logo-mould.png"
               alt="Under The Drum music festival Northern Ireland"
               className="mx-2 transition ease-in-out delay-10 hover:scale-110"
               style={{
-                filter: isScrolled ? "invert(0)" : "invert(1)",
+                filter: isScrolled ? "invert(1)" : "invert(0)",
                 transition: "filter 0.5s ease",
               }}
               width="50"

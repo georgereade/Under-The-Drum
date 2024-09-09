@@ -166,12 +166,12 @@ export default function Artists() {
       className="w-screen p-4 md:px-0 bg-utd-grey py-12 z-1 bg-[url('/Drawings.png')] bg-cover bg-top bg-repeat-y bg-local"
       id="artists"
     >
-      <motion.div
+      <div
         className="header-container"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 1, delay: 0.25 }}
+        // initial={{ opacity: 0 }}
+        // whileInView={{ opacity: 1 }}
+        // viewport={{ once: true }}
+        // transition={{ duration: 1, delay: 0.25 }}
       >
         <h2
           className="font-extrabold py-4 text-4xl uppercase cursor-pointer flex items-center transition ease-in-out delay-10 hover:scale-110"
@@ -179,7 +179,7 @@ export default function Artists() {
         >
           Line-up
         </h2>
-      </motion.div>
+      </div>
       <div
         className="flex-col items-center place-content-center md:w-1/3 mx-auto hidden sm:flex"
         id="lineup-poster"

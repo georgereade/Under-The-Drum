@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import MailchimpForm from "./components/mailchimpForm";
 import CountdownTimer from "./components/countdownTimer";
 import Link from "next/link";
+import { Image } from "@nextui-org/react";
 
 export default function Contact() {
   const icon1 = {
@@ -108,6 +109,10 @@ text-3xl leading-loose mt-12 uppercase"
           </motion.svg>
         </Link>
       </div>
+      <Image
+        src="utd-logo-mould.png"
+        className="w-1/2 sm:w-1/4 mx-auto py-4"
+      ></Image>
       <div className="flex flex-col text-2xl">
         <CountdownTimer />
       </div>
