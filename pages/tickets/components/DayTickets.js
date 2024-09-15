@@ -1,5 +1,7 @@
+"use client";
+
 import { useState, useContext } from "react";
-import { TicketContext } from "./index";
+import { TicketContext } from "../index";
 
 export default function DayTickets() {
   const { dayVisible, toggleDayTickets, campingVisible } =
