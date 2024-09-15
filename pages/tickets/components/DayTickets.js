@@ -4,7 +4,7 @@ import { useState, useContext } from "react";
 import { TicketContext } from "../index";
 
 export default function DayTickets() {
-  let { dayVisible, toggleDayTickets } = useContext(TicketContext);
+  let { dayVisible = false, toggleDayTickets } = useContext(TicketContext);
   const [quantity, setQuantity] = useState(1);
 
   const handleQuantityChange = (event) => {
