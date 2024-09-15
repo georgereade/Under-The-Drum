@@ -14,6 +14,7 @@ export default function DayTickets() {
   return (
     <section>
       <div className={dayVisible ? "hidden-section" : "visible-section"}>
+        {" "}
         {!dayVisible && (
           <section className="checkout-button-section mx-8 py-8 sm:p-0 sm:ml-0 ease-in-out transition-opacity duration-500">
             <button
@@ -28,6 +29,24 @@ export default function DayTickets() {
         )}
       </div>
       <div className={dayVisible ? "visible-section" : "hidden-section"}>
+        {" "}
+        <div className="quantity-selector mx-8 py-2">
+          <label htmlFor="quantity" className="text-white">
+            Select Quantity:{" "}
+          </label>
+          <select
+            id="quantity"
+            name="quantity"
+            value={quantity}
+            onChange={handleQuantityChange}
+            className="p-2 border-2 border-gray-300 rounded"
+          >
+            <option value="1">1 Ticket</option>
+            <option value="2">2 Tickets</option>
+            <option value="3">3 Tickets</option>
+            <option value="4">4 Tickets</option>
+          </select>
+        </div>
         {dayVisible && (
           <form action="/api/checkout_sessions" method="POST">
             <section className="checkout-button-section mx-8 pb-4 sm:p-0 sm:ml-0">
@@ -39,23 +58,7 @@ export default function DayTickets() {
                 Buy Day Tickets
               </button>
             </section>
-            <div className="quantity-selector mx-8 py-2">
-              <label htmlFor="quantity" className="text-white">
-                Select Quantity:{" "}
-              </label>
-              <select
-                id="quantity"
-                name="quantity"
-                value={quantity}
-                onChange={handleQuantityChange}
-                className="p-2 border-2 border-gray-300 rounded"
-              >
-                <option value="1">1 Ticket</option>
-                <option value="2">2 Tickets</option>
-                <option value="3">3 Tickets</option>
-                <option value="4">4 Tickets</option>
-              </select>
-            </div>
+
             <input type="hidden" name="quantity" value={quantity} />
           </form>
         )}

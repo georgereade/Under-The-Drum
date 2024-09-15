@@ -5,6 +5,11 @@ export default function TicketLower() {
   return (
     <section>
       <div className="bg-utd-navy">
+        <p>Please note, anyone staying overnight must have a camping ticket.</p>
+        <p>
+          Camper Van and Tent tickets are the same price, it just helps us with
+          planning!
+        </p>
         <p className="text-lg pt-16 text-gray-200">
           Payment processed through{" "}
           <span>

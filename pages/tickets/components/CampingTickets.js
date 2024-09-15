@@ -44,6 +44,24 @@ export default function CampingTickets() {
       </div>
 
       <div className={campingVisible ? "visible-section" : "hidden-section"}>
+        {/* Quantity Selector */}
+        <div className="quantity-selector mx-8 py-2">
+          <label htmlFor="quantity" className="text-white">
+            Select Quantity:{" "}
+          </label>
+          <select
+            id="quantity"
+            name="quantity"
+            value={quantity} // Directly bind quantity here
+            onChange={handleQuantityChange}
+            className="p-2 border-2 border-gray-300 rounded"
+          >
+            <option value="1">1 Ticket</option>
+            <option value="2">2 Tickets</option>
+            <option value="3">3 Tickets</option>
+            <option value="4">4 Tickets</option>
+          </select>
+        </div>
         {campingVisible && (
           <div className="flex flex-col py-0">
             {/* Tent Form */}
@@ -59,7 +77,7 @@ export default function CampingTickets() {
                   onClick={handleCampingClick}
                   className="text-2xl checkout-button rounded-md transition ease-in-out delay-10 hover:scale-110 hover:opacity-100 uppercase border-2 bg-utd-red border-utd-red hover:text-black hover:bg-utd-green hover:border-utd-green"
                 >
-                  Tent
+                  Buy Tent Ticket
                 </button>
               </section>
               {/* Hidden input directly tied to quantity */}
@@ -79,35 +97,13 @@ export default function CampingTickets() {
                   onClick={handleVanClick}
                   className="text-2xl checkout-button rounded-md transition ease-in-out delay-10 hover:scale-110 hover:opacity-100 uppercase border-2 bg-utd-red border-utd-red hover:text-black hover:bg-utd-green hover:border-utd-green"
                 >
-                  Camper Van
+                  Buy Camper Van Ticket
                 </button>
-                Each person staying at the venue overnight must have a camping
-                ticket. Please let us know if you are planning to camp in a tent
-                or camper van. This doesn&apos;t affect the price but helps us a
-                lot with planning, thank you!
               </section>
 
               {/* Hidden input directly tied to quantity */}
               <input type="hidden" name="quantity" value={quantity} />
             </form>
-            {/* Quantity Selector */}
-            <div className="quantity-selector mx-8 py-2">
-              <label htmlFor="quantity" className="text-white">
-                Select Quantity:{" "}
-              </label>
-              <select
-                id="quantity"
-                name="quantity"
-                value={quantity} // Directly bind quantity here
-                onChange={handleQuantityChange}
-                className="p-2 border-2 border-gray-300 rounded"
-              >
-                <option value="1">1 Ticket</option>
-                <option value="2">2 Tickets</option>
-                <option value="3">3 Tickets</option>
-                <option value="4">4 Tickets</option>
-              </select>
-            </div>
           </div>
         )}
       </div>
