@@ -1,19 +1,11 @@
-import React, { useState } from "react";
+import { useContext, useState } from "react";
+import { TicketContext } from "../index";
 
 export default function CampingTickets() {
-  const [campingVisible, setCampingVisible] = useState(false);
+  const { campingVisible, toggleCampingTickets, dayVisible } =
+    useContext(TicketContext);
   const [quantity, setQuantity] = useState(1); // Quantity is independent of the ticket type
   const [selectedTicketType, setSelectedTicketType] = useState(null); // Track if it's tent or van
-
-  const handleCampingClick = () => {
-    setCampingVisible(true);
-    setSelectedTicketType("tent");
-  };
-
-  const handleVanClick = () => {
-    setCampingVisible(true);
-    setSelectedTicketType("van");
-  };
 
   const handleQuantityChange = (event) => {
     setQuantity(Number(event.target.value)); // Set the quantity directly
@@ -33,7 +25,7 @@ export default function CampingTickets() {
           <section className="checkout-button-section mx-8 py-8 sm:p-0 sm:ml-0 ease-in-out transition-opacity duration-500">
             <button
               type="button"
-              onClick={handleCampingClick}
+              onClick={toggleCampingTickets}
               role="button"
               className="text-2xl checkout-button rounded-md transition ease-in-out delay-10 hover:scale-110 hover:opacity-100 uppercase border-2 bg-utd-red border-utd-red hover:text-black hover:bg-utd-green hover:border-utd-green"
             >
@@ -52,7 +44,7 @@ export default function CampingTickets() {
           <select
             id="quantity"
             name="quantity"
-            value={quantity} // Directly bind quantity here
+            value={quantity}
             onChange={handleQuantityChange}
             className="p-2 border-2 border-gray-300 rounded"
           >
@@ -62,6 +54,7 @@ export default function CampingTickets() {
             <option value="4">4 Tickets</option>
           </select>
         </div>
+
         {campingVisible && (
           <div className="flex flex-col py-0">
             {/* Tent Form */}
@@ -70,17 +63,15 @@ export default function CampingTickets() {
               method="POST"
               onSubmit={handleSubmit}
             >
-              <section className="checkout-button-section mx-8 pt-8 pb-2 sm:p-0 sm:pb-2 sm:ml-0">
+              <section className="checkout-button-section mx-8 pt-2 pb-2 sm:p-0 sm:pb-2 sm:ml-0">
                 <button
                   type="submit"
                   role="link"
-                  onClick={handleCampingClick}
                   className="text-2xl checkout-button rounded-md transition ease-in-out delay-10 hover:scale-110 hover:opacity-100 uppercase border-2 bg-utd-red border-utd-red hover:text-black hover:bg-utd-green hover:border-utd-green"
                 >
                   Buy Tent Ticket
                 </button>
               </section>
-              {/* Hidden input directly tied to quantity */}
               <input type="hidden" name="quantity" value={quantity} />
             </form>
 
@@ -94,14 +85,11 @@ export default function CampingTickets() {
                 <button
                   type="submit"
                   role="link"
-                  onClick={handleVanClick}
                   className="text-2xl checkout-button rounded-md transition ease-in-out delay-10 hover:scale-110 hover:opacity-100 uppercase border-2 bg-utd-red border-utd-red hover:text-black hover:bg-utd-green hover:border-utd-green"
                 >
                   Buy Camper Van Ticket
                 </button>
               </section>
-
-              {/* Hidden input directly tied to quantity */}
               <input type="hidden" name="quantity" value={quantity} />
             </form>
           </div>
