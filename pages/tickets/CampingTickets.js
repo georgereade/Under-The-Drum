@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { TicketContext } from "../index";
+import { TicketContext } from "./index";
 
 export default function CampingTickets() {
   const { campingVisible, toggleCampingTickets, dayVisible } =

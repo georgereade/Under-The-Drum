@@ -4,8 +4,8 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import TicketPrices from "./components/ticketprices";
 import Head from "next/head";
 import TicketLower from "./components/TicketLowerSection";
-import DayTickets from "./components/DayTickets";
-import CampingTickets from "./components/CampingTickets";
+import DayTickets from "./DayTickets";
+import CampingTickets from "./CampingTickets";
 import { createContext, useState } from "react";
 
 export const TicketContext = createContext();
