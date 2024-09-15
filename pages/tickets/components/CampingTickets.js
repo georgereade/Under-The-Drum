@@ -4,8 +4,16 @@ import { useContext, useState } from "react";
 import { TicketContext } from "../index";
 
 export default function CampingTickets() {
-  let { campingVisible = false, toggleCampingTickets } =
-    useContext(TicketContext);
+  const context = useContext(TicketContext);
+
+  if (!context) {
+    console.error(
+      "TicketContext is undefined. Ensure the component is wrapped in TicketContext.Provider."
+    );
+    return null; // or display a fallback UI if desired
+  }
+
+  const { campingVisible, toggleCampingTickets } = context;
   const [quantity, setQuantity] = useState(1); // Quantity is independent of the ticket type
   const [selectedTicketType, setSelectedTicketType] = useState(null); // Track if it's tent or van
 

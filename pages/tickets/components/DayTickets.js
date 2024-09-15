@@ -4,7 +4,16 @@ import { useState, useContext } from "react";
 import { TicketContext } from "../index";
 
 export default function DayTickets() {
-  let { dayVisible = false, toggleDayTickets } = useContext(TicketContext);
+  const context = useContext(TicketContext);
+
+  if (!context) {
+    console.error(
+      "TicketContext is undefined. Ensure the component is wrapped in TicketContext.Provider."
+    );
+    return null; // or display a fallback UI if desired
+  }
+
+  const { dayVisible, toggleDayTickets } = context;
   const [quantity, setQuantity] = useState(1);
 
   const handleQuantityChange = (event) => {
