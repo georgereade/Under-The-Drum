@@ -1,10 +1,10 @@
 import { Inconsolata } from "next/font/google";
 import React from "react";
-import Contact from "./homepage/contact";
-import Artists from "./homepage/artists";
-import Hero from "./homepage/hero";
-import CookieConsentBanner from "./homepage/components/CookieConsent";
-import AboutUTD from "./homepage/aboututd";
+import Contact from "./home/contact";
+import Artists from "./home/artists";
+import Hero from "./home/hero";
+import CookieConsentBanner from "../components/CookieConsent";
+import AboutUTD from "./home/aboututd";
 import Head from "next/head";
 const inconsolata = Inconsolata({ subsets: ["latin"] });
 

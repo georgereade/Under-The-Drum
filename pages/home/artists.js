@@ -37,14 +37,6 @@ const artistUrls = [
     profilepic:
       "https://i.scdn.co/image/ab67616100005174a8078f6d93d0860f90642fda",
   },
-  // {
-  //   id: 4,
-  //   name: "Elaine Howley",
-  //   url: "https://open.spotify.com/embed/artist/3STzxp6cfWNNQVcAQWYZgh?utm_source=generator",
-  //   desc: "Vocalist, musician and producer, merging a tapestry of experimental processes, classic songwriting and emotive melodies.",
-  //   profilepic:
-  //     "https://i.scdn.co/image/ab67616d0000b273b7f8b60001a9ef56307c04d2",
-  // },
   {
     id: 5,
     name: "Roe",
@@ -166,13 +158,7 @@ export default function Artists() {
       className="w-screen p-4 md:px-0 bg-utd-grey py-12 z-1 bg-[url('/Drawings.png')] bg-cover bg-top bg-repeat-y bg-local"
       id="artists"
     >
-      <div
-        className="header-container"
-        // initial={{ opacity: 0 }}
-        // whileInView={{ opacity: 1 }}
-        // viewport={{ once: true }}
-        // transition={{ duration: 1, delay: 0.25 }}
-      >
+      <div className="header-container">
         <h2
           className="font-extrabold py-4 text-4xl uppercase cursor-pointer flex items-center transition ease-in-out delay-10 hover:scale-110"
           id="artists-div"
@@ -213,11 +199,7 @@ export default function Artists() {
                     backfaceVisibility: "hidden",
                   }}
                 >
-                  <Card
-                    className="rounded-md bg-utd-navy h-fit md:mx-0 w-80 md:w-96 shadow-lg"
-                    isBlurred={false}
-                    isFooterBlurred={false}
-                  >
+                  <Card className="rounded-md bg-utd-navy h-fit md:mx-0 w-80 md:w-96 shadow-lg">
                     <CardHeader>
                       <h3 className="md:text-tiny text-xl uppercase font-bold text-utd-blue">
                         {name}
@@ -254,18 +236,20 @@ export default function Artists() {
                     {" "}
                     <CardBody className="h-fit py-8">
                       {" "}
-                      <iframe
-                        className="m-0"
-                        src={url}
-                        width="100%"
-                        height="352"
-                        allow="encrypted-media;"
-                        allowFullScreen
-                        loading="lazy"
-                        alt={name}
-                        title={name}
-                        style={{ borderRadius: "16px" }}
-                      ></iframe>
+                      {flippedCards[id] && (
+                        <iframe
+                          className="m-0"
+                          src={url}
+                          width="100%"
+                          height="352"
+                          allow="encrypted-media;"
+                          allowFullScreen
+                          loading="lazy"
+                          alt={name}
+                          title={name}
+                          style={{ borderRadius: "16px" }}
+                        ></iframe>
+                      )}
                     </CardBody>
                     <CardFooter>
                       {" "}

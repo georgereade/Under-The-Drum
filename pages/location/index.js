@@ -2,7 +2,7 @@ import { Inconsolata } from "next/font/google";
 import Head from "next/head";
 
 import Link from "next/link";
-import Contact from "../homepage/contact";
+import Contact from "../home/contact";
 
 const mapsAPIKey = process.env.GOOGLE_MAPS_KEY;
 

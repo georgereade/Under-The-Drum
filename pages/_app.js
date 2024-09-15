@@ -3,8 +3,8 @@ import React from "react";
 import { NextUIProvider } from "@nextui-org/react";
 import Head from "next/head";
 import { GoogleTagManager } from "@next/third-parties/google";
-import Navigationbar from "./homepage/components/navbar";
-import Footer from "./homepage/components/footer";
+import Navigationbar from "../components/navbar";
+import Footer from "../components/footer";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 

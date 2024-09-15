@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import MailchimpForm from "./components/mailchimpForm";
-import CountdownTimer from "./components/countdownTimer";
+import MailchimpForm from "../../components/mailchimpForm";
+import CountdownTimer from "../../components/countdownTimer";
 import Link from "next/link";
 import { Image } from "@nextui-org/react";
 

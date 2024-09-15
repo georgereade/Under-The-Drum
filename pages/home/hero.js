@@ -1,5 +1,5 @@
 import Image from "next/image";
-import BuyTickets from "./components/buyTickets";
+import BuyTickets from "../../components/buyTickets";
 import { motion } from "framer-motion";
 
 export default function Hero() {

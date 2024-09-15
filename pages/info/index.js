@@ -1,8 +1,9 @@
-import BuyTickets from "../homepage/components/buyTickets";
-import MailchimpForm from "../homepage/components/mailchimpForm";
+import BuyTickets from "../../components/buyTickets";
+import MailchimpForm from "../../components/mailchimpForm";
 import { Inconsolata } from "next/font/google";
 import { useState } from "react";
 import Head from "next/head";
+import { Image } from "@nextui-org/react";
 
 const inconsolata = Inconsolata({ subsets: ["latin"] });
 
@@ -285,6 +286,10 @@ export default function Info() {
 
       <BuyTickets />
       <MailchimpForm />
+      <Image
+        src="utd-logo-mould.png"
+        className="w-1/2 sm:w-1/4 mx-auto py-4"
+      ></Image>
     </div>
   );
 }

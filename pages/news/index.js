@@ -1,9 +1,16 @@
 import { Inconsolata } from "next/font/google";
 import Head from "next/head";
+import { Image } from "@nextui-org/react";
 
 const inconsolata = Inconsolata({ subsets: ["latin"] });
 
 const newsItems = [
+  {
+    title: "Less than two weeks to go!",
+    date: "15th September",
+    content:
+      "Tickets are still available. Information packs and digital tickets will be sent out to anyone who has already bought theirs.",
+  },
   {
     title: "Earlybird tickets now on sale!",
     date: "13th July",
@@ -52,7 +59,10 @@ export default function News() {
           </div>
         ))}
       </div>
-      {/* </div> */}
+      <Image
+        src="utd-logo-mould.png"
+        className="w-1/2 sm:w-1/4 mx-auto py-4"
+      ></Image>
     </div>
   );
 }
