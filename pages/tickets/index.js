@@ -1,3 +1,5 @@
+"use client";
+
 import { loadStripe } from "@stripe/stripe-js";
 import { Inconsolata } from "next/font/google";
 import "@fortawesome/fontawesome-free/css/all.min.css";
