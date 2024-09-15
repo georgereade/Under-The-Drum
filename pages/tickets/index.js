@@ -10,7 +10,7 @@ import DayTickets from "./components/DayTickets";
 import CampingTickets from "./components/CampingTickets";
 import { createContext, useState } from "react";
 
-const TicketContext = createContext();
+export const TicketContext = createContext();
 
 const inconsolata = Inconsolata({ subsets: ["latin"] });
 
