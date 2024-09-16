@@ -7,7 +7,7 @@ import Navigationbar from "../components/navbar";
 import Footer from "../components/footer";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import { TicketContextProvider } from "./theme-provider";
+import { TicketContextProvider } from "../contexts/theme-provider";
 
 export default function App({ Component, pageProps }) {
   return (
