@@ -1,11 +1,9 @@
-"use client";
-
 import { useState, useContext } from "react";
-import { TicketContext } from "../../../contexts/theme-provider";
+import { TicketContext } from "../../contexts/theme-provider";
 
 export default function DayTickets() {
   // const context = useContext(TicketContext);
-  let { dayVisible, toggleDayTickets } = useContext(TicketContext);
+  const { dayVisible, toggleDayTickets } = useContext(TicketContext);
   const [quantity, setQuantity] = useState(1);
 
   const handleQuantityChange = (event) => {

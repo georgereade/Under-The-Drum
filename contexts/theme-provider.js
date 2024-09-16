@@ -8,11 +8,13 @@ export const TicketContextProvider = ({ children }) => {
   const [campingVisible, setCampingVisible] = useState(false);
 
   const toggleDayTickets = () => {
-    setDayVisible(!dayVisible);
+    setDayVisible(true);
+    setCampingVisible(false);
   };
 
   const toggleCampingTickets = () => {
-    setCampingVisible(!campingVisible);
+    setCampingVisible(true);
+    setDayVisible(false);
   };
 
   return (
