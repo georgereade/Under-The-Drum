@@ -15,7 +15,7 @@ export default function CampingTickets() {
     return null; // or display a fallback UI if desired
   }
 
-  const { campingVisible, toggleCampingTickets } = context;
+  // const { campingVisible, toggleCampingTickets } = context;
 
   const handleQuantityChange = (event) => {
     setQuantity(Number(event.target.value)); // Set the quantity directly

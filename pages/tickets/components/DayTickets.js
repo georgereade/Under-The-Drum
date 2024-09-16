@@ -5,7 +5,7 @@ import { TicketContext } from "../theme-provider";
 
 export default function DayTickets() {
   const context = useContext(TicketContext);
-  const { dayVisible, toggleDayTickets } = context;
+  // const { dayVisible, toggleDayTickets } = context;
   const [quantity, setQuantity] = useState(1);
 
   if (!context) {
