@@ -7,6 +7,7 @@ import Navigationbar from "../components/navbar";
 import Footer from "../components/footer";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { TicketContextProvider } from "./theme-provider";
 
 export default function App({ Component, pageProps }) {
   return (
@@ -19,8 +20,10 @@ export default function App({ Component, pageProps }) {
           gtmId="G-L3XTL8FY14
 "
         />{" "}
-        <Navigationbar />
-        <Component {...pageProps} /> <Footer />
+        <TicketContextProvider>
+          <Navigationbar />
+          <Component {...pageProps} /> <Footer />
+        </TicketContextProvider>
         <Analytics />
       </NextUIProvider>
       <SpeedInsights />{" "}

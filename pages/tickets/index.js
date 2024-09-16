@@ -8,7 +8,6 @@ import Head from "next/head";
 import TicketLower from "./components/TicketLowerSection";
 import DayTickets from "./components/DayTickets";
 import CampingTickets from "./components/CampingTickets";
-import TicketContext from "./theme-provider";
 
 const inconsolata = Inconsolata({ subsets: ["latin"] });
 
@@ -43,10 +42,8 @@ export default function Tickets() {
 
       <div className="md:flex flex-col items-center min-h-[330px] sm:min-h-[230px]">
         <div className="md:flex flex-row sm:w-auto sm:p-0 sm:m-0 bg-utd-navy">
-          <TicketContext>
-            <DayTickets />
-            <CampingTickets />
-          </TicketContext>
+          <DayTickets />
+          <CampingTickets />
         </div>
       </div>
 

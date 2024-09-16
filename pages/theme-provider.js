@@ -1,22 +1,18 @@
-"use client";
-
-import { createContext, useState } from "react";
+import React, { createContext, useState } from "react";
 
 export const TicketContext = createContext();
 
-export default function TicketThemeProvider({ children }) {
+// Create the context provider component
+export const TicketContextProvider = ({ children }) => {
   const [dayVisible, setDayVisible] = useState(false);
   const [campingVisible, setCampingVisible] = useState(false);
 
-  // Function to toggle between day and camping tickets
   const toggleDayTickets = () => {
-    setDayVisible(true);
-    setCampingVisible(false);
+    setDayVisible(!dayVisible);
   };
 
   const toggleCampingTickets = () => {
-    setCampingVisible(true);
-    setDayVisible(false);
+    setCampingVisible(!campingVisible);
   };
 
   return (
@@ -31,4 +27,4 @@ export default function TicketThemeProvider({ children }) {
       {children}
     </TicketContext.Provider>
   );
-}
+};
