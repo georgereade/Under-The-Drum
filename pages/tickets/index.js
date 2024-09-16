@@ -8,7 +8,7 @@ import Head from "next/head";
 import TicketLower from "./components/TicketLowerSection";
 import DayTickets from "./components/DayTickets";
 import CampingTickets from "./components/CampingTickets";
-import TicketThemeProvider from "./theme-provider";
+import TicketContext from "./theme-provider";
 
 const inconsolata = Inconsolata({ subsets: ["latin"] });
 
@@ -19,38 +19,38 @@ const stripePromise = loadStripe(
 
 export default function Tickets() {
   return (
-    <TicketThemeProvider>
-      <div
-        className={`flex flex-col overflow-x-hidden dark items-center bg-utd-navy w-screen pb-12 min-h-full ${inconsolata.className} text-center bg-[url('/Drawings.png')] bg-cover bg-top bg-repeat-y bg-local`}
-        id="tickets"
-      >
-        <Head>
-          <title>Tickets | Under The Drum</title>
-          <meta
-            property="og:title"
-            content="Tickets | Under The Drum"
-            key="title"
-          />
-          <meta
-            name="description"
-            content="Tickets on sale now: £50 day tickets, £65 camping | A new music festival in the Antrim hills, featuring Joshua Burnside | 28th September 2024"
-            key="desc"
-          />
-        </Head>
-        <h1 className="font-extrabold text-2xl py-6 text-center leading-loose uppercase text-white">
-          Under The Drum Tickets on sale
-        </h1>
-        <TicketPrices />
+    <div
+      className={`flex flex-col overflow-x-hidden dark items-center bg-utd-navy w-screen pb-12 min-h-full ${inconsolata.className} text-center bg-[url('/Drawings.png')] bg-cover bg-top bg-repeat-y bg-local`}
+      id="tickets"
+    >
+      <Head>
+        <title>Tickets | Under The Drum</title>
+        <meta
+          property="og:title"
+          content="Tickets | Under The Drum"
+          key="title"
+        />
+        <meta
+          name="description"
+          content="Tickets on sale now: £50 day tickets, £65 camping | A new music festival in the Antrim hills, featuring Joshua Burnside | 28th September 2024"
+          key="desc"
+        />
+      </Head>
+      <h1 className="font-extrabold text-2xl py-6 text-center leading-loose uppercase text-white">
+        Under The Drum Tickets on sale
+      </h1>
+      <TicketPrices />
 
-        <div className="md:flex flex-col items-center min-h-[330px] sm:min-h-[230px]">
-          <div className="md:flex flex-row sm:w-auto sm:p-0 sm:m-0 bg-utd-navy">
+      <div className="md:flex flex-col items-center min-h-[330px] sm:min-h-[230px]">
+        <div className="md:flex flex-row sm:w-auto sm:p-0 sm:m-0 bg-utd-navy">
+          <TicketContext>
             <DayTickets />
             <CampingTickets />
-          </div>
+          </TicketContext>
         </div>
-
-        <TicketLower />
       </div>
-    </TicketThemeProvider>
+
+      <TicketLower />
+    </div>
   );
 }

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useContext } from "react";
+import { TicketContext } from "../theme-provider";
 
 export default function DayTickets() {
   // const context = useContext(TicketContext);

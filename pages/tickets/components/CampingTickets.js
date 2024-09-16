@@ -1,6 +1,7 @@
 "use client";
 
 import { useContext, useState } from "react";
+import { TicketContext } from "../theme-provider";
 
 export default function CampingTickets() {
   const { campingVisible, toggleCampingTickets } = useContext(TicketContext);
