@@ -5,6 +5,8 @@ import { TicketContext } from "../theme-provider";
 
 export default function CampingTickets() {
   const context = useContext(TicketContext);
+  const [quantity, setQuantity] = useState(1); // Quantity is independent of the ticket type
+  const [selectedTicketType, setSelectedTicketType] = useState(null); // Track if it's tent or van
 
   if (!context) {
     console.error(
@@ -14,8 +16,6 @@ export default function CampingTickets() {
   }
 
   const { campingVisible, toggleCampingTickets } = context;
-  const [quantity, setQuantity] = useState(1); // Quantity is independent of the ticket type
-  const [selectedTicketType, setSelectedTicketType] = useState(null); // Track if it's tent or van
 
   const handleQuantityChange = (event) => {
     setQuantity(Number(event.target.value)); // Set the quantity directly

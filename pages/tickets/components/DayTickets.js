@@ -5,6 +5,8 @@ import { TicketContext } from "../theme-provider";
 
 export default function DayTickets() {
   const context = useContext(TicketContext);
+  const { dayVisible, toggleDayTickets } = context;
+  const [quantity, setQuantity] = useState(1);
 
   if (!context) {
     console.error(
@@ -12,9 +14,6 @@ export default function DayTickets() {
     );
     return null; // or display a fallback UI if desired
   }
-
-  const { dayVisible, toggleDayTickets } = context;
-  const [quantity, setQuantity] = useState(1);
 
   const handleQuantityChange = (event) => {
     setQuantity(Number(event.target.value));

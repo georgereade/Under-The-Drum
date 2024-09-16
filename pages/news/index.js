@@ -62,6 +62,7 @@ export default function News() {
       <Image
         src="utd-logo-mould.png"
         className="w-1/2 sm:w-1/4 mx-auto py-4"
+        alt="Under The Drum logo"
       ></Image>
     </div>
   );

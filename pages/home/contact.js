@@ -112,6 +112,7 @@ text-3xl leading-loose mt-12 uppercase"
       <Image
         src="utd-logo-mould.png"
         className="w-1/2 sm:w-1/4 mx-auto py-4"
+        alt="Under The Drum logo"
       ></Image>
       <div className="flex flex-col text-2xl">
         <CountdownTimer />
