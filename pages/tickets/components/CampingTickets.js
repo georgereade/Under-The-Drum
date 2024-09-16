@@ -1,7 +1,7 @@
 "use client";
 
 import { useContext, useState } from "react";
-import { TicketContext } from "../index";
+import { TicketContext } from "../theme-provider";
 
 export default function CampingTickets() {
   const context = useContext(TicketContext);
@@ -19,6 +19,10 @@ export default function CampingTickets() {
 
   const handleQuantityChange = (event) => {
     setQuantity(Number(event.target.value)); // Set the quantity directly
+  };
+
+  const handleTicketPurchase = (event, ticketType) => {
+    setSelectedTicketType(ticketType);
   };
 
   const handleSubmit = (event) => {
@@ -77,6 +81,7 @@ export default function CampingTickets() {
                 <button
                   type="submit"
                   role="link"
+                  onClick={(event) => handleTicketPurchase(event, "tent")}
                   className="text-2xl checkout-button rounded-md transition ease-in-out delay-10 hover:scale-110 hover:opacity-100 uppercase border-2 bg-utd-red border-utd-red hover:text-black hover:bg-utd-green hover:border-utd-green"
                 >
                   Buy Tent Ticket
@@ -94,6 +99,7 @@ export default function CampingTickets() {
               <section className="checkout-button-section mx-8 py-2 sm:p-0 sm:ml-0">
                 <button
                   type="submit"
+                  onClick={(event) => handleTicketPurchase(event, "van")}
                   role="link"
                   className="text-2xl checkout-button rounded-md transition ease-in-out delay-10 hover:scale-110 hover:opacity-100 uppercase border-2 bg-utd-red border-utd-red hover:text-black hover:bg-utd-green hover:border-utd-green"
                 >
