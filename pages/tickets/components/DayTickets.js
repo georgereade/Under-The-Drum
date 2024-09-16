@@ -5,7 +5,7 @@ import { TicketContext } from "../theme-provider";
 
 export default function DayTickets() {
   // const context = useContext(TicketContext);
-  const { dayVisible, toggleDayTickets } = useContext(TicketContext);
+  let { dayVisible, toggleDayTickets } = useContext(TicketContext);
   const [quantity, setQuantity] = useState(1);
 
   const handleQuantityChange = (event) => {
