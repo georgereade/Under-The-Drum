@@ -4,8 +4,8 @@ import { useState, useContext } from "react";
 import { TicketContext } from "../theme-provider";
 
 export default function DayTickets() {
-  const context = useContext(TicketContext);
-  // const { dayVisible, toggleDayTickets } = context;
+  // const context = useContext(TicketContext);
+  const { dayVisible, toggleDayTickets } = useContext(TicketContext);
   const [quantity, setQuantity] = useState(1);
 
   if (!context) {
