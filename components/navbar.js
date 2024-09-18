@@ -42,12 +42,14 @@ export default function Navigationbar() {
     "LINE-UP",
     "LOCATION / CONTACT",
     "NEWS",
+    "MAP",
     "TERMS & CONDITIONS",
   ];
   const menuLinks = [
     "https://underthedrum.co.uk/#artists",
     "https://underthedrum.co.uk/location",
     "https://underthedrum.co.uk/news",
+    "https://underthedrum.co.uk/map",
     "https://underthedrum.co.uk/ts&cs",
   ];
 
@@ -169,6 +171,28 @@ export default function Navigationbar() {
           className="z-0 py-4 h-1/2 w-1 opacity-80"
           style={{
             backgroundColor: isScrolled ? "#db4c44 " : "#ffffff",
+            transition: "background-color 0.5s ease",
+          }}
+        />
+        <NavbarItem>
+          <Link
+            color="foreground"
+            duration={500}
+            href="/map"
+            className="cursor-pointer uppercase font-bold hover:text-utd-red transition ease-in-out delay-10 hover:scale-110"
+            style={{
+              color: isScrolled ? "#ffffff" : "#012741",
+              transition: "color 0.5s ease",
+            }}
+          >
+            Map
+          </Link>
+        </NavbarItem>
+        <Divider
+          orientation="vertical"
+          className="z-0 py-4 h-1/2 w-1 opacity-80"
+          style={{
+            backgroundColor: isScrolled ? "#a9de7c " : "#ffffff",
             transition: "background-color 0.5s ease",
           }}
         />
