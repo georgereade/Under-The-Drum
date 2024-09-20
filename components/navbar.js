@@ -223,7 +223,7 @@ export default function Navigationbar() {
         </NavbarItem>
         <Divider
           orientation="vertical"
-          className="bg-utd-grey py-4 z-0 h-1/4 border-solid place-content-center w-1"
+          className="bg-utd-grey py-4 z-0 h-1/4 border-solid place-content-center w-1 md:hidden xl:flex"
           style={{
             backgroundColor: isScrolled ? "#a9de7c" : "#ffffff",
             transition: "background-color 0.5s ease",
@@ -238,7 +238,7 @@ export default function Navigationbar() {
             info
           </Link>
         </NavbarItem>
-        <div className="hidden sm:flex pb-1">
+        <div className="hidden xl:flex">
           <CountdownTimer />
         </div>
       </NavbarContent>

@@ -170,13 +170,13 @@ export default function Artists() {
         className="flex-col items-center place-content-center md:w-1/3 mx-auto hidden sm:flex"
         id="lineup-poster"
       >
-        <Image
+        {/* <Image
           src="/UTDPOSTER-FINAL2.jpg"
           className="w-screen h-full md:h-1/4 md:w-auto rounded-none"
           alt="Under The Drum"
           width=""
           height=""
-        />
+        /> */}
       </div>
 
       <div className="flex flex-col items-center z-50">
