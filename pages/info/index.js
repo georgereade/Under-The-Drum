@@ -88,9 +88,9 @@ export default function Info() {
             activeIndices.includes(2) ? "max-h-96" : "max-h-0"
           }`}
         >
-          Saturday 28th September. The site opens 11am - 12.30am (for day
-          tickets) and closes 1pm Sunday 29th (for campers). Music on the main
-          stage will finish at 11.30pm.
+          Saturday 28th September. The site opens 10am - 1am (for day tickets)
+          and closes 1pm Sunday 29th (for campers). Music on the main stage will
+          finish at 11.30pm.
         </div>
         <h2
           onClick={() => toggleVisibility(3)}
