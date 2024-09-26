@@ -30,7 +30,8 @@ export default function Info() {
           onClick={() => toggleVisibility(0)}
           className="cursor-pointer border-b text-2xl font-bold text-utd-green"
         >
-          <i class="fa-solid fa-angle-down pr-1"></i>WELCOME TO UNDER THE DRUM!
+          <i className="fa-solid fa-angle-down pr-1"></i>WELCOME TO UNDER THE
+          DRUM!
         </h2>
         <div
           className={`text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
@@ -67,7 +68,7 @@ export default function Info() {
           onClick={() => toggleVisibility(1)}
           className="cursor-pointer pt-4 border-b text-2xl font-bold text-utd-green"
         >
-          <i class="fa-solid fa-angle-down pr-1"></i>Where?
+          <i className="fa-solid fa-angle-down pr-1"></i>Where?
         </h2>
         <div
           className={`text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
@@ -81,7 +82,7 @@ export default function Info() {
           onClick={() => toggleVisibility(2)}
           className="cursor-pointer pt-4 border-b text-2xl font-bold text-utd-green"
         >
-          <i class="fa-solid fa-angle-down pr-1"></i>When?
+          <i className="fa-solid fa-angle-down pr-1"></i>When?
         </h2>
         <div
           className={`text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
@@ -96,7 +97,7 @@ export default function Info() {
           onClick={() => toggleVisibility(3)}
           className="cursor-pointer pt-4 border-b text-2xl font-bold text-utd-green"
         >
-          <i class="fa-solid fa-angle-down pr-1"></i>Facilities
+          <i className="fa-solid fa-angle-down pr-1"></i>Facilities
         </h2>
         <div
           className={`text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
@@ -111,7 +112,7 @@ export default function Info() {
           onClick={() => toggleVisibility(4)}
           className="cursor-pointer pt-4 border-b text-2xl font-bold text-utd-green"
         >
-          <i class="fa-solid fa-angle-down pr-1"></i>Camping
+          <i className="fa-solid fa-angle-down pr-1"></i>Camping
         </h2>
         <div
           className={`text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
@@ -131,7 +132,7 @@ export default function Info() {
           onClick={() => toggleVisibility(5)}
           className="cursor-pointer pt-4 border-b text-2xl font-bold text-utd-green"
         >
-          <i class="fa-solid fa-angle-down pr-1"></i>Travel
+          <i className="fa-solid fa-angle-down pr-1"></i>Travel
         </h2>
         <div
           className={`text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
@@ -147,7 +148,7 @@ export default function Info() {
           onClick={() => toggleVisibility(6)}
           className="cursor-pointer pt-4 border-b text-2xl font-bold text-utd-green"
         >
-          <i class="fa-solid fa-angle-down pr-1"></i>Food & Drink
+          <i className="fa-solid fa-angle-down pr-1"></i>Food & Drink
         </h2>
         <div
           className={`text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
@@ -163,7 +164,7 @@ export default function Info() {
           onClick={() => toggleVisibility(7)}
           className="cursor-pointer pt-4 border-b text-2xl font-bold text-utd-green"
         >
-          <i class="fa-solid fa-angle-down pr-1"></i>Children & Pets
+          <i className="fa-solid fa-angle-down pr-1"></i>Children & Pets
         </h2>
         <div
           className={`text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
@@ -181,7 +182,7 @@ export default function Info() {
           onClick={() => toggleVisibility(8)}
           className="cursor-pointer pt-4 border-b text-2xl font-bold text-utd-green"
         >
-          <i class="fa-solid fa-angle-down pr-1"></i>Weather
+          <i className="fa-solid fa-angle-down pr-1"></i>Weather
         </h2>
         <div
           className={`text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
@@ -196,7 +197,7 @@ export default function Info() {
           onClick={() => toggleVisibility(9)}
           className="cursor-pointer pt-4 border-b text-2xl font-bold text-utd-green"
         >
-          <i class="fa-solid fa-angle-down pr-1"></i>Tickets and pricing
+          <i className="fa-solid fa-angle-down pr-1"></i>Tickets and pricing
         </h2>
         <div
           className={`text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
@@ -217,7 +218,7 @@ export default function Info() {
           onClick={() => toggleVisibility(10)}
           className="cursor-pointer pt-4 border-b text-2xl font-bold text-utd-green"
         >
-          <i class="fa-solid fa-angle-down pr-1"></i>Access and disabilities
+          <i className="fa-solid fa-angle-down pr-1"></i>Access and disabilities
         </h2>
         <div
           className={`text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
@@ -231,7 +232,8 @@ export default function Info() {
           onClick={() => toggleVisibility(11)}
           className="cursor-pointer pt-4 border-b text-2xl font-bold text-utd-green"
         >
-          <i class="fa-solid fa-angle-down pr-1"></i>Sustainability & Respect
+          <i className="fa-solid fa-angle-down pr-1"></i>Sustainability &
+          Respect
         </h2>
         <div
           className={`text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
@@ -255,7 +257,7 @@ export default function Info() {
           onClick={() => toggleVisibility(12)}
           className="cursor-pointer pt-4 border-b text-2xl font-bold text-utd-green"
         >
-          <i class="fa-solid fa-angle-down pr-1"></i>Discrimination
+          <i className="fa-solid fa-angle-down pr-1"></i>Discrimination
         </h2>
         <div
           className={`text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
@@ -271,7 +273,7 @@ export default function Info() {
           onClick={() => toggleVisibility(13)}
           className="cursor-pointer pt-4 border-b text-2xl font-bold text-utd-green"
         >
-          <i class="fa-solid fa-angle-down pr-1"></i>Who are we?
+          <i className="fa-solid fa-angle-down pr-1"></i>Who are we?
         </h2>
         <div
           className={`text-lg transition-max-height duration-500 ease-in-out pl-8 overflow-hidden ${
