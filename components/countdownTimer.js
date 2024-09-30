@@ -77,11 +77,11 @@ const CountdownTimer = () => {
 
   return (
     <div className="align-middle md:text-justify bg-utd-purple rounded-md p-2">
-      <span className="text-utd-grey uppercase font-bold ">Countdown: </span>
+      <span className="text-utd-grey uppercase font-bold ">2024: </span>
       {timerComponents.length ? (
         timerComponents
       ) : (
-        <span>Festival has finished!</span>
+        <span>Festival has passed</span>
       )}
     </div>
   );
