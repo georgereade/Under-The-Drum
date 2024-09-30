@@ -30,7 +30,8 @@ export default function CampingTickets() {
               type="button"
               onClick={toggleCampingTickets}
               role="button"
-              className="text-2xl checkout-button rounded-md transition ease-in-out delay-10 hover:scale-110 hover:opacity-100 uppercase border-2 bg-utd-red border-utd-red hover:text-black hover:bg-utd-green hover:border-utd-green"
+              disabled
+              className="cursor-not-allowed line-through text-2xl checkout-button rounded-md transition ease-in-out delay-10 hover:scale-110 hover:opacity-100 uppercase border-2 bg-gray-500 border-gray-500 hover:text-black hover:bg-utd-green hover:border-utd-green"
             >
               Camping Tickets
             </button>

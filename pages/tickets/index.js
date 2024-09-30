@@ -36,8 +36,10 @@ export default function Tickets() {
         />
       </Head>
       <h1 className="font-extrabold text-2xl py-6 text-center leading-loose uppercase text-white">
-        Under The Drum Tickets on sale
+        Under The Drum Tickets
       </h1>
+      <p>Tickets are no longer on sale for 2024.</p>
+      <p>Keep an eye out for information about next year!</p>
       <TicketPrices />
 
       <div className="md:flex flex-col items-center min-h-[330px] sm:min-h-[230px]">

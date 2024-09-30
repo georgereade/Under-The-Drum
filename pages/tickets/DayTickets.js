@@ -19,7 +19,8 @@ export default function DayTickets() {
               type="button"
               onClick={toggleDayTickets}
               role="button"
-              className="text-2xl checkout-button rounded-md transition ease-in-out delay-10 hover:scale-110 hover:opacity-100 uppercase border-2 bg-utd-red border-utd-red hover:text-black hover:bg-utd-green hover:border-utd-green"
+              disabled
+              className="text-2xl checkout-button line-through rounded-md transition ease-in-out delay-10 hover:scale-110 hover:opacity-100 uppercase border-2 bg-gray-500 border-gray-500 cursor-not-allowed hover:text-black hover:bg-utd-green hover:border-utd-green"
             >
               Day Tickets
             </button>

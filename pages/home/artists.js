@@ -18,7 +18,7 @@ const artistUrls = [
     url: "https://open.spotify.com/embed/artist/244AFgFclA9c1IcjWOAqoV?utm_source=oembed",
     desc: `Experimental folk songwriter and producer, blending Irish and world music influences. Rumbling, brooding, powerful and magnetic.`,
     profilepic:
-      "https://i.scdn.co/image/ab6761610000e5ebc12feb659a565ee3c54739d8",
+      "https://i.scdn.co/image/ab6761610000e5eb1880d6870342b00559f0170c",
   },
 
   {
@@ -135,11 +135,10 @@ const artistUrls = [
   },
   {
     id: 17,
-    name: "4MN x D4N",
-    url: "https://open.spotify.com/embed/artist/5FQzNWtS11lpF0WIDiQ5HO?utm_source=oembed",
-    desc: "Late night DJ set with 4MN and D4N.",
-    profilepic:
-      "https://i.scdn.co/image/ab6761610000e5eb02e0533797da4cfe18c9e94a",
+    name: "Two Step Trust (4MN, Dano Soprano)",
+    url: "https://www.instagram.com/twosteptrust/embed/?cr=1&amp;v=13&amp;rd=http%3A%2F%2Flocalhost%3A3000&amp;rp=%2Fnews#%7B%22ci%22%3A0%2C%22os%22%3A1224.699999988079%2C%22ls%22%3A406.5%2C%22le%22%3A654.7999999523163%7D",
+    desc: "Late night DJ set with 4MN and Dano Soprano.",
+    profilepic: "/twosteptrust.jpg",
   },
 ];
 
@@ -165,18 +164,6 @@ export default function Artists() {
         >
           Line-up
         </h2>
-      </div>
-      <div
-        className="flex-col items-center place-content-center md:w-1/3 mx-auto hidden sm:flex"
-        id="lineup-poster"
-      >
-        {/* <Image
-          src="/UTDPOSTER-FINAL2.jpg"
-          className="w-screen h-full md:h-1/4 md:w-auto rounded-none"
-          alt="Under The Drum"
-          width=""
-          height=""
-        /> */}
       </div>
 
       <div className="flex flex-col items-center z-50">

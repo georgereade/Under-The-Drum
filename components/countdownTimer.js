@@ -81,7 +81,7 @@ const CountdownTimer = () => {
       {timerComponents.length ? (
         timerComponents
       ) : (
-        <span>Festival has started!</span>
+        <span>Festival has finished!</span>
       )}
     </div>
   );
