@@ -227,7 +227,7 @@ export default function Artists() {
                 >
                   <Card className="rounded-md bg-utd-navy shadow-lg h-full w-80 sm:w-96 snap-mandatory snap-always">
                     {" "}
-                    <CardBody className="h-fit py-8">
+                    <CardBody className="h-fit py-8 safari">
                       {" "}
                       <iframe
                         className="m-0"
