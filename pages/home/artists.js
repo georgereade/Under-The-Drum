@@ -243,7 +243,7 @@ export default function Artists() {
                     <CardFooter>
                       {" "}
                       <i
-                        className="fa-solid fa-arrow-rotate-left cursor-pointer text-3xl transition ease-in-out hover:scale-110 z-50"
+                        className="fa-solid fa-arrow-rotate-left cursor-pointer text-3xl transition ease-in-out hover:scale-110"
                         role="button"
                         aria-label="back arrow"
                         onClick={() => handleCardClick(id)}
