@@ -228,7 +228,12 @@ export default function Artists() {
                 >
                   <Card className="rounded-md bg-utd-navy shadow-lg h-full w-80 sm:w-96 snap-mandatory snap-always">
                     {" "}
-                    <CardBody className="h-fit py-8 safari">
+                    <CardBody
+                      className="h-fit py-8"
+                      style={{
+                        backfaceVisibility: "hidden",
+                      }}
+                    >
                       {" "}
                       <iframe
                         className="m-0"
@@ -242,7 +247,6 @@ export default function Artists() {
                         title={name}
                         style={{
                           borderRadius: "16px",
-                          backfaceVisibility: "hidden",
                         }}
                       ></iframe>
                     </CardBody>
