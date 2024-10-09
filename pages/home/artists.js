@@ -175,7 +175,7 @@ export default function Artists() {
             {artistUrls.map(({ id, name, url, desc, profilepic }) => (
               <motion.div
                 key={id}
-                className="relative w-96 my-4 mx-2 md:mx-4 scroll-mx-0 h-80 mb-36 safari"
+                className="relative w-96 my-4 mx-2 md:mx-4 scroll-mx-0 h-80 mb-36"
                 animate={{ rotateY: flippedCards[id] ? 180 : 0 }}
                 transition={{ duration: 0.4 }}
                 style={{
@@ -184,26 +184,26 @@ export default function Artists() {
                 }}
               >
                 <motion.div
-                  className="absolute backface-hidden snap-center safari"
+                  className="absolute snap-center"
                   style={{
-                    backfaceVisibility: "hidden",
-                    WebkitBackfaceVisibility: "hidden",
+                    transformStyle: "preserve-3d",
+                    WebkitTransformStyle: "preserve-3d",
                   }}
                 >
-                  <Card className="rounded-md bg-utd-navy h-fit md:mx-0 w-80 md:w-96 shadow-lg safari">
+                  <Card className="rounded-md bg-utd-navy h-fit md:mx-0 w-80 md:w-96 shadow-lg">
                     <CardHeader>
-                      <h3 className="md:text-tiny text-xl uppercase font-bold text-utd-blue safari">
+                      <h3 className="md:text-tiny text-xl uppercase font-bold text-utd-blue">
                         {name}
                       </h3>
                     </CardHeader>
                     <Divider className="bg-utd-grey h-0.5" />
-                    <CardBody className="h-32 scroll-smooth overflow-x-hidden safari">
+                    <CardBody className="h-32 scroll-smooth overflow-x-hidden">
                       <p className="text-md leading-relaxed">{desc}</p>
                     </CardBody>
                     <Image
                       alt={name}
                       src={profilepic}
-                      className="w-full h-60 object-cover object-top rounded-none pointer-events-none safari"
+                      className="w-full h-60 object-cover object-top rounded-none pointer-events-none"
                       removeWrapper
                     />
                     <CardFooter className="overflow-visible">
@@ -217,16 +217,15 @@ export default function Artists() {
                   </Card>
                 </motion.div>
                 <motion.div
-                  className="relative rounded-md backface-hidden snap-mandatory snap-always safari"
+                  className="relative rounded-md snap-mandatory snap-always"
                   style={{
                     transform: "rotateY(180deg)",
                     backfaceVisibility: "hidden",
-                    WebkitBackfaceVisibility: "hidden",
                   }}
                 >
-                  <Card className="rounded-md bg-utd-navy shadow-lg h-full w-80 sm:w-96 snap-mandatory snap-always safari">
+                  <Card className="rounded-md bg-utd-navy shadow-lg h-full w-80 sm:w-96 snap-mandatory snap-always">
                     {" "}
-                    <CardBody className="h-fit py-8 safari">
+                    <CardBody className="h-fit py-8">
                       {" "}
                       <iframe
                         className="m-0"
@@ -244,7 +243,7 @@ export default function Artists() {
                     <CardFooter>
                       {" "}
                       <i
-                        className="fa-solid fa-arrow-rotate-left cursor-pointer text-3xl transition ease-in-out hover:scale-110"
+                        className="fa-solid fa-arrow-rotate-left cursor-pointer text-3xl transition ease-in-out hover:scale-110 z-50"
                         role="button"
                         aria-label="back arrow"
                         onClick={() => handleCardClick(id)}
