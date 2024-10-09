@@ -181,6 +181,7 @@ export default function Artists() {
                 style={{
                   transformStyle: "preserve-3d",
                   WebkitTransformStyle: "preserve-3d",
+                  backfaceVisibility: "hidden",
                 }}
               >
                 <motion.div
