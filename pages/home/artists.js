@@ -192,12 +192,12 @@ export default function Artists() {
                 >
                   <Card className="rounded-md bg-utd-navy h-fit md:mx-0 w-80 md:w-96 shadow-lg safari">
                     <CardHeader>
-                      <h3 className="md:text-tiny text-xl uppercase font-bold text-utd-blue">
+                      <h3 className="md:text-tiny text-xl uppercase font-bold text-utd-blue safari">
                         {name}
                       </h3>
                     </CardHeader>
                     <Divider className="bg-utd-grey h-0.5" />
-                    <CardBody className="h-32 scroll-smooth overflow-x-hidden">
+                    <CardBody className="h-32 scroll-smooth overflow-x-hidden safari">
                       <p className="text-md leading-relaxed">{desc}</p>
                     </CardBody>
                     <Image
@@ -226,7 +226,7 @@ export default function Artists() {
                 >
                   <Card className="rounded-md bg-utd-navy shadow-lg h-full w-80 sm:w-96 snap-mandatory snap-always safari">
                     {" "}
-                    <CardBody className="h-fit py-8">
+                    <CardBody className="h-fit py-8 safari">
                       {" "}
                       <iframe
                         className="m-0"
