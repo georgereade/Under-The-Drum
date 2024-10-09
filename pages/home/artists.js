@@ -175,13 +175,13 @@ export default function Artists() {
             {artistUrls.map(({ id, name, url, desc, profilepic }) => (
               <motion.div
                 key={id}
-                className="relative w-96 my-4 mx-2 md:mx-4 scroll-mx-0 h-80 mb-36 "
+                className="relative w-96 my-4 mx-2 md:mx-4 scroll-mx-0 h-80 mb-36"
                 animate={{ rotateY: flippedCards[id] ? 180 : 0 }}
                 transition={{ duration: 0.4 }}
                 style={{ transformStyle: "preserve-3d" }}
               >
                 <motion.div
-                  className="absolute backface-hidden snap-center "
+                  className="absolute backface-hidden snap-center safari"
                   style={{
                     backfaceVisibility: "hidden",
                   }}
@@ -213,7 +213,7 @@ export default function Artists() {
                   </Card>
                 </motion.div>
                 <motion.div
-                  className="relative rounded-md backface-hidden snap-mandatory snap-always"
+                  className="relative rounded-md backface-hidden snap-mandatory snap-always safari"
                   style={{
                     transform: "rotateY(180deg)",
                     backfaceVisibility: "hidden",

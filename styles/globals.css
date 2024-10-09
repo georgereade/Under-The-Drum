@@ -197,6 +197,11 @@ iframe.preloaded {
   stroke-linecap: round;
 }
 
+.safari {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
 .draw-item-fb {
   stroke: #359bdf;
   stroke-width: 2;
