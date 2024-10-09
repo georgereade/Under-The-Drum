@@ -181,7 +181,6 @@ export default function Artists() {
                 style={{
                   transformStyle: "preserve-3d",
                   WebkitTransformStyle: "preserve-3d",
-                  backfaceVisibility: "hidden",
                 }}
               >
                 <motion.div
@@ -189,6 +188,7 @@ export default function Artists() {
                   style={{
                     transformStyle: "preserve-3d",
                     WebkitTransformStyle: "preserve-3d",
+                    backfaceVisibility: "hidden",
                   }}
                 >
                   <Card className="rounded-md bg-utd-navy h-fit md:mx-0 w-80 md:w-96 shadow-lg">
