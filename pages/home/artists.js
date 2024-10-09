@@ -190,7 +190,7 @@ export default function Artists() {
                     WebkitBackfaceVisibility: "hidden",
                   }}
                 >
-                  <Card className="rounded-md bg-utd-navy h-fit md:mx-0 w-80 md:w-96 shadow-lg">
+                  <Card className="rounded-md bg-utd-navy h-fit md:mx-0 w-80 md:w-96 shadow-lg safari">
                     <CardHeader>
                       <h3 className="md:text-tiny text-xl uppercase font-bold text-utd-blue">
                         {name}
@@ -203,7 +203,7 @@ export default function Artists() {
                     <Image
                       alt={name}
                       src={profilepic}
-                      className="w-full h-60 object-cover object-top rounded-none pointer-events-none"
+                      className="w-full h-60 object-cover object-top rounded-none pointer-events-none safari"
                       removeWrapper
                     />
                     <CardFooter className="overflow-visible">
@@ -224,7 +224,7 @@ export default function Artists() {
                     WebkitBackfaceVisibility: "hidden",
                   }}
                 >
-                  <Card className="rounded-md bg-utd-navy shadow-lg h-full w-80 sm:w-96 snap-mandatory snap-always">
+                  <Card className="rounded-md bg-utd-navy shadow-lg h-full w-80 sm:w-96 snap-mandatory snap-always safari">
                     {" "}
                     <CardBody className="h-fit py-8">
                       {" "}
