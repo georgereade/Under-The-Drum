@@ -178,12 +178,16 @@ export default function Artists() {
                 className="relative w-96 my-4 mx-2 md:mx-4 scroll-mx-0 h-80 mb-36"
                 animate={{ rotateY: flippedCards[id] ? 180 : 0 }}
                 transition={{ duration: 0.4 }}
-                style={{ transformStyle: "preserve-3d" }}
+                style={{
+                  transformStyle: "preserve-3d",
+                  WebkitTransformStyle: "preserve-3d",
+                }}
               >
                 <motion.div
                   className="absolute backface-hidden snap-center safari"
                   style={{
                     backfaceVisibility: "hidden",
+                    WebkitBackfaceVisibility: "hidden",
                   }}
                 >
                   <Card className="rounded-md bg-utd-navy h-fit md:mx-0 w-80 md:w-96 shadow-lg">
@@ -217,6 +221,7 @@ export default function Artists() {
                   style={{
                     transform: "rotateY(180deg)",
                     backfaceVisibility: "hidden",
+                    WebkitBackfaceVisibility: "hidden",
                   }}
                 >
                   <Card className="rounded-md bg-utd-navy shadow-lg h-full w-80 sm:w-96 snap-mandatory snap-always">
