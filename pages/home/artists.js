@@ -239,7 +239,10 @@ export default function Artists() {
                         loading="lazy"
                         alt={name}
                         title={name}
-                        style={{ borderRadius: "16px" }}
+                        style={{
+                          borderRadius: "16px",
+                          backfaceVisibility: "hidden",
+                        }}
                       ></iframe>
                     </CardBody>
                     <CardFooter>
