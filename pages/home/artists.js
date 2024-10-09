@@ -175,7 +175,7 @@ export default function Artists() {
             {artistUrls.map(({ id, name, url, desc, profilepic }) => (
               <motion.div
                 key={id}
-                className="relative w-96 my-4 mx-2 md:mx-4 scroll-mx-0 h-80 mb-36"
+                className="relative w-96 my-4 mx-2 md:mx-4 scroll-mx-0 h-80 mb-36 safari"
                 animate={{ rotateY: flippedCards[id] ? 180 : 0 }}
                 transition={{ duration: 0.4 }}
                 style={{
