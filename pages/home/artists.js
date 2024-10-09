@@ -223,20 +223,18 @@ export default function Artists() {
                     {" "}
                     <CardBody className="h-fit py-8">
                       {" "}
-                      {flippedCards[id] && (
-                        <iframe
-                          className="m-0"
-                          src={url}
-                          width="100%"
-                          height="352"
-                          allow="encrypted-media;"
-                          allowFullScreen
-                          loading="lazy"
-                          alt={name}
-                          title={name}
-                          style={{ borderRadius: "16px" }}
-                        ></iframe>
-                      )}
+                      <iframe
+                        className="m-0"
+                        src={url}
+                        width="100%"
+                        height="352"
+                        allow="encrypted-media;"
+                        allowFullScreen
+                        loading="lazy"
+                        alt={name}
+                        title={name}
+                        style={{ borderRadius: "16px" }}
+                      ></iframe>
                     </CardBody>
                     <CardFooter>
                       {" "}
