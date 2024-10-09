@@ -184,7 +184,7 @@ export default function Artists() {
                 }}
               >
                 <motion.div
-                  className="absolute snap-center"
+                  className="absolute snap-center z-20"
                   style={{
                     transformStyle: "preserve-3d",
                     WebkitTransformStyle: "preserve-3d",
@@ -218,7 +218,7 @@ export default function Artists() {
                   </Card>
                 </motion.div>
                 <motion.div
-                  className="relative rounded-md snap-mandatory snap-always"
+                  className="relative rounded-md snap-mandatory snap-always z-10"
                   style={{
                     transform: "rotateY(180deg)",
                     backfaceVisibility: "hidden",
