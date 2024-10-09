@@ -221,6 +221,8 @@ export default function Artists() {
                   style={{
                     transform: "rotateY(180deg)",
                     backfaceVisibility: "hidden",
+                    transformStyle: "preserve-3d",
+                    WebkitTransformStyle: "preserve-3d",
                   }}
                 >
                   <Card className="rounded-md bg-utd-navy shadow-lg h-full w-80 sm:w-96 snap-mandatory snap-always">
