@@ -218,7 +218,7 @@ export default function Artists() {
                   </Card>
                 </motion.div>
                 <motion.div
-                  className="relative rounded-md snap-mandatory snap-always z-10"
+                  className="relative rounded-md snap-mandatory snap-always"
                   style={{
                     transform: "rotateY(180deg)",
                     backfaceVisibility: "hidden",
@@ -226,7 +226,12 @@ export default function Artists() {
                     WebkitTransformStyle: "preserve-3d",
                   }}
                 >
-                  <Card className="rounded-md bg-utd-navy shadow-lg h-full w-80 sm:w-96 snap-mandatory snap-always">
+                  <Card
+                    className="rounded-md bg-utd-navy shadow-lg h-full w-80 sm:w-96 snap-mandatory snap-always"
+                    style={{
+                      backfaceVisibility: "hidden",
+                    }}
+                  >
                     {" "}
                     <CardBody
                       className="h-fit py-8"
