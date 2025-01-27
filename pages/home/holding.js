@@ -20,7 +20,7 @@ export default function Holding() {
             // sizes="(max-width: 768px) 70vw, 40vw"
           />
         </div>
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center py-4">
           <h1 className="text-2xl text-utd-blue font-extrabold">9/8/2025</h1>
           <h1 className=" text-white font-extrabold text-2xl uppercase">
             Info coming soon
@@ -29,15 +29,14 @@ export default function Holding() {
             <span className=" text-utd-blue animate-fadeIn3s">.</span>
           </h1>
         </div>
-        <div className="flex flex-row py-8">
-          <MailchimpFormHolding />
+        <div>
+          <div className="w-screen flex flex-row place-content-center py-4">
+            <Socials />
+          </div>
         </div>
       </div>
-
-      <div>
-        <div className="w-screen flex flex-row place-content-center">
-          <Socials />
-        </div>
+      <div className="flex flex-row py-8">
+        <MailchimpFormHolding />
       </div>
     </div>
   );

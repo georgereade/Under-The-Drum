@@ -10,6 +10,7 @@ export default function CustomForm({
   const [email, setEmail] = useState("");
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
+  const [openForm, setOpenForm] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -46,64 +47,75 @@ export default function CustomForm({
       return "Sending...";
     }
     return (
-      <p className="text-xl font-bold text-white bg-transparent px-4 min-w-96">
-        Sign up for updates
-      </p>
+      <p className="text-xl font-bold text-white bg-transparent px-4 min-w-96"></p>
     );
   };
 
   return (
     <div className="flex flex-col items-center w-screen">
-      {/* <div className="flex flex-col items-center w-screen bg-black bg-opacity-75"></div> */}
-      <form className="mc__form pb-4 max-w-lg" onSubmit={handleSubmit}>
-        <h3 className="mc__title">{getStatusMessage()}</h3>
+      {openForm ? (
+        <form
+          className="mc__form pb-4 max-w-lg ease-in-out animate-slideDown"
+          onSubmit={handleSubmit}
+        >
+          <h3 className="mc__title">{getStatusMessage()}</h3>
 
-        {status !== "success" ? (
-          <div className="mc__field-container bg-transparent px-4">
-            <Input
-              label=""
-              onChange={(e) => setFirstName(e.target.value)}
-              type="text"
-              value={firstName}
-              className="py-1 caret-utd-red bg-black bg-opacity-75 my-1 rounded-full"
-              placeholder="First name"
-              required
-            />
+          {status !== "success" ? (
+            <div className="mc__field-container bg-transparent px-4">
+              <Input
+                label=""
+                onChange={(e) => setFirstName(e.target.value)}
+                type="text"
+                value={firstName}
+                className="py-1 caret-utd-blue font-bold text-lg bg-black bg-opacity-75 my-1 rounded-full"
+                placeholder="First name"
+                required
+              />
 
-            <Input
-              label=""
-              onChange={(e) => setLastName(e.target.value)}
-              type="text"
-              value={lastName}
-              className="py-1 caret-utd-blue bg-black bg-opacity-75 my-1 rounded-full"
-              placeholder="Last name"
-              required
-            />
+              <Input
+                label=""
+                onChange={(e) => setLastName(e.target.value)}
+                type="text"
+                value={lastName}
+                className="py-1 caret-utd-blue font-bold text-lg bg-black bg-opacity-75 my-1 rounded-full"
+                placeholder="Last name"
+                required
+              />
 
-            <Input
-              label=""
-              onChange={(e) => setEmail(e.target.value)}
-              type="email"
-              value={email}
-              className="py-1 caret-utd-green bg-black bg-opacity-75 my-1 rounded-full"
-              placeholder="Email"
-              required
-            />
-          </div>
-        ) : null}
+              <Input
+                label=""
+                onChange={(e) => setEmail(e.target.value)}
+                type="email"
+                value={email}
+                className="py-1 caret-utd-blue font-bold text-lg bg-black bg-opacity-75 my-1 rounded-full"
+                placeholder="Email"
+                required
+              />
+            </div>
+          ) : null}
 
-        {status === "success" ? (
-          ""
-        ) : (
-          <Button
-            type="submit"
-            size="lg"
-            className="transition text-2xl ease-in-out delay-10 hover:scale-110 py-3 my-2 text-utd-purple font-bold bg-utd-grey rounded-md uppercase hover:bg-utd-blue hover:text-white"
-          >
-            Subscribe
-          </Button>
-        )}
-      </form>
+          {status === "success" ? (
+            ""
+          ) : (
+            <Button
+              type="submit"
+              size="lg"
+              onClick={setOpenForm}
+              className="transition text-2xl ease-in-out delay-10 hover:scale-110 py-3 my-2 text-utd-purple font-bold bg-utd-grey rounded-md uppercase hover:bg-utd-blue hover:text-white"
+            >
+              Subscribe
+            </Button>
+          )}
+        </form>
+      ) : (
+        <Button
+          size="lg"
+          onClick={setOpenForm}
+          className="transition text-xl ease-in-out delay-10 hover:scale-110 py-3 my-2 text-utd-purple font-bold bg-utd-grey rounded-md uppercase hover:bg-utd-blue hover:text-white"
+        >
+          Sign up for updates
+        </Button>
+      )}
     </div>
   );
 }

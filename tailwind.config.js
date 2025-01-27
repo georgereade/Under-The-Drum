@@ -34,11 +34,16 @@ module.exports = {
         fadeIn6s: "fadeIn 6s ease-in-out forwards", // 1-second fade-in animation
         fadeIn7s: "fadeIn 7s ease-in-out forwards", // 1-second fade-in animation
         fadeIn8s: "fadeIn 8s ease-in-out forwards", // 1-second fade-in animation
+        slideDown: "slideDown 0.5s ease-out",
       },
       keyframes: {
         fadeIn: {
           "0%": { opacity: 0 },
           "100%": { opacity: 1 },
+        },
+        slideDown: {
+          "0%": { transform: "translateY(-100%)", opacity: "0" },
+          "100%": { transform: "translateY(0)", opacity: "1" },
         },
       },
     },

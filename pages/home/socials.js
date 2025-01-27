@@ -32,10 +32,10 @@ export default function Socials() {
   };
 
   return (
-    <div className="flex flex-row justify-center items-center">
+    <div className="flex flex-row justify-center items-center py-4">
       <Link
         href="https://www.instagram.com/under.the.drum/"
-        className="h-16 mb-8 text-center mx-8"
+        className="h-16 my-auto text-center mx-12"
         aria-label="instagram"
       >
         <motion.svg
@@ -61,7 +61,7 @@ export default function Socials() {
       </Link>
       <Link
         href="https://www.facebook.com/profile.php?id=61561380038001"
-        className="h-16 mb-8 text-center mx-8"
+        className="h-16 my-auto text-center mx-12"
         aria-label="facebook"
       >
         <motion.svg
