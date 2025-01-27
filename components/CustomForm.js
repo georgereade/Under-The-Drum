@@ -46,27 +46,27 @@ export default function CustomForm({
       return "Sending...";
     }
     return (
-      <p className="text-xl font-bold text-white bg-utd-navy px-4">
-        Sign up for updates on tickets, artists and more!
+      <p className="text-xl font-bold text-white bg-transparent px-4">
+        Sign up for updates on Under The Drum 2025
       </p>
     );
   };
 
   return (
     <form
-      className="mc__form bg-utd-navy sm:bg-transparent py-8"
+      className="mc__form bg-transparent sm:bg-transparent py-8"
       onSubmit={handleSubmit}
     >
       <h3 className="mc__title">{getStatusMessage()}</h3>
 
       {status !== "success" ? (
-        <div className="mc__field-container bg-utd-navy px-4">
+        <div className="mc__field-container bg-transparent px-4">
           <Input
             label=""
             onChange={(e) => setFirstName(e.target.value)}
             type="text"
             value={firstName}
-            className="py-3 caret-utd-red"
+            className="py-1 caret-utd-red"
             placeholder="First name"
             required
           />
@@ -76,7 +76,7 @@ export default function CustomForm({
             onChange={(e) => setLastName(e.target.value)}
             type="text"
             value={lastName}
-            className="py-3 caret-utd-blue "
+            className="py-1 caret-utd-blue "
             placeholder="Last name"
             required
           />
@@ -86,7 +86,7 @@ export default function CustomForm({
             onChange={(e) => setEmail(e.target.value)}
             type="email"
             value={email}
-            className="py-3 caret-utd-green"
+            className="py-1 caret-utd-green"
             placeholder="your@email.com"
             required
           />
@@ -99,7 +99,7 @@ export default function CustomForm({
         <Button
           type="submit"
           size="lg"
-          className="transition text-2xl ease-in-out delay-10 hover:scale-110 py-3 text-utd-purple font-bold bg-utd-grey rounded-md uppercase hover:bg-utd-red hover:text-white"
+          className="transition text-2xl ease-in-out delay-10 hover:scale-110 py-3 text-utd-purple font-bold bg-utd-grey rounded-md uppercase hover:bg-utd-blue hover:text-white"
         >
           Subscribe
         </Button>

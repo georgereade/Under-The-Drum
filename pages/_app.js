@@ -21,8 +21,9 @@ export default function App({ Component, pageProps }) {
 "
         />{" "}
         <TicketContextProvider>
-          <Navigationbar />
-          <Component {...pageProps} /> <Footer />
+          {/* <Navigationbar /> */}
+          <Component {...pageProps} />
+          {/* <Footer /> */}
         </TicketContextProvider>
         <Analytics />
       </NextUIProvider>

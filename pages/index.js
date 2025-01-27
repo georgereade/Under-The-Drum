@@ -1,23 +1,21 @@
 import { Inconsolata } from "next/font/google";
 import React from "react";
-import Contact from "./home/contact";
-import Artists from "./home/artists";
-import Hero from "./home/hero";
-import CookieConsentBanner from "../components/CookieConsent";
-import AboutUTD from "./home/aboututd";
+// import Contact from "./home/contact";
+// import Artists from "./home/artists";
+// import Hero from "./home/hero";
+// import CookieConsentBanner from "../components/CookieConsent";
+// import AboutUTD from "./home/aboututd";
 import Head from "next/head";
+import Holding from "./home/holding";
 const inconsolata = Inconsolata({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <main
-      className={`flex flex-col items-center w-screen font-nunito bg-utd-navy ${inconsolata.className} z-0 scroll-smooth `}
+      className={`flex flex-col items-center w-screen font-nunito ${inconsolata.className} z-0 scroll-smooth `}
     >
       <Head>
-        <title>
-          Under The Drum | Music Festival | Northern Ireland Saturday September
-          2024
-        </title>
+        <title>Under The Drum | Music Festival | Northern Ireland</title>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -55,7 +53,7 @@ export default function Home() {
               },
               image: ["https://www.underthedrum.co.uk/main-logo.png"],
               description:
-                "A new music festival in the Antrim hills featuring Joshua Burnside | Art, food, drinks and more",
+                "Music festival in the Antrim hills | Art, food, drinks and more",
               offers: {
                 "@type": "Offer",
                 url: "https://www.underthedrum.co.uk/tickets",
@@ -64,19 +62,16 @@ export default function Home() {
                 availability: "https://schema.org/InStock",
                 validFrom: "2024-07-21T12:00",
               },
-              performer: {
-                "@type": "MusicGroup",
-                name: "Joshua Burnside",
-              },
             }),
           }}
         />
       </Head>
-      <CookieConsentBanner />
+      <Holding />
+      {/* <CookieConsentBanner />
       <Hero />
       <AboutUTD />
       <Artists />
-      <Contact />
+      <Contact /> */}
     </main>
   );
 }

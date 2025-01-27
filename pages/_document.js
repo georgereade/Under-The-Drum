@@ -7,13 +7,13 @@ export default function Document() {
       <Head>
         <meta
           name="description"
-          content="A new music festival in the Antrim hills, featuring Joshua Burnside | Art, food and more | Tickets on Sale Now | 28th September 2024"
+          content="Music festival in the Antrim hills | Art, food and more"
           key="desc"
         />
         <meta property="og:title" content="Under The Drum" />
         <meta
           property="og:description"
-          content="A new music festival in the Antrim hills, featuring Joshua Burnside | Art, food and more | Tickets on Sale Now | 28th September 2024"
+          content="Music festival in the Antrim hills | Art, food and more"
         />
         <meta property="og:image" content="public\Vector LOGO - MAIN.jpg" />
         <meta property="og:image:alt" content="Under The Drum logo" />
@@ -28,7 +28,7 @@ export default function Document() {
         <meta property="twitter:title" content="Under The Drum" />
         <meta
           property="twitter:description"
-          content="A new music festival in the Antrim hills with art, food and more | 28th September 2024"
+          content="Music festival in the Antrim hills | Art, food and more"
         />
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow" />
