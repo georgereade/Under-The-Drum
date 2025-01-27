@@ -25,6 +25,17 @@ module.exports = {
         medium: "0.5rem",
         small: "0.2rem",
       },
+      animation: {
+        fadeIn1s: "fadeIn 1s ease-in-out forwards", // 1-second fade-in animation
+        fadeIn2s: "fadeIn 3s ease-in-out forwards", // 1-second fade-in animation
+        fadeIn4s: "fadeIn 6s ease-in-out forwards", // 1-second fade-in animation
+      },
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: 0 },
+          "100%": { opacity: 1 },
+        },
+      },
     },
     fontFamily: {
       nunito: ["Nunito", "sans-serif"],

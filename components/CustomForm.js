@@ -46,8 +46,8 @@ export default function CustomForm({
       return "Sending...";
     }
     return (
-      <p className="text-xl font-bold text-white bg-transparent px-4">
-        Sign up for Under The Drum 2025 updates
+      <p className="text-xl font-bold text-white bg-transparent px-4 min-w-96">
+        Sign up for updates
       </p>
     );
   };
@@ -65,7 +65,7 @@ export default function CustomForm({
               onChange={(e) => setFirstName(e.target.value)}
               type="text"
               value={firstName}
-              className="py-1 caret-utd-red bg-black bg-opacity-75 my-1"
+              className="py-1 caret-utd-red bg-black bg-opacity-75 my-1 rounded-full"
               placeholder="First name"
               required
             />
@@ -75,7 +75,7 @@ export default function CustomForm({
               onChange={(e) => setLastName(e.target.value)}
               type="text"
               value={lastName}
-              className="py-1 caret-utd-blue bg-black bg-opacity-75 my-1"
+              className="py-1 caret-utd-blue bg-black bg-opacity-75 my-1 rounded-full"
               placeholder="Last name"
               required
             />
@@ -85,7 +85,7 @@ export default function CustomForm({
               onChange={(e) => setEmail(e.target.value)}
               type="email"
               value={email}
-              className="py-1 caret-utd-green bg-black bg-opacity-75 my-1"
+              className="py-1 caret-utd-green bg-black bg-opacity-75 my-1 rounded-full"
               placeholder="Email"
               required
             />
