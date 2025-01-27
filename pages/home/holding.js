@@ -6,7 +6,7 @@ import MailchimpFormHolding from "@/components/mailchimpFormHolding";
 export default function Holding() {
   return (
     <div
-      className="flex flex-col h-screen max-h-screen w-screen justify-between items-center px-0 mx-0 pb-0 my-0 relative bg-[url('/Satge.jpg')] bg-cover bg-no-repeat bg-bottom"
+      className="flex flex-col h-screen max-h-screen w-screen justify-start sm:justify-between items-center px-0 mx-0 pb-0 my-0 relative bg-[url('/Satge.jpg')] bg-cover bg-no-repeat bg-bottom"
       id="home"
     >
       <div className="flex flex-row place-content-center w-full pt-4">
