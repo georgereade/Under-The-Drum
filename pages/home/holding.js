@@ -10,14 +10,14 @@ export default function Holding() {
       id="home"
     >
       <div>
-        <div className="flex flex-row place-content-center w-full pt-4">
+        <div className="flex flex-row place-content-center w-full pt-8">
           <Image
             src="/2025 logo colour.png"
-            className=""
+            className=" w-3/5 sm:w-[350px]"
             alt="Under The Drum music festival Northern Ireland"
-            width={250}
-            height={250}
-            // sizes="(max-width: 768px) 70vw, 40vw"
+            width={350}
+            height={350}
+            sizes="(max-width: 768px) 80vw, 50vw"
           />
         </div>
         <div className="flex flex-col items-center py-4">
