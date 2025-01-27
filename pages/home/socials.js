@@ -32,17 +32,17 @@ export default function Socials() {
   };
 
   return (
-    <div className="flex flex-row">
+    <div className="flex flex-row justify-center items-center">
       <Link
         href="https://www.instagram.com/under.the.drum/"
-        className="h-16 mb-12 text-center mx-8"
+        className="h-16 mb-8 text-center mx-8"
         aria-label="instagram"
       >
         <motion.svg
           xmlns="http://www.w3.org/2000/svg"
           width="64"
           height="64"
-          className="flex flex-col items-center transition ease-in-out hover:scale-110 mb-12 draw-item-ig place-content-center m-0"
+          className="flex flex-col items-center transition ease-in-out hover:scale-110 mb-12 draw-item-ig place-content-center"
           alt="instagram"
           viewBox="0 0 50 50"
         >
@@ -61,7 +61,7 @@ export default function Socials() {
       </Link>
       <Link
         href="https://www.facebook.com/profile.php?id=61561380038001"
-        className="h-16 mb-12 text-center mx-8"
+        className="h-16 mb-8 text-center mx-8"
         aria-label="facebook"
       >
         <motion.svg

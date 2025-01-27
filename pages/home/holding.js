@@ -6,32 +6,38 @@ import MailchimpFormHolding from "@/components/mailchimpFormHolding";
 export default function Holding() {
   return (
     <div
-      className="flex flex-col h-screen max-h-screen w-screen justify-start sm:justify-between items-center px-0 mx-0 pb-0 my-0 relative bg-[url('/Satge.jpg')] bg-cover bg-no-repeat bg-bottom bg-black bg-opacity-35 bg-blend-darken"
+      className="flex flex-col h-screen max-h-screen w-screen justify-between sm:justify-between items-center relative bg-[url('/Satge.jpg')] bg-cover bg-no-repeat bg-center sm:bg-bottom"
       id="home"
     >
-      <div className="flex flex-row place-content-center w-full pt-4">
-        <Image
-          src="/2025 logo colour.png"
-          className=""
-          alt="Under The Drum music festival Northern Ireland"
-          width={350}
-          height={350}
-          sizes="(max-width: 768px) 80vw, 40vw"
-        />
-      </div>
       <div>
-        <h1 className=" text-white font-extrabold text-2xl uppercase">
-          2025 Info coming soon
-          <span className="text-utd-blue opacity-0 animate-fadeIn1s">.</span>
-          <span className="text-utd-purple opacity-0 animate-fadeIn2s">.</span>
-          <span className=" text-utd-blue opacity-0 animate-fadeIn4s">.</span>
-        </h1>
+        <div className="flex flex-row place-content-center w-full pt-4">
+          <Image
+            src="/2025 logo colour.png"
+            className=""
+            alt="Under The Drum music festival Northern Ireland"
+            width={250}
+            height={250}
+            // sizes="(max-width: 768px) 70vw, 40vw"
+          />
+        </div>
+        <div className="flex flex-col items-center">
+          <h1 className="text-2xl text-utd-blue font-extrabold">9/8/2025</h1>
+          <h1 className=" text-white font-extrabold text-2xl uppercase">
+            Info coming soon
+            <span className="text-utd-blue animate-fadeIn1s">.</span>
+            <span className="text-utd-purple animate-fadeIn2s">.</span>
+            <span className=" text-utd-blue animate-fadeIn3s">.</span>
+          </h1>
+        </div>
+        <div className="flex flex-row py-8">
+          <MailchimpFormHolding />
+        </div>
       </div>
-      <div className="flex flex-row">
-        <MailchimpFormHolding />
-      </div>
-      <div className="w-screen flex flex-row place-content-center">
-        <Socials />
+
+      <div>
+        <div className="w-screen flex flex-row place-content-center">
+          <Socials />
+        </div>
       </div>
     </div>
   );

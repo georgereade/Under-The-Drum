@@ -27,8 +27,13 @@ module.exports = {
       },
       animation: {
         fadeIn1s: "fadeIn 1s ease-in-out forwards", // 1-second fade-in animation
-        fadeIn2s: "fadeIn 3s ease-in-out forwards", // 1-second fade-in animation
-        fadeIn4s: "fadeIn 6s ease-in-out forwards", // 1-second fade-in animation
+        fadeIn2s: "fadeIn 2s ease-in-out forwards", // 1-second fade-in animation
+        fadeIn3s: "fadeIn 3s ease-in-out forwards", // 1-second fade-in animation
+        fadeIn4s: "fadeIn 4s ease-in-out forwards", // 1-second fade-in animation
+        fadeIn5s: "fadeIn 5s ease-in-out forwards", // 1-second fade-in animation
+        fadeIn6s: "fadeIn 6s ease-in-out forwards", // 1-second fade-in animation
+        fadeIn7s: "fadeIn 7s ease-in-out forwards", // 1-second fade-in animation
+        fadeIn8s: "fadeIn 8s ease-in-out forwards", // 1-second fade-in animation
       },
       keyframes: {
         fadeIn: {
