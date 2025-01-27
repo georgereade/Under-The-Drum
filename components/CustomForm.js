@@ -47,63 +47,63 @@ export default function CustomForm({
     }
     return (
       <p className="text-xl font-bold text-white bg-transparent px-4">
-        Sign up for updates on Under The Drum 2025
+        Sign up for Under The Drum 2025 updates
       </p>
     );
   };
 
   return (
-    <form
-      className="mc__form bg-transparent sm:bg-transparent py-8"
-      onSubmit={handleSubmit}
-    >
-      <h3 className="mc__title">{getStatusMessage()}</h3>
+    <div className="flex flex-col items-center w-screen">
+      {/* <div className="flex flex-col items-center w-screen bg-black bg-opacity-75"></div> */}
+      <form className="mc__form py-8 max-w-lg" onSubmit={handleSubmit}>
+        <h3 className="mc__title">{getStatusMessage()}</h3>
 
-      {status !== "success" ? (
-        <div className="mc__field-container bg-transparent px-4">
-          <Input
-            label=""
-            onChange={(e) => setFirstName(e.target.value)}
-            type="text"
-            value={firstName}
-            className="py-1 caret-utd-red"
-            placeholder="First name"
-            required
-          />
+        {status !== "success" ? (
+          <div className="mc__field-container bg-transparent px-4">
+            <Input
+              label=""
+              onChange={(e) => setFirstName(e.target.value)}
+              type="text"
+              value={firstName}
+              className="py-1 caret-utd-red bg-black bg-opacity-75 my-1"
+              placeholder="First name"
+              required
+            />
 
-          <Input
-            label=""
-            onChange={(e) => setLastName(e.target.value)}
-            type="text"
-            value={lastName}
-            className="py-1 caret-utd-blue "
-            placeholder="Last name"
-            required
-          />
+            <Input
+              label=""
+              onChange={(e) => setLastName(e.target.value)}
+              type="text"
+              value={lastName}
+              className="py-1 caret-utd-blue bg-black bg-opacity-75 my-1"
+              placeholder="Last name"
+              required
+            />
 
-          <Input
-            label=""
-            onChange={(e) => setEmail(e.target.value)}
-            type="email"
-            value={email}
-            className="py-1 caret-utd-green"
-            placeholder="your@email.com"
-            required
-          />
-        </div>
-      ) : null}
+            <Input
+              label=""
+              onChange={(e) => setEmail(e.target.value)}
+              type="email"
+              value={email}
+              className="py-1 caret-utd-green bg-black bg-opacity-75 my-1"
+              placeholder="Email"
+              required
+            />
+          </div>
+        ) : null}
 
-      {status === "success" ? (
-        ""
-      ) : (
-        <Button
-          type="submit"
-          size="lg"
-          className="transition text-2xl ease-in-out delay-10 hover:scale-110 py-3 text-utd-purple font-bold bg-utd-grey rounded-md uppercase hover:bg-utd-blue hover:text-white"
-        >
-          Subscribe
-        </Button>
-      )}
-    </form>
+        {status === "success" ? (
+          ""
+        ) : (
+          <Button
+            type="submit"
+            size="lg"
+            className="transition text-2xl ease-in-out delay-10 hover:scale-110 py-3 my-2 text-utd-purple font-bold bg-utd-grey rounded-md uppercase hover:bg-utd-blue hover:text-white"
+          >
+            Subscribe
+          </Button>
+        )}
+      </form>
+    </div>
   );
 }
