@@ -55,7 +55,7 @@ export default function CustomForm({
   return (
     <div className="flex flex-col items-center w-screen">
       {/* <div className="flex flex-col items-center w-screen bg-black bg-opacity-75"></div> */}
-      <form className="mc__form py-8 max-w-lg" onSubmit={handleSubmit}>
+      <form className="mc__form pb-4 max-w-lg" onSubmit={handleSubmit}>
         <h3 className="mc__title">{getStatusMessage()}</h3>
 
         {status !== "success" ? (
